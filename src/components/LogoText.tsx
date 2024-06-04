@@ -9,7 +9,7 @@ interface LogoTextProps {
 export default function LogoText({ color, position, size }: LogoTextProps) {
   const textDisplay = cn(
     'inline-flex justify-start items-start',
-    position === 'vertical' ? `flex-col gap-2` : `gap-2`
+    position === 'vertical' ? `flex-col gap-1` : `gap-2`
   );
 
   return (
