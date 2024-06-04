@@ -10,7 +10,10 @@ export default {
         light: '#FAFAFA',
         dark: '#edeeed',
       },
-      text: '#000',
+      text: {
+        light: '#fff',
+        dark: '#000',
+      },
     },
   },
   plugins: [],
