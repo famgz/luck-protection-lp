@@ -1,13 +1,8 @@
+import { Product } from 'src/data/products';
 import { cn } from 'src/utils/cn';
 
-interface IFeaturedProduct {
-  title: string;
-  text: string;
-  image: string;
-}
-
 interface FeaturedProductProps {
-  product: IFeaturedProduct;
+  product: Product;
   reverseOrder?: boolean;
 }
 
@@ -31,8 +26,8 @@ export default function FeaturedProduct({
       />
 
       <div className="flex flex-col gap-2 text-left">
-        <p className="text-left text-4xl">{product.title}</p>
-        <p className="text-muted">{product.text}</p>
+        <p className="text-left text-4xl capitalize">{product.title}</p>
+        <p className="text-muted">{product.description}</p>
       </div>
     </div>
   );
