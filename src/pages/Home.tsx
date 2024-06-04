@@ -6,6 +6,7 @@ export default function Home() {
     <>
       <Hero />
       <FeaturedProductsGrid />
+      <div className="h-[300px] flex-1"></div>
     </>
   );
 }

@@ -7,6 +7,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+body {
+  @apply min-h-screen;
+}
+
 .container {
   @apply mx-auto max-w-[1120px];
 }
