@@ -1,9 +1,9 @@
 export enum ProductCategory {
-  BOMBEIRO = 'Bombeiro',
-  POLICIAL = 'Policial',
-  RESGATE = 'Resgate',
-  MERGULHO = 'Mergulho',
-  ARROMBAMENTO = 'Arrombamento',
+  BOMBEIRO = 'bombeiro',
+  POLICIAL = 'policial',
+  RESGATE = 'resgate',
+  MERGULHO = 'mergulho',
+  ARROMBAMENTO = 'arrombamento',
 }
 
 export interface Product {
