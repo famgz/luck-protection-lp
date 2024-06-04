@@ -8,7 +8,7 @@ export default function ProductsList() {
   return (
     <div className="flex flex-wrap justify-center gap-4 gap-y-6">
       {displayProducts.length > 0 &&
-        displayProducts.map((p) => <ProductCard product={p} />)}
+        displayProducts.map((p) => <ProductCard product={p} key={p.title} />)}
     </div>
   );
 }

@@ -7,12 +7,15 @@ export default function Home() {
   return (
     <>
       <Hero />
+
       <FeaturedProductsGrid />
+
       <CategoryList />
-      <div className="mt-32">
+
+      <div className="py-14">
         <div className="container">
           <h2 className="text-xl underline">Recomendado pra você</h2>
-          <div className="mt-5">
+          <div className="mt-10">
             <ProductsList />
           </div>
         </div>

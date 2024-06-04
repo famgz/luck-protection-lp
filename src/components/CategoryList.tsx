@@ -11,17 +11,20 @@ export default function CategoryList() {
           <p className="text-xl">Navegar por Categoria</p>
           <div className="flex gap-5">
             <button>
-              <FaChevronLeft size={20} />
+              <FaChevronLeft size={24} />
             </button>
             <button>
-              <FaChevronRight size={20} />
+              <FaChevronRight size={24} />
             </button>
           </div>
         </div>
         <div className="flex-center mt-5 gap-5">
           {categories.length > 0 &&
             categories.map((c) => (
-              <div className="flex-center h-[128px] w-[160px] flex-col gap-3 rounded-md bg-background-dark">
+              <div
+                key={c}
+                className="flex-center h-[128px] w-[160px] flex-col gap-3 rounded-md bg-background-dark"
+              >
                 <img src={`/icons/${c}.svg`} alt={c} />
                 <h3 className="capitalize">{c}</h3>
               </div>
