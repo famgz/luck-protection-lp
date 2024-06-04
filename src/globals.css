@@ -20,7 +20,7 @@ body {
 }
 
 .btn {
-  @apply flex-center rounded-md px-14 py-4;
+  @apply flex-center rounded-lg px-14 py-4;
 }
 
 .btn-outline {
