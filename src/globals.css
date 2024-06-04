@@ -8,9 +8,21 @@ body {
 }
 
 .container {
-  @apply max-w-[1120px] mx-auto;
+  @apply mx-auto max-w-[1120px];
 }
 
 .flex-center {
   @apply flex items-center justify-center text-center;
+}
+
+.btn {
+  @apply flex-center rounded-md px-14 py-4;
+}
+
+.btn-outline {
+  @apply btn border text-white;
+}
+
+.btn-secondary {
+  @apply btn bg-secondary text-white;
 }
