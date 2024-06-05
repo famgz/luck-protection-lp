@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Hero() {
   return (
     <div className="bg-secondary px-24">
@@ -11,7 +13,9 @@ export default function Hero() {
             <p className="text-7xl text-primary">confiáveis</p>
           </div>
           <p>Soluções eficazes para um ambiente seguro</p>
-          <button className="btn-outline">Conferir</button>
+          <button className="btn-outline-white">
+            <Link to={'/catalogo'}>Conferir</Link>
+          </button>
         </div>
 
         <div>
