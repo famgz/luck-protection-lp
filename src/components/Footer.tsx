@@ -9,7 +9,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-background-dark">
-      <div className="container grid grid-cols-3 py-24">
+      <div className="container grid grid-cols-3 py-24 text-sm">
         <div className="space-y-6">
           <Link to={'/'} className="flex items-center gap-3">
             <LogoImage color="fill-primary" size={30} />
@@ -34,7 +34,7 @@ export default function Footer() {
 
         <div className="flex-center flex-col !justify-start">
           <div>
-            <h3 className="mb-3 text-left font-bold">Categorias</h3>
+            <h3 className="mb-3 text-left text-base font-bold">Categorias</h3>
             <nav className="">
               <ul className="flex flex-col gap-3 text-left">
                 {categories.map((c) => (
@@ -51,7 +51,7 @@ export default function Footer() {
 
         <div className="flex-center !items-start">
           <div className="space-y-4 text-left">
-            <h3 className="font-bold">Contato</h3>
+            <h3 className="text-base font-bold">Contato</h3>
             <p>(11) 98163-9291</p>
             <p>grupoluckprotection@gmail.com</p>
           </div>
