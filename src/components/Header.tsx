@@ -14,10 +14,10 @@ export default function Header() {
   return (
     <header className="bg-background-dark px-2 py-4">
       <div className="container flex justify-between gap-3">
-        <div className="flex items-center gap-3">
+        <Link to={'/'} className="flex items-center gap-3">
           <LogoImage color="fill-primary" size={30} />
           <LogoText color="fill-secondary" size={10} position="vertical" />
-        </div>
+        </Link>
 
         <SearchBox />
 
@@ -59,9 +59,9 @@ export default function Header() {
             </li>
             <li>
               <Link
-                to={'/loja'}
+                to={'/catalogo'}
                 className={
-                  pathname.startsWith('/loja')
+                  pathname.startsWith('/catalogo')
                     ? currentLinkStyle
                     : regularLinkStyle
                 }

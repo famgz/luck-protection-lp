@@ -11,10 +11,10 @@ export default function Footer() {
     <div className="bg-background-dark">
       <div className="container grid grid-cols-3 py-24">
         <div className="space-y-6">
-          <div className="flex items-center gap-3">
+          <Link to={'/'} className="flex items-center gap-3">
             <LogoImage color="fill-primary" size={30} />
             <LogoText color="fill-secondary" size={10} position="vertical" />
-          </div>
+          </Link>
           <p>
             A Luck Protection começou suas atividades para fornecer proteção
             individual, importando Equipamentos de Proteção Individual (EPIs)
@@ -23,7 +23,10 @@ export default function Footer() {
             corporações militares e empresas de resgate e salvamento.
           </p>
           <div>
-            <Link to="/">
+            <Link
+              to="https://www.instagram.com/luckprotection/"
+              target="_blank"
+            >
               <FaInstagram size={16} className="text-primary" />
             </Link>
           </div>
@@ -36,7 +39,7 @@ export default function Footer() {
               <ul className="flex flex-col gap-3 text-left">
                 {categories.map((c) => (
                   <li key={c}>
-                    <Link to="/" className="capitalize">
+                    <Link to="/catalogo" className="capitalize">
                       {c}
                     </Link>
                   </li>
