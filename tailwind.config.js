@@ -8,10 +8,10 @@ export default {
       secondary: '#143252',
       background: {
         light: '#FAFAFA',
-        dark: '#edeeed',
+        dark: '#EDEEEF',
       },
-      white: '#fff',
-      light: '#bbb',
+      white: '#FFF',
+      light: '#B5B5B5',
       muted: '#656565',
       dark: '#000',
     },
