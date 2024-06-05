@@ -2,8 +2,11 @@ import { Link } from 'react-router-dom';
 import LogoImage from 'src/components/LogoImage';
 import LogoText from 'src/components/LogoText';
 import { FaInstagram } from 'react-icons/fa6';
+import { ProductCategory } from 'src/data/products';
 
 export default function Footer() {
+  const categories = Object.values(ProductCategory);
+
   return (
     <div className="bg-background-dark">
       <div className="container grid grid-cols-3 py-24">
@@ -26,29 +29,21 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex-center !items-start">
-          <nav className="">
-            <ul className="flex flex-col gap-3 text-left">
-              <li>
-                <h3 className="font-bold">Categorias</h3>
-              </li>
-              <li>
-                <Link to="/">Bombeiro</Link>
-              </li>
-              <li>
-                <Link to="/">Policial</Link>
-              </li>
-              <li>
-                <Link to="/">Mergulho</Link>
-              </li>
-              <li>
-                <Link to="/">Resgaste</Link>
-              </li>
-              <li>
-                <Link to="/">Arrombamento</Link>
-              </li>
-            </ul>
-          </nav>
+        <div className="flex-center flex-col !justify-start">
+          <div>
+            <h3 className="mb-3 text-left font-bold">Categorias</h3>
+            <nav className="">
+              <ul className="flex flex-col gap-3 text-left">
+                {categories.map((c) => (
+                  <li>
+                    <Link to="/" key={c} className="capitalize">
+                      {c}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </div>
         </div>
 
         <div className="flex-center !items-start">
