@@ -7,9 +7,9 @@ interface ProductCardProps {
 
 export default function ProductCard({ product }: ProductCardProps) {
   return (
-    <div className="flex h-[392px] w-[268px] flex-col justify-end gap-2 p-4 text-center">
+    <div className="flex h-[392px] w-[268px] flex-col justify-end gap-5 p-4 text-center">
       <button className="flex w-full justify-end">
-        <IoHeartOutline size={30} className="text-muted" />
+        <IoHeartOutline size={30} className="text-light" />
       </button>
       <div className="flex-1 overflow-hidden">
         <img
@@ -19,7 +19,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         />
       </div>
 
-      <p>{product.title}</p>
+      <p className="font-medium">{product.title}</p>
 
       <button className="btn-secondary w-full">Disponibilidade</button>
     </div>
