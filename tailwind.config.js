@@ -11,7 +11,7 @@ export default {
         dark: '#edeeed',
       },
       white: '#fff',
-      light: '#fff',
+      light: '#bbb',
       muted: '#656565',
       dark: '#000',
     },
