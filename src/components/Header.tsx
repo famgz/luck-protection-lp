@@ -13,7 +13,7 @@ export default function Header() {
 
   return (
     <header className="bg-background-dark px-2 py-4">
-      <div className="container flex justify-between gap-3">
+      <div className="container flex justify-between gap-10">
         <Link to={'/'} className="flex items-center gap-3">
           <LogoImage color="fill-primary" size={30} />
           <LogoText color="fill-secondary" size={10} position="vertical" />
@@ -21,8 +21,8 @@ export default function Header() {
 
         <SearchBox />
 
-        <nav className="flex-center">
-          <ul className="flex-center gap-12 text-base">
+        <nav className="flex-1">
+          <ul className="flex-center h-full !justify-between gap-4 text-base">
             <li>
               <Link
                 to={'/'}
@@ -30,7 +30,7 @@ export default function Header() {
                   pathname === '/' ? currentLinkStyle : regularLinkStyle
                 }
               >
-                Início
+                <span className="whitespace-nowrap">Início</span>
               </Link>
             </li>
             <li>
@@ -42,7 +42,7 @@ export default function Header() {
                     : regularLinkStyle
                 }
               >
-                Conheça-nos
+                <span className="whitespace-nowrap">Conheça-nos</span>
               </Link>
             </li>
             <li>
@@ -54,7 +54,7 @@ export default function Header() {
                     : regularLinkStyle
                 }
               >
-                Contato
+                <span className="whitespace-nowrap">Contato</span>
               </Link>
             </li>
             <li>
@@ -66,7 +66,7 @@ export default function Header() {
                     : regularLinkStyle
                 }
               >
-                Loja
+                <span className="whitespace-nowrap">Loja</span>
               </Link>
             </li>
             <li>
