@@ -1,14 +1,15 @@
 import ProductCard from 'src/components/ProductCard';
-import { Product, products } from 'src/data/products';
-import { shuffleproducts } from 'src/utils/misc';
+import { Product } from 'src/data/products';
 
-export default function ProductsList() {
-  const displayProducts: Product[] = shuffleproducts(products).slice(0, 8);
+interface ProductsListProps {
+  products: Product[];
+}
 
+export default function ProductsList({ products }: ProductsListProps) {
   return (
     <div className="flex flex-wrap justify-center gap-4 gap-y-6">
-      {displayProducts.length > 0 &&
-        displayProducts.map((p) => <ProductCard product={p} key={p.title} />)}
+      {products.length > 0 &&
+        products.map((p) => <ProductCard product={p} key={p.title} />)}
     </div>
   );
 }
