@@ -128,7 +128,7 @@ export const products: Product[] = [
   {
     slug: 'bote-inflavel',
     title: 'Bote Inflável Capacidade 9 passageiros',
-    category: ProductCategory.BOMBEIRO,
+    category: ProductCategory.RESGATE,
     description: '',
     price: 0,
     image: baseImagePath + 'bote-inflavel.png',
@@ -195,7 +195,7 @@ export const products: Product[] = [
     category: ProductCategory.MERGULHO,
     description: '',
     price: 0,
-    image: baseImagePath + 'luve-neoprene.png',
+    image: baseImagePath + 'luva-neoprene.png',
   },
   {
     slug: 'machado-picareta',
