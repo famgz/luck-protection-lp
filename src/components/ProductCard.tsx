@@ -1,4 +1,5 @@
 import { IoHeartOutline } from 'react-icons/io5';
+import { Link } from 'react-router-dom';
 import { Product } from 'src/data/products';
 
 interface ProductCardProps {
@@ -21,7 +22,9 @@ export default function ProductCard({ product }: ProductCardProps) {
 
       <p className="font-medium">{product.title}</p>
 
-      <button className="btn-secondary w-full">Disponibilidade</button>
+      <Link to={`/catalogo/${product.slug}`} className="btn-secondary w-full">
+        Disponibilidade
+      </Link>
     </div>
   );
 }

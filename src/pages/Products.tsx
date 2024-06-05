@@ -13,8 +13,6 @@ export default function ProductsPage() {
   >([]);
 
   useEffect(() => {
-    console.log(selectedCategories);
-
     if (selectedCategories.length === 0) {
       setFilteredProducts(products);
       return;
