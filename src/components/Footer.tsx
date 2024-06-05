@@ -35,8 +35,8 @@ export default function Footer() {
             <nav className="">
               <ul className="flex flex-col gap-3 text-left">
                 {categories.map((c) => (
-                  <li>
-                    <Link to="/" key={c} className="capitalize">
+                  <li key={c}>
+                    <Link to="/" className="capitalize">
                       {c}
                     </Link>
                   </li>
