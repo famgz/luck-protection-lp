@@ -2,10 +2,10 @@ import FeaturedProduct from 'src/components/FeaturedProduct';
 import { products } from 'src/data/products';
 
 export default function FeaturedProductsGrid() {
-  const alavanca = products.find((p) => p.title === 'alavanca')!;
-  const abafador = products.find((p) => p.title === 'abafador')!;
-  const ariete = products.find((p) => p.title === 'ariete')!;
-  const marreta = products.find((p) => p.title === 'marreta')!;
+  const alavanca = products.find((p) => p.slug === 'alavanca')!;
+  const abafador = products.find((p) => p.slug === 'abafador')!;
+  const ariete = products.find((p) => p.slug === 'ariete')!;
+  const marreta = products.find((p) => p.slug === 'marreta')!;
 
   return (
     <div className="bg-background-dark">
