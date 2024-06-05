@@ -30,3 +30,11 @@ body {
 .btn-secondary {
   @apply btn bg-secondary text-white;
 }
+
+.line-bottom {
+  @apply border-b-[2px] border-solid border-y-background-dark;
+}
+
+.line-top {
+  @apply border-t-[2px] border-solid border-t-background-light;
+}
