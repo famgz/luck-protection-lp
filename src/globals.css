@@ -27,8 +27,16 @@ body {
   @apply flex-center rounded-lg px-14 py-4;
 }
 
-.btn-outline {
+.btn-outline-white {
   @apply btn border text-white;
+}
+
+.btn-outline-secondary {
+  @apply btn border border-secondary text-secondary;
+}
+
+.btn-outline-primary {
+  @apply btn border border-primary text-dark;
 }
 
 .btn-secondary {
@@ -36,11 +44,15 @@ body {
 }
 
 .line-bottom {
-  @apply border-b-[2px] border-solid border-y-background-dark;
+  @apply border-b-[1px] border-solid border-y-background-dark;
+}
+
+.line-bottom-primary-light {
+  @apply border-b-[1px] border-solid border-y-primary/50;
 }
 
 .line-top {
-  @apply border-t-[2px] border-solid border-t-background-light;
+  @apply border-t-[1px] border-solid border-t-background-light;
 }
 
 #bread-crumb {
