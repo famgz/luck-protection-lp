@@ -50,7 +50,7 @@ export default function SingleProductPage() {
         <BreadCrumb product={product} category={product?.category} />
 
         {/* Product images and title */}
-        <div className="grid grid-cols-2 items-center gap-10 py-24">
+        <div className="grid grid-cols-1 items-center gap-10 py-24 md:grid-cols-2">
           <div className="flex gap-10">
             {/* Thumbnails */}
             <div className="flex flex-col justify-center gap-4">
@@ -85,7 +85,9 @@ export default function SingleProductPage() {
               <h1 className="text-4xl">{product.title}</h1>
               <p className="text-muted">{product.description}</p>
             </div>
-            <div className="flex gap-4">
+
+            {/* Buttons */}
+            <div className="grid-col-1 grid gap-4 lg:grid-cols-2">
               <button
                 className="btn-outline-primary w-full whitespace-nowrap"
                 onClick={() => handleToggleFavorite()}
@@ -111,7 +113,6 @@ export default function SingleProductPage() {
 
           <div className="space-y-4">
             <h3 className="text-2xl">Corpo</h3>
-
             {Object.entries(product.details).map(([k, v]) => (
               <div
                 key={k}

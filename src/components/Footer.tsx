@@ -9,7 +9,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-background-dark">
-      <div className="container grid grid-cols-3 py-24 text-sm">
+      <div className="container grid grid-cols-1 py-10 text-sm md:grid-cols-[1fr_2fr] md:py-24">
         <div className="space-y-6">
           <Link to={'/'} className="flex items-center gap-3">
             <LogoImage color="fill-primary" size={30} />
@@ -32,28 +32,33 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex-center flex-col !justify-start">
-          <div>
-            <h3 className="mb-3 text-left text-base font-bold">Categorias</h3>
-            <nav className="">
-              <ul className="flex flex-col gap-3 text-left">
-                {categories.map((c) => (
-                  <li key={c}>
-                    <Link to={`/catalogo?category=${c}`} className="capitalize">
-                      {c}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
+        <div className="mt-5 grid grid-cols-2 md:mt-0">
+          <div className="flex-center flex-col !items-start md:!items-center md:!justify-start">
+            <div>
+              <h3 className="mb-3 text-left text-base font-bold">Categorias</h3>
+              <nav>
+                <ul className="flex flex-col gap-3 text-left">
+                  {categories.map((c) => (
+                    <li key={c}>
+                      <Link
+                        to={`/catalogo?category=${c}`}
+                        className="capitalize"
+                      >
+                        {c}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            </div>
           </div>
-        </div>
 
-        <div className="flex-center !items-start">
-          <div className="space-y-4 text-left">
-            <h3 className="text-base font-bold">Contato</h3>
-            <p>(11) 98163-9291</p>
-            <p>grupoluckprotection@gmail.com</p>
+          <div className="flex-center !items-start md:!justify-start">
+            <div className="space-y-4 text-left">
+              <h3 className="text-base font-bold">Contato</h3>
+              <p>(11) 98163-9291</p>
+              <p>grupoluckprotection@gmail.com</p>
+            </div>
           </div>
         </div>
       </div>

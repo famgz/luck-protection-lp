@@ -4,6 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import LogoImage from 'src/components/LogoImage';
 import LogoText from 'src/components/LogoText';
 import SearchBox from 'src/components/SearchBox';
+import { IoMenu } from 'react-icons/io5';
 
 export default function Header() {
   const pathname = useLocation().pathname;
@@ -21,7 +22,11 @@ export default function Header() {
 
         <SearchBox />
 
-        <nav className="flex-1">
+        <button className="flex items-center text-muted md:hidden">
+          <IoMenu size={40} />
+        </button>
+
+        <nav className="hidden flex-1 md:block">
           <ul className="flex-center h-full !justify-between gap-4 text-base">
             <li>
               <Link

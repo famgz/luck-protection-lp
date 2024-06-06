@@ -16,7 +16,7 @@ body {
 }
 
 *:has(> .container) {
-  @apply px-4;
+  @apply px-10;
 }
 
 .flex-center {

@@ -8,7 +8,7 @@ export default function FeaturedProductsGrid() {
   const marreta = products.find((p) => p.slug === 'marreta')!;
 
   return (
-    <div className="bg-background-dark">
+    <div className="hidden bg-background-dark sm:block">
       <div
         id="featured-products-grid"
         className="mx-auto flex min-h-[600px] w-full max-w-[1440px] flex-col xl:flex-row"
