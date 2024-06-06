@@ -19,11 +19,11 @@ export default function CategoryList() {
             </button>
           </div>
         </div>
-        <div className="flex-center mt-5 gap-5">
+        <div className="flex-center mt-5 flex-wrap gap-5">
           {categories.length > 0 &&
             categories.map((c) => (
               <Link
-                to={'/catalogo'}
+                to={`/catalogo?category=${c}`}
                 key={c}
                 className="flex-center h-[128px] w-[160px] flex-col gap-3 rounded-md bg-background-dark"
               >

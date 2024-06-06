@@ -32,7 +32,10 @@ export default function BreadCrumb({ product, category }: BreadCrumbProps) {
             <>
               <GoChevronRight size={24} strokeWidth={1} />
               <li>
-                <Link to={'/catalogo'} className="capitalize">
+                <Link
+                  to={`/catalogo?category=${category}`}
+                  className="capitalize"
+                >
                   {category}
                 </Link>
               </li>

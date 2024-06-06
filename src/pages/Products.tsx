@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import BreadCrumb from 'src/components/BreadCrumb';
 import ProductsList from 'src/components/ProductsList';
 import SearchBox from 'src/components/SearchBox';
 import { ProductCategory, products } from 'src/data/products';
 
 export default function ProductsPage() {
+  const [searchParams] = useSearchParams();
   const [filteredProducts, setFilteredProducts] = useState(products);
   const categories = Object.values(ProductCategory);
 
@@ -13,6 +15,14 @@ export default function ProductsPage() {
   >([]);
 
   useEffect(() => {
+    // first access, check params filter
+    const paramCategory = searchParams.get('category') as ProductCategory;
+
+    if (categories.includes(paramCategory)) {
+      setSelectedCategories([paramCategory]);
+      searchParams.delete('category');
+    }
+
     if (selectedCategories.length === 0) {
       setFilteredProducts(products);
       return;

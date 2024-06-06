@@ -39,7 +39,7 @@ export default function Footer() {
               <ul className="flex flex-col gap-3 text-left">
                 {categories.map((c) => (
                   <li key={c}>
-                    <Link to="/catalogo" className="capitalize">
+                    <Link to={`/catalogo?category=${c}`} className="capitalize">
                       {c}
                     </Link>
                   </li>

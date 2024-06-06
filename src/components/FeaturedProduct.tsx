@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Product } from 'src/data/products';
 import { cn } from 'src/utils/cn';
 
@@ -13,9 +14,10 @@ export default function FeaturedProduct({
   const padding = reverseOrder ? 'pl-10' : 'pr-10';
 
   return (
-    <div
+    <Link
+      to={`/catalogo/${product.slug}`}
       className={cn(
-        'featured-product grid flex-1 grid-cols-2 items-center gap-4 outline outline-[1px]',
+        'featured-product grid flex-1 grid-cols-2 items-center gap-4 py-5 outline outline-[1px]',
         padding
       )}
     >
@@ -29,6 +31,6 @@ export default function FeaturedProduct({
         <p className="text-left text-4xl capitalize">{product.title}</p>
         <p className="text-muted">{product.description}</p>
       </div>
-    </div>
+    </Link>
   );
 }
