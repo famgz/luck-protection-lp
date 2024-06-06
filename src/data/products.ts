@@ -20,7 +20,7 @@ export interface Product {
   images: string[];
 }
 
-const baseImagePath = '/products/';
+export const baseImagePath = '/products/';
 
 export const products: Product[] = [
   {
