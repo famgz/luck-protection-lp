@@ -76,8 +76,12 @@ export default function Header() {
             </li>
             <li>
               <div className="flex-center gap-5 text-dark">
-                <IoHeartOutline size={20} />
-                <LuUser size={20} strokeWidth={1.5} />
+                <button>
+                  <IoHeartOutline size={20} />
+                </button>
+                <button>
+                  <LuUser size={20} strokeWidth={1.5} />
+                </button>
               </div>
             </li>
           </ul>

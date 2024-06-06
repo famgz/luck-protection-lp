@@ -60,7 +60,7 @@ export default function ProductsPage() {
                   type="checkbox"
                   name="all"
                   id="all"
-                  className="mr-2 scale-125 accent-primary"
+                  className="mr-2 scale-125 cursor-pointer accent-primary"
                   checked={selectedCategories.length === 0}
                   onChange={() => {
                     setSelectedCategories([]);
@@ -68,7 +68,7 @@ export default function ProductsPage() {
                 />
                 <label
                   htmlFor="all"
-                  className="text-sm font-medium text-secondary"
+                  className="cursor-pointer text-sm font-medium text-secondary"
                 >
                   Todos os Produtos
                   <span className="ml-1 text-xs text-light">
@@ -83,13 +83,13 @@ export default function ProductsPage() {
                       type="checkbox"
                       name={c}
                       id={c}
-                      className="mr-2 scale-125 accent-primary"
+                      className="mr-2 scale-125 cursor-pointer accent-primary"
                       onChange={() => handleFilterClick(c)}
                       checked={selectedCategories.includes(c)}
                     />
                     <label
                       htmlFor={c}
-                      className="text-sm font-medium capitalize text-secondary"
+                      className="cursor-pointer text-sm font-medium capitalize text-secondary"
                     >
                       {c}
                       <span className="ml-1 text-xs text-light">
