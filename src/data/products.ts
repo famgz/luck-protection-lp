@@ -89,21 +89,6 @@ export const products: Product[] = [
     ],
   },
   {
-    slug: 'abafador',
-    title: 'Abafador Tático',
-    category: ProductCategory.POLICIAL,
-    description:
-      'Proteção auditiva e melhora a consciência situacional e a comunicação',
-    details: {
-      'Fabricado em': 'Aço',
-      Comprimento: '90cm',
-      Diâmetro: '3,7cm',
-      Peso: '2,9kg',
-    },
-    price: 0,
-    images: [baseImagePath + 'abafador.png'],
-  },
-  {
     slug: 'alavanca-2',
     title: 'Alavanca Hooligan Pé de Cabra',
     category: ProductCategory.RESGATE,
@@ -185,21 +170,6 @@ export const products: Product[] = [
     },
     price: 0,
     images: [baseImagePath + 'ariete-tatico-2.png'],
-  },
-  {
-    slug: 'ariete',
-    title: 'Ariete Tático',
-    category: ProductCategory.POLICIAL,
-    description:
-      'Com capacidade para fornecer 500 kg de força cinética(padrão).',
-    details: {
-      'Fabricado em': 'Aço',
-      Comprimento: '90cm',
-      Diâmetro: '3,7cm',
-      Peso: '2,9kg',
-    },
-    price: 0,
-    images: [baseImagePath + 'ariete.png'],
   },
   {
     slug: 'barco-inflavel',
