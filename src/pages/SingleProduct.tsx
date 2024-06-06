@@ -15,7 +15,7 @@ export default function SingleProductPage() {
     setProduct(foundProduct);
 
     if (foundProduct) {
-      setCurrentImage(foundProduct.image);
+      setCurrentImage(foundProduct.images[0]);
     }
   }, [productSlug]);
 
@@ -29,12 +29,6 @@ export default function SingleProductPage() {
       </div>
     );
   }
-
-  const images = [
-    product?.image,
-    '/products/capuz-neoprene.png',
-    '/products/alavanca-2.png',
-  ];
 
   function whatsAppMessage(product: Product) {
     return `https://wa.me/5511975305715?text=Ol%C3%A1!+Tenho+interesse+no+produto+*${product.title}*.%0A%0AEstá+disponível?`;
@@ -54,8 +48,8 @@ export default function SingleProductPage() {
           <div className="flex gap-10">
             {/* Thumbnails */}
             <div className="flex flex-col justify-center gap-4">
-              {images.length > 0 &&
-                images.map((img, idx) => (
+              {product.images.length > 0 &&
+                product.images.map((img, idx) => (
                   <div key={idx + img} className="max-w-[80px] overflow-hidden">
                     <img
                       src={img}

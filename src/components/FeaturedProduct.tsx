@@ -22,7 +22,7 @@ export default function FeaturedProduct({
       )}
     >
       <img
-        src={product.image}
+        src={product.images[0]}
         alt=""
         className={reverseOrder ? 'order-last' : ''}
       />

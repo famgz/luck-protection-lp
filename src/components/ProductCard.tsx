@@ -27,7 +27,7 @@ export default function ProductCard({ product }: ProductCardProps) {
       </button>
       <div className="flex-1 overflow-hidden">
         <img
-          src={product.image}
+          src={product.images[0]}
           alt={product.title}
           className="mx-auto max-h-full object-contain"
         />
