@@ -11,7 +11,7 @@ export default function FeaturedProductsGrid() {
     <div className="bg-background-dark">
       <div
         id="featured-products-grid"
-        className="mx-auto flex h-[600px] w-full max-w-[1440px]"
+        className="mx-auto flex min-h-[600px] w-full max-w-[1440px] flex-col xl:flex-row"
       >
         <div className="flex flex-1 flex-col">
           <FeaturedProduct product={alavanca} />
