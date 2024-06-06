@@ -20,7 +20,9 @@ export default function Header() {
           <LogoText color="fill-secondary" size={10} position="vertical" />
         </Link>
 
-        <SearchBox />
+        <div className="hidden sm:block">
+          <SearchBox />
+        </div>
 
         <button className="flex items-center text-muted md:hidden">
           <IoMenu size={40} />
@@ -40,7 +42,8 @@ export default function Header() {
             </li>
             <li>
               <Link
-                to={'/'}
+                to={'https://www.instagram.com/luckprotection/'}
+                target="_blank"
                 className={
                   pathname.startsWith('/sobre')
                     ? currentLinkStyle
@@ -52,7 +55,8 @@ export default function Header() {
             </li>
             <li>
               <Link
-                to={'/'}
+                to={'https://wa.me/5511975305715'}
+                target="_blank"
                 className={
                   pathname.startsWith('/contato')
                     ? currentLinkStyle

@@ -28,15 +28,15 @@ body {
 }
 
 .btn-outline-white {
-  @apply btn border text-white;
+  @apply btn border-[1px] text-white;
 }
 
 .btn-outline-secondary {
-  @apply btn border border-secondary text-secondary;
+  @apply btn border-[1px] border-secondary text-secondary;
 }
 
 .btn-outline-primary {
-  @apply btn border border-primary text-dark;
+  @apply btn border-[1px] border-primary text-dark;
 }
 
 .btn-secondary {

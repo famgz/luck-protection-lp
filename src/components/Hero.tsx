@@ -3,23 +3,25 @@ import { Link } from 'react-router-dom';
 export default function Hero() {
   return (
     <div className="bg-secondary px-24">
-      <div className="flex-center container !justify-between">
-        <div className="my-5 flex flex-col items-start gap-4 text-left text-white">
+      <div className="container grid grid-cols-1 min-[400px]:grid-cols-2">
+        <div className="my-8 flex flex-col items-start justify-center gap-4 text-left text-white">
           <p className="text-2xl">
             Qualidade em<span className="text-primary"> segurança!</span>
           </p>
           <div className="space-y-2">
-            <p className="text-4xl lg:text-7xl">Equipamentos</p>
-            <p className="text-4xl text-primary lg:text-7xl">confiáveis</p>
+            <p className="text-3xl sm:text-4xl lg:text-7xl">Equipamentos</p>
+            <p className="text-3xl text-primary sm:text-4xl lg:text-7xl">
+              confiáveis
+            </p>
           </div>
           <p>Soluções eficazes para um ambiente seguro</p>
-          <button className="btn-outline-white scale-75 md:scale-100">
+          <button className="btn-outline-white !px-5 !py-2 text-xs sm:!px-14 sm:!py-4 sm:!text-base">
             <Link to={'/catalogo'}>Conferir</Link>
           </button>
         </div>
 
-        <div>
-          <img src="/bombeiro.png" alt="" />
+        <div className="flex hidden min-h-full items-end justify-end min-[400px]:flex">
+          <img src="/bombeiro.png" alt="" className="max-h-[85%]" />
         </div>
       </div>
     </div>
