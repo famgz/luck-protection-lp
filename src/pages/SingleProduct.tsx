@@ -2,11 +2,13 @@ import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import BreadCrumb from 'src/components/BreadCrumb';
 import { Product, products } from 'src/data/products';
+import useFavorites from 'src/hooks/useFavorites';
 
 export default function SingleProductPage() {
   const { productSlug } = useParams();
   const [product, setProduct] = useState<Product | undefined>();
   const [currentImage, setCurrentImage] = useState<string | undefined>();
+  const { isFavorite, toggleFavorite } = useFavorites();
 
   useEffect(() => {
     const foundProduct = products.find((p) => p.slug === productSlug);
@@ -33,6 +35,14 @@ export default function SingleProductPage() {
     '/products/capuz-neoprene.png',
     '/products/alavanca-2.png',
   ];
+
+  function whatsAppMessage(product: Product) {
+    return `https://wa.me/5511975305715?text=Ol%C3%A1!+Tenho+interesse+no+produto+*${product.title}*.%0A%0AEstá+disponível?`;
+  }
+
+  const handleToggleFavorite = () => {
+    toggleFavorite(product.slug);
+  };
 
   return (
     <div>
@@ -76,12 +86,20 @@ export default function SingleProductPage() {
               <p className="text-muted">{product.description}</p>
             </div>
             <div className="flex gap-4">
-              <button className="btn-outline-primary w-full whitespace-nowrap">
+              <button
+                className="btn-outline-primary w-full whitespace-nowrap"
+                onClick={() => handleToggleFavorite()}
+                disabled={isFavorite(product.slug)}
+              >
                 Lista de Desejo
               </button>
-              <button className="btn-secondary w-full whitespace-nowrap">
+              <Link
+                to={whatsAppMessage(product)}
+                target="_blank"
+                className="btn-secondary w-full whitespace-nowrap"
+              >
                 Orçamento
-              </button>
+              </Link>
             </div>
           </div>
         </div>

@@ -43,6 +43,10 @@ body {
   @apply btn bg-secondary text-white;
 }
 
+button:disabled {
+  @apply cursor-not-allowed border border-light bg-background-dark text-light;
+}
+
 .line-bottom {
   @apply border-b-[1px] border-solid border-y-background-dark;
 }
