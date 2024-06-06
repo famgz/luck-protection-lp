@@ -1,5 +1,3 @@
-import { cn } from 'src/utils/cn';
-
 interface LogoImageProps {
   color: string;
   size: number;
