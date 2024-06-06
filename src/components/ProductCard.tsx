@@ -14,7 +14,7 @@ export default function ProductCard({ product }: ProductCardProps) {
   };
 
   return (
-    <div className="flex h-[392px] w-[268px] flex-col justify-end gap-5 p-4 text-center">
+    <div className="flex h-[392px] w-full flex-col justify-end gap-5 px-0 py-4 text-center sm:w-[268px] sm:p-4">
       <button
         className="flex w-full justify-end"
         onClick={() => handleToggleFavorite()}

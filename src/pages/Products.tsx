@@ -49,7 +49,7 @@ export default function ProductsPage() {
     <div>
       <div className="container">
         <BreadCrumb />
-        <div className="flex gap-8 py-10">
+        <div className="flex flex-col gap-8 py-10 lg:flex-row">
           {/* Categories list filter */}
           <div className="min-w-[200px] space-y-5">
             <h2 className="line-bottom pb-3 text-xl font-medium">Categorias</h2>
