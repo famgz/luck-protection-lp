@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import BreadCrumb from 'src/components/BreadCrumb';
 import ProductsList from 'src/components/ProductsList';
@@ -10,6 +10,7 @@ export default function ProductsPage() {
   const [filteredProducts, setFilteredProducts] = useState(products);
   const categories = Object.values(ProductCategory);
   const [search, setSearch] = useState('');
+  const searchInput = useRef<HTMLInputElement>(null);
 
   const [selectedCategories, setSelectedCategories] = useState<
     ProductCategory[]
@@ -47,6 +48,12 @@ export default function ProductsPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedCategories, search]);
 
+  useEffect(() => {
+    if (searchInput.current) {
+      searchInput.current.focus();
+    }
+  }, []);
+
   function handleFilterClick(category: ProductCategory) {
     if (selectedCategories.includes(category)) {
       setSelectedCategories((prev) => prev.filter((c) => c !== category));
@@ -74,6 +81,7 @@ export default function ProductsPage() {
                 name="search"
                 value={search}
                 onChange={(ev) => setSearch(ev.target.value)}
+                ref={searchInput}
                 placeholder="Pesquisar"
                 className="bg-transparent w-full text-dark focus:outline-none"
               />
