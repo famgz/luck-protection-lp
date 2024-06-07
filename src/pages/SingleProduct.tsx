@@ -19,6 +19,10 @@ export default function SingleProductPage() {
     }
   }, [productSlug]);
 
+  function handleTextClampClick(event: React.MouseEvent<HTMLButtonElement>) {
+    event.currentTarget.classList.toggle('line-clamp-3');
+  }
+
   if (!product) {
     return (
       <div className="flex-center min-h-full flex-col gap-12 py-36">
@@ -40,12 +44,12 @@ export default function SingleProductPage() {
 
   return (
     <div>
-      <div className="container py-10">
+      <div className="container">
         <BreadCrumb product={product} category={product?.category} />
 
         {/* Product images and title */}
-        <div className="grid grid-cols-1 items-center gap-10 py-24 md:grid-cols-2">
-          <div className="flex gap-10">
+        <div className="grid grid-cols-1 items-center py-0 md:py-24 lg:grid-cols-2 lg:gap-10">
+          <div className="flex gap-2 md:gap-10">
             {/* Thumbnails */}
             <div className="flex flex-col justify-center gap-4">
               {product.images.length > 0 &&
@@ -64,7 +68,7 @@ export default function SingleProductPage() {
             </div>
 
             {/* Main image */}
-            <div className="item-center flex max-h-[500px] min-h-[500px] flex-1 overflow-hidden">
+            <div className="item-center flex max-h-[500px] flex-1 justify-center overflow-hidden sm:min-h-[500px]">
               <img
                 src={currentImage}
                 alt={product.title}
@@ -77,7 +81,12 @@ export default function SingleProductPage() {
           <div className="flex flex-col gap-10">
             <div className="space-y-4">
               <h1 className="text-4xl">{product.title}</h1>
-              <p className="text-muted">{product.description}</p>
+              <p
+                className="line-clamp-3 cursor-pointer text-muted"
+                onClick={(ev) => handleTextClampClick(ev)}
+              >
+                {product.description}
+              </p>
             </div>
 
             {/* Buttons */}
@@ -101,7 +110,7 @@ export default function SingleProductPage() {
         </div>
 
         {/* Technical details */}
-        <div className="space-y-6 py-20">
+        <div className="space-y-6 py-16 sm:py-20">
           <h2 className="text-2xl font-semibold">Detalhes</h2>
           <p>{product.description}</p>
 
