@@ -42,7 +42,7 @@ export default function Header() {
         </div>
 
         <nav className="hidden flex-1 items-center md:flex">
-          <HeaderLinks ulClassNames="flex-center !justify-between gap-4 " />
+          <HeaderLinks ulClassNames="flex-center !justify-between gap-4 flex-1" />
         </nav>
 
         <SideMenu />
