@@ -56,8 +56,8 @@ export default function Footer() {
           <div className="flex-center !items-start md:!justify-start">
             <div className="space-y-4 text-left">
               <h3 className="text-base font-bold">Contato</h3>
-              <p>(11) 98163-9291</p>
-              <p className="break-all">grupoluckprotection@gmail.com</p>
+              <p>(11) 97530-5715</p>
+              <p className="break-all">contato@luckprotection.com.br</p>
             </div>
           </div>
         </div>

@@ -157,7 +157,7 @@ export const products: Product[] = [
     images: [baseImagePath + 'alicate-tatico.png'],
   },
   {
-    slug: 'ariete-tatico-2',
+    slug: 'ariete-tatico',
     title: 'Ariete tático 1 e 2 alças usiplen',
     category: ProductCategory.POLICIAL,
     description:
@@ -169,7 +169,10 @@ export const products: Product[] = [
       Peso: '15kg',
     },
     price: 0,
-    images: [baseImagePath + 'ariete-tatico-2.png'],
+    images: [
+      baseImagePath + 'ariete-tatico.png',
+      baseImagePath + 'ariete-tatico-2.png',
+    ],
   },
   {
     slug: 'barco-inflavel',
@@ -230,7 +233,7 @@ export const products: Product[] = [
   {
     slug: 'cilindro-mergulho',
     title: 'Cilindro de mergulho alumínio',
-    category: ProductCategory.MERGULHO,
+    category: ProductCategory.BOMBEIRO,
     description: 'Cilindro de Alumínio S80 com torneira.',
     details: {
       'Fabricado em': 'Alumínio',
