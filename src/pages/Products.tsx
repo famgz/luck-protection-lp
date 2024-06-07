@@ -9,6 +9,7 @@ export default function ProductsPage() {
   const [searchParams] = useSearchParams();
   const [filteredProducts, setFilteredProducts] = useState(products);
   const categories = Object.values(ProductCategory);
+  const [search, setSearch] = useState('');
 
   const [selectedCategories, setSelectedCategories] = useState<
     ProductCategory[]
@@ -17,21 +18,35 @@ export default function ProductsPage() {
   useEffect(() => {
     // first access, check params filter
     const paramCategory = searchParams.get('category') as ProductCategory;
+    const paramProduct = searchParams.get('product') as string;
 
     if (categories.includes(paramCategory)) {
       setSelectedCategories([paramCategory]);
       searchParams.delete('category');
     }
 
+    if (paramProduct) {
+      setSearch(paramProduct);
+      searchParams.delete('product');
+    }
+
     if (selectedCategories.length === 0) {
       setFilteredProducts(products);
-      return;
+    } else {
+      setFilteredProducts(
+        products.filter((p) => selectedCategories.includes(p.category))
+      );
     }
-    setFilteredProducts(
-      products.filter((p) => selectedCategories.includes(p.category))
-    );
+
+    if (search.trim()) {
+      console.log(search);
+      setFilteredProducts((prev) =>
+        prev.filter((p) => p.title.toLowerCase().includes(search.toLowerCase()))
+      );
+    }
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [selectedCategories]);
+  }, [selectedCategories, search]);
 
   function handleFilterClick(category: ProductCategory) {
     if (selectedCategories.includes(category)) {
@@ -54,7 +69,16 @@ export default function ProductsPage() {
           {/* Categories list filter */}
           <div className="min-w-[200px] max-w-[200px] space-y-5">
             <h2 className="line-bottom pb-3 text-xl font-medium">Categorias</h2>
-            <SearchBox />
+            <SearchBox className="focus-within:bg-white">
+              <input
+                type="text"
+                name="search"
+                value={search}
+                onChange={(ev) => setSearch(ev.target.value)}
+                placeholder="Pesquisar"
+                className="bg-transparent w-full text-dark focus:outline-none"
+              />
+            </SearchBox>
             <div>
               <div>
                 <input
@@ -103,15 +127,21 @@ export default function ProductsPage() {
           </div>
 
           {/* Products list */}
-          <div className="flex-1 space-y-8">
-            <h2 className="text-muted">
-              Produtos selecionados:{' '}
-              <span className="text-xl font-medium text-dark">
-                {filteredProducts.length}
-              </span>
-            </h2>
-            <ProductsList products={filteredProducts} />
-          </div>
+          {filteredProducts.length === 0 ? (
+            <div className="flex-center w-full text-lg">
+              Nenhum produto encontrado
+            </div>
+          ) : (
+            <div className="flex-1 space-y-8">
+              <h2 className="text-muted">
+                Produtos selecionados:{' '}
+                <span className="text-xl font-medium text-dark">
+                  {filteredProducts.length}
+                </span>
+              </h2>
+              <ProductsList products={filteredProducts} />
+            </div>
+          )}
         </div>
       </div>
     </div>
