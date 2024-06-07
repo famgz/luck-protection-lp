@@ -14,6 +14,7 @@ export default {
       light: '#B5B5B5',
       muted: '#656565',
       dark: '#000',
+      transparent: 'transparent',
     },
   },
   plugins: [],
