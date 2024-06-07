@@ -1,10 +1,22 @@
+import { ReactNode } from 'react';
 import { CiSearch } from 'react-icons/ci';
+import { cn } from 'src/utils/cn';
 
-export default function SearchBox() {
+interface SearchBoxProps {
+  children: ReactNode;
+  className?: string;
+}
+
+export default function SearchBox({ children, className }: SearchBoxProps) {
   return (
-    <div className="inline-flex h-[44px] w-full flex-1 items-center justify-start gap-3 rounded-lg border p-4 text-light hover:border-primary">
-      <CiSearch size={22} className="font-bold text-muted" />
-      <span>Pesquisar</span>
+    <div
+      className={cn(
+        'inline-flex h-[44px] w-full flex-1 items-center justify-start gap-2 rounded-lg border border-light px-4 text-sm text-muted transition-colors duration-200 focus-within:border-primary',
+        className
+      )}
+    >
+      <CiSearch size={22} className="font-bold" />
+      {children}
     </div>
   );
 }
