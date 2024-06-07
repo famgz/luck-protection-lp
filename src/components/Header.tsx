@@ -1,16 +1,29 @@
 import { IoHeartOutline } from 'react-icons/io5';
 import { LuUser } from 'react-icons/lu';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import LogoImage from 'src/components/LogoImage';
 import LogoText from 'src/components/LogoText';
 import SearchBox from 'src/components/SearchBox';
 import { IoMenu } from 'react-icons/io5';
+import { useRef } from 'react';
 
 export default function Header() {
   const pathname = useLocation().pathname;
 
   const currentLinkStyle = 'text-dark';
   const regularLinkStyle = 'text-light';
+
+  const inputRef = useRef<HTMLInputElement>(null);
+  const navigate = useNavigate();
+
+  function handleSearchSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const inputElement = inputRef.current;
+    const querySearch = inputElement!.value.trim();
+    if (!querySearch) return;
+    inputElement!.value = '';
+    navigate(`/catalogo?product=${querySearch}`);
+  }
 
   return (
     <header className="bg-background-dark px-2 py-4">
@@ -20,8 +33,18 @@ export default function Header() {
           <LogoText color="fill-secondary" size={10} position="vertical" />
         </Link>
 
-        <div className="hidden max-w-[min(372px,100%)] flex-1 md:flex">
-          <SearchBox />
+        <div className="hidden max-w-[min(350px,100%)] flex-1 md:flex">
+          <SearchBox className="focus-within:bg-background-light">
+            <form onSubmit={handleSearchSubmit} className="w-full flex-1">
+              <input
+                type="text"
+                name="search"
+                placeholder="Pesquisar"
+                ref={inputRef}
+                className="bg-transparent w-full text-dark focus:outline-none"
+              />
+            </form>
+          </SearchBox>
         </div>
 
         <button className="flex items-center text-muted md:hidden">
