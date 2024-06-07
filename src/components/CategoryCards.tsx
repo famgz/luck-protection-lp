@@ -1,4 +1,4 @@
-import { ProductCategory } from 'src/data/products';
+import { ProductCategory } from '@/data/products';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 
@@ -7,7 +7,7 @@ export default function CategoryCards() {
 
   return (
     <div>
-      <div className="container py-20">
+      <div className="container py-10 sm:py-20">
         <div className="flex justify-between">
           <p className="text-xl">Navegar por Categoria</p>
           <div className="flex gap-5 text-muted">

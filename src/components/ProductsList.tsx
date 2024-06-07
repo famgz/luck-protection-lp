@@ -1,5 +1,5 @@
-import ProductCard from 'src/components/ProductCard';
-import { Product } from 'src/data/products';
+import ProductCard from '@/components/ProductCard';
+import { Product } from '@/data/products';
 
 interface ProductsListProps {
   products: Product[];

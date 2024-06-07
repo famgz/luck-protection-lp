@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 import { CiSearch } from 'react-icons/ci';
-import { cn } from 'src/utils/cn';
+import { cn } from '@/lib/utils';
 
 interface SearchBoxProps {
   children: ReactNode;

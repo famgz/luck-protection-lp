@@ -1,7 +1,7 @@
 import { IoHeartOutline, IoHeartSharp } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
-import { Product } from 'src/data/products';
-import useFavorites from 'src/hooks/useFavorites';
+import { Product } from '@/data/products';
+import useFavorites from '@/hooks/useFavorites';
 interface ProductCardProps {
   product: Product;
 }

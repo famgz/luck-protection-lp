@@ -1,11 +1,11 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Footer from 'src/components/Footer';
-import Header from 'src/components/Header';
-import ScrollToTop from 'src/components/ScrollToTop';
-import HomePage from 'src/pages/Home';
-import NotFound from 'src/pages/NotFound';
-import ProductsPage from 'src/pages/Products';
-import SingleProductPage from 'src/pages/SingleProduct';
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
+import ScrollToTop from '@/components/ScrollToTop';
+import HomePage from '@/pages/Home';
+import NotFound from '@/pages/NotFound';
+import ProductsPage from '@/pages/Products';
+import SingleProductPage from '@/pages/SingleProduct';
 
 function App() {
   return (

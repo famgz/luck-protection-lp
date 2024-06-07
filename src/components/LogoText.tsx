@@ -1,4 +1,4 @@
-import { cn } from 'src/utils/cn';
+import { cn } from '@/lib/utils';
 
 interface LogoTextProps {
   color: string;

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { Product } from 'src/data/products';
-import { cn } from 'src/utils/cn';
+import { Product } from '@/data/products';
+import { cn } from '@/lib/utils';
 
 interface FeaturedProductProps {
   product: Product;

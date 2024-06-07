@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import LogoImage from 'src/components/LogoImage';
-import LogoText from 'src/components/LogoText';
+import LogoImage from '@/components/LogoImage';
+import LogoText from '@/components/LogoText';
 import { FaInstagram } from 'react-icons/fa6';
-import { ProductCategory } from 'src/data/products';
+import { ProductCategory } from '@/data/products';
 
 export default function Footer() {
   const categories = Object.values(ProductCategory);

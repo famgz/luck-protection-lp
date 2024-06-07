@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import BreadCrumb from 'src/components/BreadCrumb';
-import ProductsList from 'src/components/ProductsList';
-import SearchBox from 'src/components/SearchBox';
-import { ProductCategory, products } from 'src/data/products';
+import BreadCrumb from '@/components/BreadCrumb';
+import ProductsList from '@/components/ProductsList';
+import SearchBox from '@/components/SearchBox';
+import { ProductCategory, products } from '@/data/products';
 
 export default function ProductsPage() {
   const [searchParams] = useSearchParams();
@@ -71,7 +71,7 @@ export default function ProductsPage() {
     <div>
       <div className="container">
         <BreadCrumb />
-        <div className="flex flex-col gap-8 py-0 md:py-10 lg:flex-row">
+        <div className="flex flex-col gap-8 pb-4 md:py-10 lg:flex-row">
           {/* Categories list filter */}
           <div className="min-w-[200px] max-w-[200px] space-y-5">
             <h2 className="line-bottom pb-3 text-xl font-medium">Categorias</h2>
@@ -83,7 +83,7 @@ export default function ProductsPage() {
                 onChange={(ev) => setSearch(ev.target.value)}
                 ref={searchInput}
                 placeholder="Pesquisar"
-                className="bg-transparent w-full text-dark focus:outline-none"
+                className="w-full flex-1 bg-transparent text-dark focus:outline-none"
               />
             </SearchBox>
             <div>
@@ -135,7 +135,7 @@ export default function ProductsPage() {
 
           {/* Products list */}
           {filteredProducts.length === 0 ? (
-            <div className="flex-center w-full text-lg">
+            <div className="flex-center min-h-[300px] w-full text-lg">
               Nenhum produto encontrado
             </div>
           ) : (

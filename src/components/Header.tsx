@@ -1,18 +1,12 @@
-import { IoHeartOutline } from 'react-icons/io5';
-import { LuUser } from 'react-icons/lu';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
-import LogoImage from 'src/components/LogoImage';
-import LogoText from 'src/components/LogoText';
-import SearchBox from 'src/components/SearchBox';
-import { IoMenu } from 'react-icons/io5';
+import HeaderLinks from '@/components/HeaderLinks';
+import LogoImage from '@/components/LogoImage';
+import LogoText from '@/components/LogoText';
+import SearchBox from '@/components/SearchBox';
+import SideMenu from '@/components/SideMenu';
 import { useRef } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function Header() {
-  const pathname = useLocation().pathname;
-
-  const currentLinkStyle = 'text-dark';
-  const regularLinkStyle = 'text-light';
-
   const inputRef = useRef<HTMLInputElement>(null);
   const navigate = useNavigate();
 
@@ -26,7 +20,7 @@ export default function Header() {
   }
 
   return (
-    <header className="bg-background-dark px-2 py-4">
+    <header className="bg-background-dark py-4">
       <div className="container flex justify-between gap-10">
         <Link to={'/'} className="flex items-center gap-3">
           <LogoImage color="fill-primary" size={30} />
@@ -41,78 +35,17 @@ export default function Header() {
                 name="search"
                 placeholder="Pesquisar"
                 ref={inputRef}
-                className="bg-transparent w-full text-dark focus:outline-none"
+                className="w-full bg-transparent text-dark focus:outline-none"
               />
             </form>
           </SearchBox>
         </div>
 
-        <button className="flex items-center text-muted md:hidden">
-          <IoMenu size={40} />
-        </button>
-
-        <nav className="hidden flex-1 md:block">
-          <ul className="flex-center h-full !justify-between gap-4 text-base">
-            <li>
-              <Link
-                to={'/'}
-                className={
-                  pathname === '/' ? currentLinkStyle : regularLinkStyle
-                }
-              >
-                <span className="whitespace-nowrap">Início</span>
-              </Link>
-            </li>
-            <li>
-              <Link
-                to={'https://www.instagram.com/luckprotection/'}
-                target="_blank"
-                className={
-                  pathname.startsWith('/sobre')
-                    ? currentLinkStyle
-                    : regularLinkStyle
-                }
-              >
-                <span className="whitespace-nowrap">Conheça-nos</span>
-              </Link>
-            </li>
-            <li>
-              <Link
-                to={'https://wa.me/5511975305715'}
-                target="_blank"
-                className={
-                  pathname.startsWith('/contato')
-                    ? currentLinkStyle
-                    : regularLinkStyle
-                }
-              >
-                <span className="whitespace-nowrap">Contato</span>
-              </Link>
-            </li>
-            <li>
-              <Link
-                to={'/catalogo'}
-                className={
-                  pathname.startsWith('/catalogo')
-                    ? currentLinkStyle
-                    : regularLinkStyle
-                }
-              >
-                <span className="whitespace-nowrap">Loja</span>
-              </Link>
-            </li>
-            <li>
-              <div className="flex-center gap-5 text-dark">
-                <button>
-                  <IoHeartOutline size={20} />
-                </button>
-                <button>
-                  <LuUser size={20} strokeWidth={1.5} />
-                </button>
-              </div>
-            </li>
-          </ul>
+        <nav className="hidden flex-1 items-center md:flex">
+          <HeaderLinks ulClassNames="flex-center !justify-between gap-4 " />
         </nav>
+
+        <SideMenu />
       </div>
     </header>
   );

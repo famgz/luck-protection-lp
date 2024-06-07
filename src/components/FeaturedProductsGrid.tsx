@@ -1,5 +1,5 @@
-import FeaturedProduct from 'src/components/FeaturedProduct';
-import { ProductCategory, baseImagePath } from 'src/data/products';
+import FeaturedProduct from '@/components/FeaturedProduct';
+import { ProductCategory, baseImagePath } from '@/data/products';
 
 export default function FeaturedProductsGrid() {
   const alavanca = {

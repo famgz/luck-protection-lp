@@ -1,6 +1,6 @@
 import { GoChevronRight } from 'react-icons/go';
 import { Link, useLocation } from 'react-router-dom';
-import { Product, ProductCategory } from 'src/data/products';
+import { Product, ProductCategory } from '@/data/products';
 
 interface BreadCrumbProps {
   product?: Product;
