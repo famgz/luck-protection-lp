@@ -30,6 +30,7 @@ export default function ProductsPage() {
     setFilteredProducts(
       products.filter((p) => selectedCategories.includes(p.category))
     );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedCategories]);
 
   function handleFilterClick(category: ProductCategory) {

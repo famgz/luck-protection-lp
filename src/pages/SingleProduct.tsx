@@ -19,7 +19,9 @@ export default function SingleProductPage() {
     }
   }, [productSlug]);
 
-  function handleTextClampClick(event: React.MouseEvent<HTMLButtonElement>) {
+  function handleTextClampClick(
+    event: React.MouseEvent<HTMLParagraphElement, MouseEvent>
+  ) {
     event.currentTarget.classList.toggle('line-clamp-3');
   }
 
