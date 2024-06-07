@@ -57,7 +57,7 @@ export default function Footer() {
             <div className="space-y-4 text-left">
               <h3 className="text-base font-bold">Contato</h3>
               <p>(11) 98163-9291</p>
-              <p>grupoluckprotection@gmail.com</p>
+              <p className="break-all">grupoluckprotection@gmail.com</p>
             </div>
           </div>
         </div>

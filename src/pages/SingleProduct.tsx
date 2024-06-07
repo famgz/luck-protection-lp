@@ -50,13 +50,16 @@ export default function SingleProductPage() {
         <BreadCrumb product={product} category={product?.category} />
 
         {/* Product images and title */}
-        <div className="grid grid-cols-1 items-center py-0 md:py-24 lg:grid-cols-2 lg:gap-10">
+        <div className="grid grid-cols-1 items-center gap-10 py-0 lg:grid-cols-2 lg:py-24">
           <div className="flex gap-2 md:gap-10">
             {/* Thumbnails */}
             <div className="flex flex-col justify-center gap-4">
               {product.images.length > 0 &&
                 product.images.map((img, idx) => (
-                  <div key={idx + img} className="max-w-[80px] overflow-hidden">
+                  <div
+                    key={idx + img}
+                    className="max-w-[50px] overflow-hidden sm:max-w-[80px]"
+                  >
                     <img
                       src={img}
                       alt={product.title}
@@ -112,7 +115,7 @@ export default function SingleProductPage() {
         </div>
 
         {/* Technical details */}
-        <div className="space-y-6 py-16 sm:py-20">
+        <div className="space-y-6 py-16 lg:py-20">
           <h2 className="text-2xl font-semibold">Detalhes</h2>
           <p>{product.description}</p>
 
