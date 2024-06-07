@@ -51,7 +51,7 @@ export default function ProductsPage() {
         <BreadCrumb />
         <div className="flex flex-col gap-8 py-10 lg:flex-row">
           {/* Categories list filter */}
-          <div className="min-w-[200px] space-y-5">
+          <div className="min-w-[200px] max-w-[200px] space-y-5">
             <h2 className="line-bottom pb-3 text-xl font-medium">Categorias</h2>
             <SearchBox />
             <div>

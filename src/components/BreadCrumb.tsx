@@ -14,7 +14,7 @@ export default function BreadCrumb({ product, category }: BreadCrumbProps) {
   return (
     <div className="py-10" id="bread-crumb">
       <div className="flex-center !justify-start text-light">
-        <ul className="flex gap-3">
+        <ul className="flex flex-wrap gap-3">
           <li>
             <Link to={'/'}>Home</Link>
           </li>

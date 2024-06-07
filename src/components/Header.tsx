@@ -20,7 +20,7 @@ export default function Header() {
           <LogoText color="fill-secondary" size={10} position="vertical" />
         </Link>
 
-        <div className="hidden sm:block">
+        <div className="hidden max-w-[min(372px,100%)] flex-1 md:flex">
           <SearchBox />
         </div>
 
