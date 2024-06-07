@@ -32,7 +32,7 @@ export default function FeaturedProductsGrid() {
       'Com capacidade para fornecer 500 kg de força cinética(padrão).',
     details: {},
     price: 0,
-    images: [baseImagePath + 'ariete-tatico-2.png'],
+    images: [baseImagePath + 'ariete.png'],
   };
 
   const marreta = {

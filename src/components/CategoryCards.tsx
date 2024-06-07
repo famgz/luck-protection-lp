@@ -2,7 +2,7 @@ import { ProductCategory } from 'src/data/products';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 
-export default function CategoryList() {
+export default function CategoryCards() {
   const categories = Object.values(ProductCategory);
 
   return (
@@ -10,7 +10,7 @@ export default function CategoryList() {
       <div className="container py-20">
         <div className="flex justify-between">
           <p className="text-xl">Navegar por Categoria</p>
-          <div className="flex gap-5">
+          <div className="flex gap-5 text-muted">
             <button>
               <FaChevronLeft size={24} />
             </button>
@@ -25,9 +25,9 @@ export default function CategoryList() {
               <Link
                 to={`/catalogo?category=${c}`}
                 key={c}
-                className="flex-center h-[128px] w-[160px] flex-col gap-3 rounded-md bg-background-dark"
+                className="flex-center h-[128px] w-[160px] flex-col gap-3 rounded-lg bg-background-dark"
               >
-                <img src={`/icons/${c}.svg`} alt={c} />
+                <img src={`/icons/${c}.svg`} alt={c} className="opacity-80" />
                 <h3 className="capitalize">{c}</h3>
               </Link>
             ))}

@@ -20,7 +20,7 @@ export default function Hero() {
           </button>
         </div>
 
-        <div className="flex hidden min-h-full items-end justify-end min-[400px]:flex">
+        <div className="hidden min-h-full items-end justify-end min-[400px]:flex">
           <img src="/bombeiro.png" alt="" className="max-h-[85%]" />
         </div>
       </div>

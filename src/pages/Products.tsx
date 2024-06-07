@@ -39,7 +39,6 @@ export default function ProductsPage() {
     }
 
     if (search.trim()) {
-      console.log(search);
       setFilteredProducts((prev) =>
         prev.filter((p) => p.title.toLowerCase().includes(search.toLowerCase()))
       );

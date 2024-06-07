@@ -1,4 +1,4 @@
-import CategoryList from 'src/components/CategoryList';
+import CategoryCards from 'src/components/CategoryCards';
 import FeaturedProductsGrid from 'src/components/FeaturedProductsGrid';
 import Hero from 'src/components/Hero';
 import ProductsList from 'src/components/ProductsList';
@@ -14,7 +14,7 @@ export default function HomePage() {
 
       <FeaturedProductsGrid />
 
-      <CategoryList />
+      <CategoryCards />
 
       <div className="py-14">
         <div className="container">
