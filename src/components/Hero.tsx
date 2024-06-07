@@ -15,7 +15,7 @@ export default function Hero() {
             </p>
           </div>
           <p>Soluções eficazes para um ambiente seguro</p>
-          <button className="btn-outline-white !px-5 !py-2 text-xs sm:!px-14 sm:!py-4 sm:!text-base">
+          <button className="btn-outline-white w-fit !px-5 !py-2 text-xs transition-colors duration-300 hover:bg-white hover:text-secondary sm:!px-14 sm:!py-4 sm:!text-base">
             <Link to={'/catalogo'}>Conferir</Link>
           </button>
         </div>
