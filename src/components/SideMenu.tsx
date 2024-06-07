@@ -18,14 +18,14 @@ export default function SideMenu() {
         <button onClick={handleToggleSheet}>
           <FiMenu size={36} strokeWidth={2} />
         </button>
-        <SheetContent>
-          <SheetHeader className="flex h-full flex-col gap-20">
+        <SheetContent side={'top'}>
+          <SheetHeader className="flex h-full flex-col">
             <div className="flex items-center gap-3">
               <LogoImage color="fill-primary" size={30} />
               <LogoText color="fill-secondary" size={10} position="vertical" />
             </div>
             <HeaderLinks
-              ulClassNames="flex-1 h-full flex flex-col gap-10"
+              ulClassNames="flex-1 h-full flex flex-col gap-8 py-12"
               linkClickAction={handleToggleSheet}
             />
           </SheetHeader>
