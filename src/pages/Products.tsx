@@ -48,11 +48,11 @@ export default function ProductsPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedCategories, search]);
 
-  useEffect(() => {
-    if (searchInput.current) {
-      searchInput.current.focus();
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (searchInput.current) {
+  //     searchInput.current.focus();
+  //   }
+  // }, []);
 
   function handleFilterClick(category: ProductCategory) {
     if (selectedCategories.includes(category)) {
