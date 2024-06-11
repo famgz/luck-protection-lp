@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import BreadCrumb from '@/components/BreadCrumb';
 import { Product, products } from '@/data/products';
 import useFavorites from '@/hooks/useFavorites';
+import KitArrombamentoDetails from '@/components/KitArrombamentoDetails';
 
 export default function SingleProductPage() {
   const { productSlug } = useParams();
@@ -115,9 +116,13 @@ export default function SingleProductPage() {
         </div>
 
         {/* Technical details */}
-        <div className="space-y-6 py-16 lg:py-20">
+        <div className="space-y-10 py-16 lg:py-20">
           <h2 className="text-2xl font-semibold">Detalhes</h2>
-          <p>{product.description}</p>
+          {product.slug !== 'kit-arrombamento' ? (
+            <p>{product.description}</p>
+          ) : (
+            <KitArrombamentoDetails />
+          )}
 
           <div className="space-y-4">
             <h3 className="text-2xl">Corpo</h3>
