@@ -5,7 +5,7 @@ export default function FeaturedProductsGrid() {
   const alavanca = {
     slug: 'alavanca',
     title: 'Alavanca policial',
-    category: ProductCategory.POLICIAL,
+    categories: [ProductCategory.POLICIAL],
     description:
       'Este equipamento conta com um quebrador de vidros ou perfurador, uma cunha de expansão e um pé de cabra',
     details: {},
@@ -16,7 +16,7 @@ export default function FeaturedProductsGrid() {
   const abafador = {
     slug: 'abafador-m32',
     title: 'Abafador Tático',
-    category: ProductCategory.POLICIAL,
+    categories: [ProductCategory.POLICIAL],
     description:
       'Proteção auditiva e melhora a consciência situacional e a comunicação',
     details: {},
@@ -27,7 +27,7 @@ export default function FeaturedProductsGrid() {
   const ariete = {
     slug: 'ariete-tatico',
     title: 'Ariete Tático',
-    category: ProductCategory.POLICIAL,
+    categories: [ProductCategory.POLICIAL],
     description:
       'Com capacidade para fornecer 500 kg de força cinética(padrão).',
     details: {},
@@ -38,7 +38,7 @@ export default function FeaturedProductsGrid() {
   const marreta = {
     slug: 'marreta',
     title: 'Marreta Tática',
-    category: ProductCategory.POLICIAL,
+    categories: [ProductCategory.POLICIAL],
     description:
       'Equipamento desenvolvido para arrombar portas (internas), fechaduras, dobradiças e auxiliar na abertura de cadeados, romper obstáculos e expandir resistências, a marreta pode entregar uma força cinética de mais de 150kg',
     details: {},
