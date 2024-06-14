@@ -25,7 +25,7 @@ export default function FeaturedProductsGrid() {
   };
 
   const ariete = {
-    slug: 'ariete-tatico-2',
+    slug: 'ariete-tatico',
     title: 'Ariete Tático',
     category: ProductCategory.POLICIAL,
     description:
