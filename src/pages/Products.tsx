@@ -4,6 +4,7 @@ import BreadCrumb from '@/components/BreadCrumb';
 import ProductsList from '@/components/ProductsList';
 import SearchBox from '@/components/SearchBox';
 import { ProductCategory, products } from '@/data/products';
+import { matchProductsCategories } from '@/lib/utils';
 
 export default function ProductsPage() {
   const [searchParams] = useSearchParams();
@@ -35,7 +36,9 @@ export default function ProductsPage() {
       setFilteredProducts(products);
     } else {
       setFilteredProducts(
-        products.filter((p) => selectedCategories.includes(p.category))
+        products.filter((p) =>
+          matchProductsCategories(selectedCategories, p.categories)
+        )
       );
     }
 
@@ -64,7 +67,7 @@ export default function ProductsPage() {
   }
 
   function getCategoryLength(category: ProductCategory) {
-    return products.filter((p) => p.category === category).length;
+    return products.filter((p) => p.categories.includes(category)).length;
   }
 
   return (

@@ -48,7 +48,7 @@ export default function SingleProductPage() {
   return (
     <div>
       <div className="container">
-        <BreadCrumb product={product} category={product?.category} />
+        <BreadCrumb product={product} category={product?.categories[0]} />
 
         {/* Product images and title */}
         <div className="grid grid-cols-1 items-center gap-10 py-0 lg:grid-cols-2 lg:py-24">
