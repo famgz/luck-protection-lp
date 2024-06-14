@@ -158,10 +158,10 @@ export const products: Product[] = [
   },
   {
     slug: 'ariete-tatico',
-    title: 'Ariete tático 1 e 2 alças usiplen',
+    title: 'Ariete tático 1 e 2 alças para policial',
     categories: [ProductCategory.POLICIAL],
     description:
-      'Ferramenta especial para uso em operação policial, do tipo ariete tático com uma e duas alças, materia prima principal aço 1020 usinado, pintura eletrostática na cor preta, ponteiras em polipropileno (nylon),com duas alças emborrachadas e flexíveis, posicionadas e travadas na transversal do tubo, equipamento isolado eletricamente, não condutivo e anti-fagulha, com capacidade para fornecer 500 kg de força cinética(padrão). (obs medidas podem variar de acordo com pedido)',
+      'Ferramenta especial para uso em operação policial, do tipo ariete tático com uma e duas alças, materia prima principal aço 1020 usinado, pintura eletrostática na cor preta, ponteiras em polipropileno (nylon),com duas alças emborrachadas e flexíveis, posicionadas e travadas na transversal do tubo, equipamento isolado eletricamente, não condutivo e anti-fagulha, com capacidade para fornecer 500 kg de força cinética(padrão). (obs: medidas podem variar de acordo com pedido)',
     details: {
       'Fabricado em': 'Aço',
       Comprimento: '75cm',
