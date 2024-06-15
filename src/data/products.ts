@@ -41,7 +41,7 @@ export const products: Product[] = [
   {
     slug: 'abafador-incendio',
     title: 'Abafador de Incêndio Cabo de Madeira/Alumínio',
-    categories: [ProductCategory.BOMBEIRO, ProductCategory.RESGATE],
+    categories: [ProductCategory.BOMBEIRO],
     description:
       'Ferramenta usada para o combate direto ao fogo apagando-o por abafamento. Construída de uma lâmina ("flap") de borracha, com duas lonas internas, comprimento de 40 a 50cm, largura de 30 a 40cm e espessura de 3 a 6mm, com furos ou sem, parafusada em armação de madeira ou ferro em forma de T reforçada com furação para 4 parafusos, e angulação de 45° para maior ergonomia do operador durante o combate. Cabo flexível e resistente a impactos, comprimento 1,50m e diâmetro de 28mm, peso total: de 1,5 a 2,5kg. (obs: medidas podem variar de acordo com pedido)',
     details: {
@@ -91,7 +91,7 @@ export const products: Product[] = [
   {
     slug: 'alavanca-2',
     title: 'Alavanca Hooligan Pé de Cabra',
-    categories: [ProductCategory.BOMBEIRO, ProductCategory.RESGATE],
+    categories: [ProductCategory.BOMBEIRO],
     description:
       'Projetada para cortar, forçar entradas, criar ou alargar aberturas, fechar condutas de gás e remover qualquer tipo de barreira, a Hooligan proporciona acesso eficaz para as equipas de emergência chegarem às vítimas.',
     details: {
@@ -205,7 +205,7 @@ export const products: Product[] = [
   {
     slug: 'bote-inflavel',
     title: 'Bote Inflável Capacidade 9 passageiros',
-    categories: [ProductCategory.BOMBEIRO, ProductCategory.RESGATE],
+    categories: [ProductCategory.BOMBEIRO],
     description:
       'Bote inflável, material: tecido poliéster emborrachado/ pvc/ hyplon , comprimento:4,70 m, largura externa:1,90 m, capacidade passageiro:9, casco rígido, capacidade para suportar motor de popa: 50 hp, capacidade carga:1200 kg',
     details: {
@@ -233,7 +233,7 @@ export const products: Product[] = [
   {
     slug: 'cilindro-mergulho',
     title: 'Cilindro de mergulho alumínio',
-    categories: [ProductCategory.MERGULHO, ProductCategory.RESGATE],
+    categories: [ProductCategory.MERGULHO],
     description: 'Cilindro de Alumínio S80 com torneira.',
     details: {
       'Fabricado em': 'Alumínio',
@@ -246,7 +246,7 @@ export const products: Product[] = [
   {
     slug: 'enxada-rastelo',
     title: 'Ferramenta combinada Enxada e Rastelo',
-    categories: [ProductCategory.BOMBEIRO, ProductCategory.RESGATE],
+    categories: [ProductCategory.BOMBEIRO],
     description:
       'Ferramenta do tipo versátil combinando em uma só peça, enxada e rastelo de alta resistência. Utilizada para limpar linhas de fogo, abrindo pequenas faixas ou aceiros, para cavar pequenas valas, rastelar dentre outros, cabo de madeira com 150 cm de comprimento, Peso: 2,3 kg, 6 dentes de 9 cm. (obs: medidas podem variar de acordo com pedido)',
     details: {
@@ -260,7 +260,7 @@ export const products: Product[] = [
   {
     slug: 'equipamento-respiracao',
     title: 'Equipamento de respiração com máscara autônoma',
-    categories: [ProductCategory.BOMBEIRO, ProductCategory.RESGATE],
+    categories: [ProductCategory.BOMBEIRO],
     description:
       'Respirador de adução de ar tipo máscara autônoma de ar comprimido com circuito aberto de demanda com pressão positiva, usados exclusivamente para combate ao incêndio e áreas contaminadas com manômetro de fácil visualização e com alarme sonoro acoplado que é acionado, automaticamente, ao atingir 55 bar.',
     details: {
@@ -372,7 +372,7 @@ export const products: Product[] = [
   {
     slug: 'passador-nivel',
     title: 'Passador de nível para mangueira',
-    categories: [ProductCategory.BOMBEIRO, ProductCategory.RESGATE],
+    categories: [ProductCategory.BOMBEIRO],
     description: `Equipamento fabricado em ferro, na cor preta com faixas na cor amarela para melhor visualização, utilizado para proteção da mangueira de combate a incêndio quando da necessidade de transpassá-la com o caminhão, comprimento 76 cm, largura 42 cm, altura 9 cm, vão para encaixe das mangueiras de 1 ½' e 2 ½" de aproximadamente 11 cm, possui duas alças laterais em ferro para transporte, Peso máximo de 23 kg. (obs: medidas podem variar de acordo com pedido)`,
     details: {
       'Fabricado em': 'Ferro',
@@ -385,7 +385,7 @@ export const products: Product[] = [
   {
     slug: 'capacete-bombeiro',
     title: 'Capacete bombeiro de  segurança',
-    categories: [ProductCategory.BOMBEIRO, ProductCategory.RESGATE],
+    categories: [ProductCategory.BOMBEIRO],
     description:
       'Capacete bombeiro cav. Capacete de segurança em fiberglass, na cor vermelha, resistente a impactos e chamas, com revestimento interno, suspensão fixa, carneira tipo catraca de ajuste na parte traseira, com faixas refletivas fixadas nas laterais, aba em toda sua lateral e frontal, totalmente emborrachada. Protetor facial articulável, transparente com jugular de ajuste e aparador de suor em velcro. Protetor de nuca e ouvidos em tecido antichamas. Atende os requisitos da norma nfpa 1971 ou equivalente',
     details: {
@@ -483,7 +483,7 @@ export const products: Product[] = [
   {
     slug: 'capacete-resgate',
     title: 'Capacete de resgate aquático',
-    categories: [ProductCategory.MERGULHO, ProductCategory.RESGATE],
+    categories: [ProductCategory.MERGULHO],
     description:
       'Capacete de resgate aquático de montanha com protetores de ouvido Capacete injetado em polipropileno de alta resistência. Possui ajuste interno (RATCHER), feito com dentes de travamento com controle de volume, que proporciona melhor ajuste ao cabeçote, mais segurança e conforto ao operador, Espuma de células fechadas Rebites de metal inoxidável (não enferrujam), Fitas de polipropileno, Fivelas e engates de nylon, Neoprene 1,5 mm, Velcro',
     details: {
