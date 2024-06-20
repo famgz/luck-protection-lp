@@ -1,9 +1,8 @@
-import { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
 import BreadCrumb from '@/components/BreadCrumb';
 import { Product, products } from '@/data/products';
 import useFavorites from '@/hooks/useFavorites';
-import KitArrombamentoDetails from '@/components/KitArrombamentoDetails';
+import { useEffect, useState } from 'react';
+import { Link, useParams } from 'react-router-dom';
 
 export default function SingleProductPage() {
   const { productSlug } = useParams();
