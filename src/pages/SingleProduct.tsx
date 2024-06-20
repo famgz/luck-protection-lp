@@ -46,7 +46,7 @@ export default function SingleProductPage() {
   };
 
   return (
-    <div>
+    <div className="container-wrapper">
       <div className="container">
         <BreadCrumb product={product} category={product?.categories[0]} />
 
@@ -88,7 +88,7 @@ export default function SingleProductPage() {
             <div className="space-y-4">
               <h1 className="text-4xl">{product.title}</h1>
               <p
-                className="line-clamp-3 cursor-pointer text-muted"
+                className="line-clamp-3 cursor-pointer text-sm leading-6 text-muted"
                 onClick={(ev) => handleTextClampClick(ev)}
               >
                 {product.description}
@@ -118,11 +118,15 @@ export default function SingleProductPage() {
         {/* Technical details */}
         <div className="space-y-10 py-16 lg:py-20">
           <h2 className="text-2xl font-semibold">Detalhes</h2>
-          {product.slug !== 'kit-arrombamento' ? (
-            <p>{product.description}</p>
-          ) : (
-            <KitArrombamentoDetails />
-          )}
+          <p
+            className="text-sm leading-7"
+            dangerouslySetInnerHTML={{
+              __html:
+                product.descriptionHTML.trim().length > 0
+                  ? product.descriptionHTML
+                  : product.description,
+            }}
+          />
 
           <div className="space-y-4">
             <h3 className="text-2xl">Corpo</h3>
