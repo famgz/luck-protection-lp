@@ -17,7 +17,7 @@ export default function HeaderLinks({
   const regularLinkStyle = 'text-light';
 
   return (
-    <ul className={(cn('h-full text-base'), ulClassNames)}>
+    <ul className={cn('h-full text-center text-base', ulClassNames)}>
       <li>
         <Link
           to={'/'}

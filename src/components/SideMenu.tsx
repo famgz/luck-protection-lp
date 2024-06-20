@@ -25,7 +25,7 @@ export default function SideMenu() {
               <LogoText color="fill-secondary" size={10} position="vertical" />
             </div>
             <HeaderLinks
-              ulClassNames="flex-1 h-full flex flex-col gap-8 py-12"
+              ulClassNames="flex-1 flex flex-col gap-8 py-12"
               linkClickAction={handleToggleSheet}
             />
           </SheetHeader>
