@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export default function Hero() {
   return (
-    <div className="bg-secondary px-24">
+    <div className="container-wrapper bg-secondary px-24">
       <div className="container grid grid-cols-1 min-[400px]:grid-cols-2">
         <div className="my-8 flex flex-col items-start justify-center gap-4 text-left text-white">
           <p className="text-2xl">

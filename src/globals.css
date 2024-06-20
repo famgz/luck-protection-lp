@@ -16,7 +16,8 @@ body {
   @apply mx-auto max-w-[1120px];
 }
 
-*:has(> .container) {
+.container-wrapper {
+  padding: 16px;
   @apply px-4 sm:px-10;
 }
 

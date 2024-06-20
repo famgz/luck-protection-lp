@@ -16,7 +16,7 @@ export default function HomePage() {
 
       <CategoryCards />
 
-      <div className="py-10 sm:py-14">
+      <div className="container-wrapper py-10 sm:py-14">
         <div className="container">
           <h2 className="text-xl underline">Recomendado pra você</h2>
           <div className="mt-10">

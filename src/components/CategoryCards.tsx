@@ -6,7 +6,7 @@ export default function CategoryCards() {
   const categories = Object.values(ProductCategory);
 
   return (
-    <div>
+    <div className="container-wrapper">
       <div className="container py-10 sm:py-20">
         <div className="flex justify-between">
           <p className="text-xl">Navegar por Categoria</p>

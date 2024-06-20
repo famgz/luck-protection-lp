@@ -8,7 +8,7 @@ export default function Footer() {
   const categories = Object.values(ProductCategory);
 
   return (
-    <footer className="bg-background-dark">
+    <footer className="container-wrapper bg-background-dark">
       <div className="container grid grid-cols-1 py-10 text-sm md:grid-cols-[1fr_2fr] md:py-24">
         <div className="space-y-6">
           <Link to={'/'} className="flex items-center gap-3">

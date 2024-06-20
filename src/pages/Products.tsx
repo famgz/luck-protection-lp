@@ -71,7 +71,7 @@ export default function ProductsPage() {
   }
 
   return (
-    <div>
+    <div className="container-wrapper">
       <div className="container">
         <BreadCrumb />
         <div className="flex flex-col gap-8 pb-4 md:py-10 lg:flex-row">

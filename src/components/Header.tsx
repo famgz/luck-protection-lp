@@ -20,7 +20,7 @@ export default function Header() {
   }
 
   return (
-    <header className="bg-background-dark py-4">
+    <header className="container-wrapper bg-background-dark py-4">
       <div className="container flex justify-between gap-10">
         <Link to={'/'} className="flex items-center gap-3">
           <LogoImage color="fill-primary" size={30} />
