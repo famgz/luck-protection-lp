@@ -8,6 +8,7 @@ export default function FeaturedProductsGrid() {
     categories: [ProductCategory.POLICIAL],
     description:
       'Este equipamento conta com um quebrador de vidros ou perfurador, uma cunha de expansão e um pé de cabra',
+    descriptionHTML: '',
     details: {},
     price: 0,
     images: [baseImagePath + 'alavanca.png'],
@@ -19,6 +20,7 @@ export default function FeaturedProductsGrid() {
     categories: [ProductCategory.POLICIAL],
     description:
       'Proteção auditiva e melhora a consciência situacional e a comunicação',
+    descriptionHTML: '',
     details: {},
     price: 0,
     images: [baseImagePath + 'abafador.png'],
@@ -30,6 +32,7 @@ export default function FeaturedProductsGrid() {
     categories: [ProductCategory.POLICIAL],
     description:
       'Com capacidade para fornecer 500 kg de força cinética(padrão).',
+    descriptionHTML: '',
     details: {},
     price: 0,
     images: [baseImagePath + 'ariete.png'],
@@ -41,6 +44,7 @@ export default function FeaturedProductsGrid() {
     categories: [ProductCategory.POLICIAL],
     description:
       'Equipamento desenvolvido para arrombar portas (internas), fechaduras, dobradiças e auxiliar na abertura de cadeados, romper obstáculos e expandir resistências, a marreta pode entregar uma força cinética de mais de 150kg',
+    descriptionHTML: '',
     details: {},
     price: 0,
     images: [baseImagePath + 'marreta.png'],
