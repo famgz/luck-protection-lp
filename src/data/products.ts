@@ -2,7 +2,7 @@ export enum ProductCategory {
   BOMBEIRO = 'bombeiro',
   POLICIAL = 'policial',
   RESGATE = 'resgate',
-  MERGULHO = 'mergulho',
+  // MERGULHO = 'mergulho',
   // ARROMBAMENTO = 'arrombamento',
 }
 
@@ -12,6 +12,7 @@ interface ProductDetails {
 
 export interface Product {
   slug: string;
+  active: boolean;
   title: string;
   categories: ProductCategory[];
   description: string;
@@ -23,9 +24,10 @@ export interface Product {
 
 export const baseImagePath = '/products/';
 
-export const products: Product[] = [
+const baseProducts: Product[] = [
   {
     slug: 'abafador-eletronico',
+    active: true,
     title: 'Abafador Eletrônico IA Earmor M20T Preto',
     categories: [ProductCategory.POLICIAL],
     description:
@@ -42,6 +44,7 @@ export const products: Product[] = [
   },
   {
     slug: 'abafador-incendio',
+    active: true,
     title: 'Abafador de Incêndio Cabo de Madeira/Alumínio',
     categories: [ProductCategory.BOMBEIRO],
     description:
@@ -61,6 +64,7 @@ export const products: Product[] = [
   },
   {
     slug: 'abafador-m31',
+    active: true,
     title: 'Abafador Protetor Auricular Eletrônico Tático Earmor M31',
     categories: [ProductCategory.POLICIAL],
     description:
@@ -77,6 +81,7 @@ export const products: Product[] = [
   },
   {
     slug: 'abafador-m32',
+    active: true,
     title: 'Abafador Eletrônico Earmor M32 Verde',
     categories: [ProductCategory.POLICIAL],
     description: `O Abafador Eletrônico M32 da EARMOR com comunicador é Ideal para operadores táticos, instrutores de tiro esportivo, atiradores, esportistas, indústrias e todos que trabalham em ambientes de muito barulho. Protege a audição do usuário de forma imediata, inteligente e segura. Os microfones ambientais melhoram a consciência situacional. Atende a norma NRR e reduz 22dB. Os sons nocivos são limitados a um nível seguro de 82 dB. Os microfones montados nos protetores auriculares melhoram a consciência situacional do usuário, permitindo que ele ouça sons de ambientes próximos e proteja sua audição. Amplifica sons de baixo nível. Permite que você ouça e se comunique normalmente e até aprimore sons padrão: fala, comandos, instruções, sons do ambiente Anti-suor com a tecnologia NANO. À prova d'água padrão IPX5. Aprovado por normas internacionais.`,
@@ -95,6 +100,7 @@ export const products: Product[] = [
   },
   {
     slug: 'alavanca-2',
+    active: true,
     title: 'Alavanca Hooligan Pé de Cabra',
     categories: [ProductCategory.BOMBEIRO],
     description:
@@ -115,6 +121,7 @@ export const products: Product[] = [
   },
   {
     slug: 'alavanca-corta-latas',
+    active: true,
     title: 'Alavanca Hoolingan Corta Latas',
     categories: [ProductCategory.BOMBEIRO],
     description:
@@ -135,6 +142,7 @@ export const products: Product[] = [
   },
   {
     slug: 'alavanca',
+    active: true,
     title: 'Alavanca Tática para policial em aço',
     categories: [ProductCategory.POLICIAL],
     description:
@@ -151,6 +159,7 @@ export const products: Product[] = [
   },
   {
     slug: 'alicate-tatico',
+    active: true,
     title: 'Alicate tático preto em aço',
     categories: [ProductCategory.POLICIAL],
     description:
@@ -167,6 +176,7 @@ export const products: Product[] = [
   },
   {
     slug: 'ariete-tatico',
+    active: true,
     title: 'Ariete tático 1 e 2 alças para policial',
     categories: [ProductCategory.POLICIAL],
     description:
@@ -186,6 +196,7 @@ export const products: Product[] = [
   },
   {
     slug: 'barco-inflavel',
+    active: true,
     title: 'Barco Inflável de poliéster em borracha',
     categories: [ProductCategory.BOMBEIRO],
     description:
@@ -202,8 +213,9 @@ export const products: Product[] = [
   },
   {
     slug: 'bota-neoprene',
-    title: 'Bota Neopreme com forro duplo nylon',
-    categories: [ProductCategory.MERGULHO],
+    active: false,
+    title: 'Bota Neoprene com forro duplo nylon',
+    categories: [ProductCategory.RESGATE],
     description:
       'Aba de proteção interna para maior vedação. Reforço de borracha no peito do pé e calcanhar. Solado vulcanizado antiderrapante. Fechamento em velcro para prevenir que o zíper desça durante o uso',
     descriptionHTML: '',
@@ -216,6 +228,7 @@ export const products: Product[] = [
   },
   {
     slug: 'bote-inflavel',
+    active: true,
     title: 'Bote Inflável Capacidade 9 passageiros',
     categories: [ProductCategory.BOMBEIRO],
     description:
@@ -232,6 +245,7 @@ export const products: Product[] = [
   },
   {
     slug: 'caixa-desmuniciamento',
+    active: true,
     title: 'Caixa Desmuniciamento',
     categories: [ProductCategory.POLICIAL],
     description: 'Medidas conforme a necessidade do cliente.',
@@ -249,6 +263,7 @@ export const products: Product[] = [
   },
   {
     slug: 'capacete-bombeiro',
+    active: true,
     title: 'Capacete bombeiro de  segurança',
     categories: [ProductCategory.BOMBEIRO],
     description:
@@ -262,8 +277,9 @@ export const products: Product[] = [
   },
   {
     slug: 'capacete-resgate',
+    active: true,
     title: 'Capacete de resgate aquático',
-    categories: [ProductCategory.MERGULHO],
+    categories: [ProductCategory.RESGATE],
     description:
       'Capacete de resgate aquático de montanha com protetores de ouvido Capacete injetado em polipropileno de alta resistência. Possui ajuste interno (RATCHER), feito com dentes de travamento com controle de volume, que proporciona melhor ajuste ao cabeçote, mais segurança e conforto ao operador, Espuma de células fechadas Rebites de metal inoxidável (não enferrujam), Fitas de polipropileno, Fivelas e engates de nylon, Neoprene 1,5 mm, Velcro',
     descriptionHTML: '',
@@ -275,8 +291,9 @@ export const products: Product[] = [
   },
   {
     slug: 'capuz-neoprene',
+    active: false,
     title: 'Capuz Neoprene em borracha',
-    categories: [ProductCategory.MERGULHO],
+    categories: [ProductCategory.RESGATE],
     description:
       'Capuz-01 Fun Dive, Capuz de neoprene 3 mm para mergulho pesca ou esportes aquáticos. Contorno interno em borracha selante para face',
     descriptionHTML: '',
@@ -289,8 +306,9 @@ export const products: Product[] = [
   },
   {
     slug: 'cilindro-mergulho',
+    active: true,
     title: 'Cilindro de mergulho alumínio',
-    categories: [ProductCategory.MERGULHO],
+    categories: [ProductCategory.RESGATE],
     description: 'Cilindro de Alumínio S80 com torneira.',
     descriptionHTML: '',
     details: {
@@ -303,6 +321,7 @@ export const products: Product[] = [
   },
   {
     slug: 'cinto-pelvico',
+    active: true,
     title: 'Cinto Pélvico',
     categories: [ProductCategory.RESGATE],
     description:
@@ -322,6 +341,7 @@ export const products: Product[] = [
   },
   {
     slug: 'colete-salva-vidas',
+    active: true,
     title: 'Colete salva-vidas inflável',
     categories: [ProductCategory.RESGATE],
     description:
@@ -342,6 +362,7 @@ export const products: Product[] = [
   },
   {
     slug: 'enxada-rastelo',
+    active: true,
     title: 'Ferramenta combinada Enxada e Rastelo',
     categories: [ProductCategory.BOMBEIRO],
     description:
@@ -357,6 +378,7 @@ export const products: Product[] = [
   },
   {
     slug: 'equipamento-respiracao',
+    active: true,
     title: 'Equipamento de respiração com máscara autônoma',
     categories: [ProductCategory.BOMBEIRO],
     description:
@@ -373,6 +395,7 @@ export const products: Product[] = [
   },
   {
     slug: 'gancho',
+    active: true,
     title: 'Gancho Crock Bombeiros',
     categories: [ProductCategory.BOMBEIRO],
     description:
@@ -389,6 +412,7 @@ export const products: Product[] = [
   },
   {
     slug: 'gorgui',
+    active: true,
     title: 'Ferramenta Gorgui Multi-função',
     categories: [ProductCategory.BOMBEIRO],
     description:
@@ -404,6 +428,7 @@ export const products: Product[] = [
   },
   {
     slug: 'kit-arrombamento',
+    active: true,
     title: 'Kit de Arrombamento',
     categories: [ProductCategory.POLICIAL],
     description:
@@ -418,6 +443,7 @@ export const products: Product[] = [
   },
   {
     slug: 'laco-cambao',
+    active: true,
     title: 'Laço cambão confeccionado em alumínio',
     categories: [ProductCategory.BOMBEIRO],
     description:
@@ -433,8 +459,9 @@ export const products: Product[] = [
   },
   {
     slug: 'luva-neoprene',
+    active: false,
     title: 'Luva Neoprene com forro em duplo nylon',
-    categories: [ProductCategory.MERGULHO],
+    categories: [ProductCategory.RESGATE],
     description:
       'Luva para mergulho em neoprene 2 ou 3 mm com forro em duplo nylon. Palma da mão e dedos com reforço em couro sintético "Amara". Tira elástica com velcro para melhor fechamento e fixação no punho.',
     descriptionHTML: '',
@@ -446,6 +473,7 @@ export const products: Product[] = [
   },
   {
     slug: 'machado-picareta',
+    active: true,
     title: 'Ferramenta combinada machado/picareta',
     categories: [ProductCategory.BOMBEIRO],
     description:
@@ -461,6 +489,7 @@ export const products: Product[] = [
   },
   {
     slug: 'marreta',
+    active: true,
     title: 'Marreta tática construída em aço',
     categories: [ProductCategory.POLICIAL],
     description:
@@ -477,6 +506,7 @@ export const products: Product[] = [
   },
   {
     slug: 'passador-nivel',
+    active: true,
     title: 'Passador de nível para mangueira',
     categories: [ProductCategory.BOMBEIRO],
     description: `Equipamento fabricado em ferro, na cor preta com faixas na cor amarela para melhor visualização, utilizado para proteção da mangueira de combate a incêndio quando da necessidade de transpassá-la com o caminhão, comprimento 76 cm, largura 42 cm, altura 9 cm, vão para encaixe das mangueiras de 1 ½' e 2 ½" de aproximadamente 11 cm, possui duas alças laterais em ferro para transporte, Peso máximo de 23 kg. (obs: medidas podem variar de acordo com pedido)`,
@@ -492,6 +522,7 @@ export const products: Product[] = [
 
   {
     slug: 'rastelo',
+    active: true,
     title: 'Rastelo para remoção de material vegetal',
     categories: [ProductCategory.BOMBEIRO],
     description:
@@ -507,8 +538,9 @@ export const products: Product[] = [
   },
   {
     slug: 'roupa-neoprene',
+    active: false,
     title: 'Roupa Neoprene costurada e colada',
-    categories: [ProductCategory.MERGULHO],
+    categories: [ProductCategory.RESGATE],
     description:
       'Roupa neoprene 5mm leve e confortável costurada e colada, impossibilitando a passagem de água pelas costuras zipper frontal ykk tamanho 10, fácil de manusear e resistente ombros texturizados em borracha para evitar desgaste por uso com colete joelheiras em supratex tamanhos: S, M, L, XL, 2XL E 3XL',
     descriptionHTML: '',
@@ -521,6 +553,7 @@ export const products: Product[] = [
   },
   {
     slug: 'suporte-colunas',
+    active: true,
     title: 'Suporte para colunas veicular',
     categories: [ProductCategory.RESGATE],
     description:
@@ -536,6 +569,7 @@ export const products: Product[] = [
   },
   {
     slug: 'suporte-lanterna',
+    active: true,
     title: 'Suporte lanterna Propolymer 4AA 27x37',
     categories: [ProductCategory.BOMBEIRO],
     description:
@@ -554,6 +588,7 @@ export const products: Product[] = [
   },
   {
     slug: 'suporte-painel',
+    active: true,
     title: 'Suporte para pressão - Painel',
     categories: [ProductCategory.RESGATE],
     description:
@@ -569,6 +604,7 @@ export const products: Product[] = [
   },
   {
     slug: 'suporte-teto',
+    active: true,
     title: 'Suporte para pressão - Teto',
     categories: [ProductCategory.RESGATE],
     description:
@@ -584,6 +620,7 @@ export const products: Product[] = [
   },
   {
     slug: 'torniquete',
+    active: true,
     title: 'Torniquete',
     categories: [ProductCategory.RESGATE],
     description:
@@ -602,3 +639,5 @@ export const products: Product[] = [
     ],
   },
 ];
+
+export const products = baseProducts.filter((x) => x.active);

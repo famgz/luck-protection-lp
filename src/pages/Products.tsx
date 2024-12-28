@@ -1,10 +1,10 @@
-import { useEffect, useRef, useState } from 'react';
-import { useSearchParams } from 'react-router-dom';
 import BreadCrumb from '@/components/BreadCrumb';
 import ProductsList from '@/components/ProductsList';
 import SearchBox from '@/components/SearchBox';
 import { ProductCategory, products } from '@/data/products';
 import { matchProductsCategories } from '@/lib/utils';
+import { useEffect, useRef, useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 
 export default function ProductsPage() {
   const [searchParams] = useSearchParams();
