@@ -4,6 +4,7 @@ import { ProductCategory, baseImagePath } from '@/data/products';
 export default function FeaturedProductsGrid() {
   const alavanca = {
     slug: 'alavanca',
+    active: true,
     title: 'Alavanca policial',
     categories: [ProductCategory.POLICIAL],
     description:
@@ -16,6 +17,7 @@ export default function FeaturedProductsGrid() {
 
   const abafador = {
     slug: 'abafador-m32',
+    active: true,
     title: 'Abafador Tático',
     categories: [ProductCategory.POLICIAL],
     description:
@@ -28,6 +30,7 @@ export default function FeaturedProductsGrid() {
 
   const ariete = {
     slug: 'ariete-tatico',
+    active: true,
     title: 'Ariete Tático',
     categories: [ProductCategory.POLICIAL],
     description:
@@ -40,6 +43,7 @@ export default function FeaturedProductsGrid() {
 
   const marreta = {
     slug: 'marreta',
+    active: true,
     title: 'Marreta Tática',
     categories: [ProductCategory.POLICIAL],
     description:
