@@ -114,6 +114,17 @@ export default function SingleProductPage() {
           </div>
         </div>
 
+        {/* Renderiza a imagem se existir e centraliza */}
+        {product.descriptionImage && (
+          <div className="mt-4 flex justify-center">
+            <img
+              src={product.descriptionImage}
+              alt="Descrição do produto"
+              className="rounded-lg" 
+            />
+          </div>
+        )}
+
         {/* Technical details */}
         <div className="space-y-10 py-16 lg:py-20">
           <h2 className="text-2xl font-semibold">Detalhes</h2>
