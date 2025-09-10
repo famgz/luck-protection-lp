@@ -127,7 +127,7 @@ export default function SingleProductPage() {
 
         {/* Technical details */}
         <div className="space-y-10 py-16 lg:py-20">
-          <h2 className="text-2xl font-semibold">Detalhes</h2>
+          <h2 className="text-2xl font-semibold">Descrição Geral</h2>
           <p
             className="text-sm leading-7"
             dangerouslySetInnerHTML={{
@@ -139,14 +139,14 @@ export default function SingleProductPage() {
           />
 
           <div className="space-y-4">
-            <h3 className="text-2xl">Corpo</h3>
+            <h3 className="text-2xl">Características</h3>
             {Object.entries(product.details).map(([k, v]) => (
               <div
                 key={k}
-                className="line-bottom-primary-light flex justify-between pb-1"
+                className="flex gap-1"
               >
-                <span>{k}</span>
-                <span>{v}</span>
+                <span className="font-medium">{k}</span>
+                <span className="font-medium">{v}</span>
               </div>
             ))}
           </div>

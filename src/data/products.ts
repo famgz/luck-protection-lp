@@ -27,23 +27,6 @@ export const baseImagePath = '/products/';
 
 const baseProducts: Product[] = [
   {
-    slug: 'abafador-eletronico',
-    active: true,
-    title: 'Abafador Eletrônico IA Earmor M20T Preto',
-    categories: [ProductCategory.POLICIAL],
-    description:
-      'O EARMOR® M20T é um protetor auricular eletrônico intra-auricular que suprime efetivamente o ruído prejudicial acima de 82dB, ao mesmo tempo em que melhora a consciência situacional e a comunicação em ambientes barulhentos. A função Bluetooth sem fio permite ouvir música livremente, atender ou rejeitar chamadas, compartilhar comunicação e diversidade de entretenimento. Com um tempo de espera de 8 horas quando totalmente carregado, possui prompts de voz e prompts de bateria fraca para conveniência. Comparado aos protetores tácticos tradicionais, é mais leve e fácil de transportar',
-    descriptionHTML: `O EARMOR® M20T é um protetor auricular eletrônico intra-auricular que suprime efetivamente o ruído prejudicial acima de 82dB, ao mesmo tempo em que melhora a consciência situacional e a comunicação em ambientes barulhentos. <br/>A função Bluetooth sem fio permite ouvir música livremente, atender ou rejeitar chamadas, compartilhar comunicação e diversidade de entretenimento. <br/>Com um tempo de espera de 8 horas quando totalmente carregado, possui prompts de voz e prompts de bateria fraca para conveniência. <br/>Comparado aos protetores tácticos tradicionais, é mais leve e fácil de transportar`,
-    details: {
-      'Fabricado em': 'Plástico',
-      Carregamento: '8h',
-      Bluetooth: 'Sim',
-      Abafador: 'Sim',
-    },
-    price: 0,
-    images: [baseImagePath + 'abafador-eletronico.png'],
-  },
-  {
     slug: 'abafador-incendio',
     active: true,
     title: 'Abafador de Incêndio Cabo de Alumínio',
@@ -104,48 +87,12 @@ const baseProducts: Product[] = [
     ],
   },
   {
-    slug: 'abafador-m31',
-    active: true,
-    title: 'Abafador Protetor Auricular Eletrônico Tático Earmor M31',
-    categories: [ProductCategory.POLICIAL],
-    description:
-      'O fone de ouvido tático M31 MARK3 MilPro oferece proteção auditiva e melhora a consciência situacional e a comunicação. Com funções e níveis mais avançados, pode ser adaptado a diferentes missões e escutas ambientais. Com suporte substituível foi projetado para ser instalado no trilho do capacete para conveniência dos usuários. Design modular atualizado 5 modos de som ajustáveis Compatibilidade eletromagnética EMC Microfone de redução de ruído casco em ABS modificado de alta resistência Almofadas de ouvido de silicone confortáveis IP67 resistente à água Compatibilidade ambiental Cumprir com CE/RoSH/FCC. Os sons nocivos são limitados a um nível seguro de 82 dB.',
-    descriptionHTML: `<p>O fone de ouvido tático M31 MARK3 MilPro oferece proteção auditiva e melhora a consciência situacional e a comunicação. Com funções e níveis mais avançados, pode ser adaptado a diferentes missões e escutas ambientais. Com suporte substituível foi projetado para ser instalado no trilho do capacete para conveniência dos usuários.</p> <p>Design modular atualizado 5 modos de som ajustáveis Compatibilidade eletromagnética EMC Microfone de redução de ruído casco em ABS modificado de alta resistência Almofadas de ouvido de silicone confortáveis IP67 resistente à água Compatibilidade ambiental Cumprir com CE/RoSH/FCC.</p> <p>Os sons nocivos são limitados a um nível seguro de 82 dB.</p>`,
-    details: {
-      'Fabricado em': 'Plástico',
-      'Resistente à água': 'Sim',
-      Cabo: '3,5mm',
-      Peso: '350g',
-    },
-    price: 0,
-    images: [baseImagePath + 'abafador-m31.png'],
-  },
-  {
-    slug: 'abafador-m32',
-    active: true,
-    title: 'Abafador Eletrônico Earmor M32 Verde',
-    categories: [ProductCategory.POLICIAL],
-    description: `O Abafador Eletrônico M32 da EARMOR com comunicador é Ideal para operadores táticos, instrutores de tiro esportivo, atiradores, esportistas, indústrias e todos que trabalham em ambientes de muito barulho. Protege a audição do usuário de forma imediata, inteligente e segura. Os microfones ambientais melhoram a consciência situacional. Atende a norma NRR e reduz 22dB. Os sons nocivos são limitados a um nível seguro de 82 dB. Os microfones montados nos protetores auriculares melhoram a consciência situacional do usuário, permitindo que ele ouça sons de ambientes próximos e proteja sua audição. Amplifica sons de baixo nível. Permite que você ouça e se comunique normalmente e até aprimore sons padrão: fala, comandos, instruções, sons do ambiente Anti-suor com a tecnologia NANO. À prova d'água padrão IPX5. Aprovado por normas internacionais.`,
-    descriptionHTML: `<p>O Abafador Eletrônico M32 da EARMOR com comunicador é Ideal para operadores táticos, instrutores de tiro esportivo, atiradores, esportistas, indústrias e todos que trabalham em ambientes de muito barulho. Protege a audição do usuário de forma imediata, inteligente e segura. Os microfones ambientais melhoram a consciência situacional. Atende a norma NRR e reduz 22dB.</p> <p>Os sons nocivos são limitados a um nível seguro de 82 dB.</p> <p>Os microfones montados nos protetores auriculares melhoram a consciência situacional do usuário, permitindo que ele ouça sons de ambientes próximos e proteja sua audição.</p> <p>Amplifica sons de baixo nível.</p> <p>Permite que você ouça e se comunique normalmente e até aprimore sons padrão: fala, comandos, instruções, sons do ambiente Anti-suor com a tecnologia NANO.</p> <p>À prova d'água padrão IPX5.</p> <p>Aprovado por normas internacionais.</p>`,
-    details: {
-      'Fabricado em': 'Aço',
-      'Resistência à água': 'Sim',
-      Cabo: '84cm',
-      Peso: '396g',
-    },
-    price: 0,
-    images: [
-      baseImagePath + 'abafador-m32.png',
-      baseImagePath + 'abafador-m32-2.png',
-    ],
-  },
-  {
     slug: 'alavanca-2',
     active: true,
     title: 'Alavanca Hooligan Pé de Cabra',
     categories: [ProductCategory.BOMBEIRO],
     description:
-      'Ferramenta para arrombamento tática portátil para uso exclusivo de forças especiais (Grupos Anti-Sequestro, Policiais, Bombeiros, Resgatistas), foi projetada para forçar, martelar, torcer ou remover todos os tipos de barreiras, mantendo um perfil tático. Corpo fabricado em aço SAE 1045 e acabamento com pintura ou galvanizada. <br> <strong>Especificações</strong> <br> Contendo ponteiras fabricadas em aço SAE 1075 temperado e revenido <br> Uma das extremidades: ponteira tipo pé de cabra <br> Outra extremidade: ponteira tipo cunha e uma ponta arrombadora ',
+      'Ferramenta para arrombamento tática portátil para uso exclusivo de forças especiais (Grupos Anti-Sequestro, Policiais, Bombeiros, Resgatistas). Projetada para forçar, martelar, torcer ou remover barreiras mantendo perfil tático. Corpo fabricado em aço SAE 1045 com ponteiras em aço SAE 1075 temperado. Uma extremidade: pé de cabra; outra extremidade: cunha e ponta arrombadora. Comprimento 80cm, peso 6,8kg.',
     descriptionHTML: '',
     details: {
       'Fabricado em': 'Aço',
@@ -191,19 +138,46 @@ const baseProducts: Product[] = [
   {
     slug: 'alavanca',
     active: true,
-    title: 'Alavanca Tática para policial em aço',
+    title: 'Alavanca de Arrombamento',
     categories: [ProductCategory.POLICIAL],
     description:
-      'A Alavanca hooligan tática foi desenvolvida exclusivamente para o uso policial, e poderá ser empregada em viaturas ou equipes especiais. Equipamento construído em aço, usinado com cortes e medidas precisas com acabamento em pintura eletrostática. O tamanho e o peso foi determinado estrategicamente para fornecer força suficiente para romper obstáculos, expandir resistências e abrir portas com sentido de abertura de dentro para fora. Este equipamento conta com um quebrador de vidros ou perfurador, uma cunha de expansão eum pé de cabra. Cor: Preto (padrão). (obs: medidas podem variar de acordo com pedido)',
+      'Ferramenta de arrombamento desenvolvida para uso em ações policiais e táticas especializadas. Equipamento multifuncional que combina diferentes funções: pé de cabra, cunha de expansão, quebrador de vidros e perfurador. Construída em aço temperado de alta resistência com acabamento em pintura eletrostática preta. Projetada para fornecer força cinética suficiente para romper obstáculos, abrir portas, expandir resistências e auxiliar em operações de arrombamento tático.',
     descriptionHTML: '',
     details: {
       'Fabricado em': 'Aço',
       Comprimento: '60cm',
-      Diâmetro: '3,5cm',
+      'Diâmetro da haste': '3,5cm',
       Peso: '4kg',
     },
     price: 0,
     images: [baseImagePath + 'alavanca.png'],
+  },
+  {
+    slug: 'alavanca-hooligan-corta-lata',
+    active: true,
+    title: 'Alavanca Hooligan Corta Lata',
+    categories: [ProductCategory.POLICIAL, ProductCategory.BOMBEIRO],
+    description:
+      'Ferramenta de arrombamento tático que permite perfurar e cortar chapas metálicas, tipo hooligan. Material em aço liga, forjado em peça única de alta resistência com tratamento térmico para aumentar a durabilidade e resistência. Possui três ponteiras dinâmicas versáteis, uma extremidade para corte de chapa e outra extremidade para perfuração. Garantia de 1 ano contra defeitos de fabricação.',
+    descriptionHTML: '',
+    details: {
+      'Material': 'Aço liga, forjado em peça única de alta resistência',
+      'Tratamento': 'Tratamento térmico para aumentar a durabilidade e resistência',
+      'Acabamento': 'Pintura eletrostática preto fosco ou natural',
+      'Comprimento': 'Mínimo 90 cm / Máximo 95 cm',
+      'Peso': 'Máximo 6,0 kg',
+      'Ponteiras': 'Três ponteiras dinâmicas versáteis',
+      'Uma extremidade': 'Para corte de chapa',
+      'Outra extremidade': 'Para perfuração',
+      'Funcionalidade': 'Ferramenta de arrombamento tático que permite perfurar e cortar chapas metálicas, tipo hooligan',
+      'Garantia': '1 ano contra defeitos de fabricação'
+    },
+    price: 0,
+    images: [
+      baseImagePath + 'ALAVANCA HOOLIGAN CORTA LATA-1-Photoroom 1 1.png',
+      baseImagePath + 'image 61.png',
+      baseImagePath + 'image 62.png'
+    ],
   },
   {
     slug: 'alicate-tatico',
@@ -211,7 +185,7 @@ const baseProducts: Product[] = [
     title: 'Alicate tático preto em aço 60cm ',
     categories: [ProductCategory.POLICIAL],
     description:
-      'Construído em aço temperado, usinado com cortes e medidas precisas com acabamento em pintura eletrostática. As empunhaduras de nylon, a pintura eletrostática e o tratamento térmico do metal tornam o equipamento isolado eletricamente (não condutivo e anti-fagulha). Tamanho: 60 cm; Capacidade de corte: 8mm; Peso: 2.6kg; Cor: Preto. (medidas padrão). (obs: medidas podem variar de acordo com pedido.',
+      'O Alicate Tático Especial foi criado especificamente para operações policiais e pode ser utilizado em diversas situações táticas. Equipamento construído em aço temperado de alta qualidade, usinado com precisão e acabamento em pintura eletrostática preta. As empunhaduras ergonômicas em nylon proporcionam aderência e conforto durante o uso, além de isolamento elétrico. Capacidade de corte de até 8mm, ideal para cortar arames, cabos, correntes e outros materiais. Anti-fagulha e não condutivo.',
     descriptionHTML: '',
     details: {
       'Fabricado em': 'Aço',
@@ -228,7 +202,7 @@ const baseProducts: Product[] = [
     title: 'Alicate tático preto em aço 75cm ',
     categories: [ProductCategory.POLICIAL],
     description:
-      'Construído em aço temperado, usinado com cortes e medidas precisas com acabamento em pintura eletrostática. As empunhaduras de nylon, a pintura eletrostática e o tratamento térmico do metal tornam o equipamento isolado eletricamente (não condutivo e anti-fagulha). Tamanho: 60 cm; Capacidade de corte: 8mm; Peso: 2.6kg; Cor: Preto. (medidas padrão). (obs: medidas podem variar de acordo com pedido.',
+      'O Alicate Tático Especial foi criado especificamente para operações policiais e pode ser utilizado em diversas situações táticas. Equipamento construído em aço temperado de alta qualidade, usinado com precisão e acabamento em pintura eletrostática preta. As empunhaduras ergonômicas em nylon proporcionam aderência e conforto durante o uso, além de isolamento elétrico. Versão estendida de 75cm para maior alavancagem. Capacidade de corte de até 8mm, ideal para cortar arames, cabos, correntes e outros materiais. Anti-fagulha e não condutivo.',
     descriptionHTML: '',
     details: {
       'Fabricado em': 'Aço',
@@ -242,17 +216,17 @@ const baseProducts: Product[] = [
   {
     slug: 'ariete-tatico',
     active: true,
-    title: 'Ariete tático 2 alças 60cm para policial',
+    title: 'Ariete tático 2 alças 50cm para policial',
     categories: [ProductCategory.POLICIAL],
     description:
-      'O Ariete foi desenvolvido exclusivamente para uso policial, podendo ser utilizado tanto no patrulhamento diário quanto por grupos especiais. É um equipamento extremamente resistente, com um design inovador e fabricado em polímero, utilizando técnicas de usinagem de alta precisão e acabamento com pintura eletrostática. Nas extremidades, são fixadas ponteiras de nylon, que garantem segurança e durabilidade.Seu tamanho e peso foram estrategicamente definidos para garantir a força necessária para quebrar portas internas e externas leves. O modelo conta com alças semi-flexíveis emborrachadas, posicionadas ao longo do tubo, que facilitam o manuseio e ajudam a absorver o impacto. Essas alças oferecem excelente aderência, mesmo quando o usuário está utilizando luvas, ou em condições de umidade, óleo ou sangue. As ponteiras de nylon e o revestimento emborrachado das alças seguem as normas de certificação ABNT NBR IEC 60060-1-2013, proporcionando isolamento elétrico de até 50.000V (50kV), tornando o equipamento seguro e não condutivo.',
+      'O Ariete foi desenvolvido exclusivamente para uso policial, podendo ser utilizado tanto para patrulhamento quanto por grupos especiais. Equipamento resistente com design inovador, fabricado em aço temperado com acabamento em pintura eletrostática preta. Versão compacta de 50cm com duas alças emborrachadas posicionadas transversalmente para melhor manuseio e absorção de impacto. As ponteiras de polímero garantem segurança e durabilidade. Isolamento elétrico conforme normas ABNT NBR IEC 60060-1-2013, proporcionando proteção de até 50.000V (50kV). Ideal para operações que exigem agilidade e precisão.',
     descriptionHTML: '',
     details: {
       'Fabricado em': 'Aço',
-      Comprimento: '60cm',
+      Comprimento: '50cm',
       'Diâmetro do tubo': '11,5cm',
       'Diâmetro da alca': '2,54cm',
-      Peso: '10kg',
+      Peso: '8kg',
     },
     price: 0,
     images: [
@@ -266,7 +240,7 @@ const baseProducts: Product[] = [
     title: 'Ariete tático 2 alças 75cm para policial',
     categories: [ProductCategory.POLICIAL],
     description:
-      'O ariete foi projetado especificamente para o uso policial, sendo versátil em diversas operações. Desenvolvido para fácil transporte, pode ser acondicionado em viaturas e carregado em uma bandoleira. Com uma construção robusta e design inovador, ele é fabricado em polímero usinado com cortes e medidas precisas. Nas extremidades, há ponteiras de nylon fixadas de forma segura. Seu peso e tamanho foram cuidadosamente planejados para garantir força suficiente para romper portas internas e externas, mesmo aquelas com fechaduras complexas, como tetra-chaves. Uma de suas principais características é o sistema de neutralização de rebote, que utiliza a inércia para eliminar o efeito de ação e reação, protegendo o braço do operador de qualquer desconforto causado pelo impacto. O ariete conta com duas alças emborrachadas de alta resistência, capazes de suportar temperaturas entre -20° e 90°C. Semi-flexíveis e estrategicamente posicionadas transversalmente ao tubo, essas alças facilitam o manuseio e ajudam a absorver o impacto. Elas oferecem excelente aderência, mesmo quando o operador está utilizando luvas, em ambientes úmidos ou com presença de óleo ou sangue. Além disso, as ponteiras de nylon e o revestimento emborrachado das alças tornam o equipamento eletricamente isolado até 100.000 volts AC, atendendo às normas ABNT NBR IEC 60060-1/2013, ASTM 1826, ASTM F711 e IEC-60855. O ariete também é autoextinguível e anti-faísculas. A alça traseira foi posicionada de modo a evitar qualquer risco de esmagamento da mão do operador durante o uso.',
+      'O aríete foi projetado especificamente para o uso policial, sendo versátil em diversas operações. Desenvolvido para fácil transporte, pode ser acondicionado em viaturas e carregado em uma bandoleira. Com uma construção robusta e design inovador, ele é fabricado em polímero usinado com cortes e medidas precisas. Nas extremidades, há ponteiras de nylon fixadas de forma segura. Seu peso e tamanho foram cuidadosamente planejados para garantir força suficiente para romper portas internas e externas, mesmo aquelas com fechaduras complexas, como tetra-chaves. Uma de suas principais características é o sistema de neutralização de rebote, que utiliza a inércia para eliminar o efeito de ação e reação, protegendo o braço do operador de qualquer desconforto causado pelo impacto. O aríete conta com duas alças emborrachadas de alta resistência, capazes de suportar temperaturas entre -20° e 90°C. Semi-flexíveis e estrategicamente posicionadas transversalmente ao tubo, essas alças facilitam o manuseio e ajudam a absorver o impacto. Elas oferecem excelente aderência, mesmo quando o operador está utilizando luvas, em ambientes úmidos ou com presença de óleo ou sangue. Além disso, as ponteiras de nylon e o revestimento emborrachado das alças tornam o equipamento eletricamente isolado até 100.000 volts AC, atendendo às normas ABNT NBR IEC 60060-1/2013, ASTM 1826, ASTM F711 e IEC-60855. O aríete também é autoextinguível e anti-faíscas. A alça traseira foi posicionada de modo a evitar qualquer risco de esmagamento da mão do operador durante o uso.',
     descriptionHTML: '',
     details: {
       'Fabricado em': 'Aço',
@@ -284,10 +258,10 @@ const baseProducts: Product[] = [
   {
     slug: 'ariete-tatico-1-alca',
     active: true,
-    title: 'Ariete tático 1 alças 12kg para policial',
+    title: 'Ariete tático 1 alça para policial',
     categories: [ProductCategory.POLICIAL],
     description:
-      'O aríete foi desenvolvido para uso policial, sendo prático para transporte e uso em operações táticas. Com um design robusto e inovador, é feito de aço temperado com acabamento em pintura preta, e possui pontas de polímero que ajudam a reduzir o impacto. Ele conta com um sistema de neutralização de rebote, que elimina o efeito de ação e reação, protegendo o operador. Além disso, as alças semi-flexíveis, posicionadas longitudinalmente, facilitam o manuseio e ajudam a absorver os impactos. O aríete é isolado eletricamente e à prova de faíscas, atendendo às normas ASTM e IEC, o que o torna seguro para uso em diversas condições. Ele pode ser armazenado em viaturas ou carregado em mochilas especializadas. Essa ferramenta é ideal para operações que exigem força e precisão, garantindo a eficiência e a segurança dos agentes policiais.',
+      'Aríete tático desenvolvido exclusivamente para uso policial, otimizado para operações especiais que exigem força e precisão. Ferramenta a ser empregada durante ações táticas de arrombamento de diversos obstáculos. Foi projetado com tecnologia avançada de absorção de impacto e sistema de neutralização de rebote, protegendo o operador durante o uso. Construído em aço temperado de alta resistência com acabamento em pintura eletrostática preta e pontas de polímero. Equipado com alça ergonômica de alta aderência, permitindo controle total durante operações. Isolado eletricamente e anti-fagulha, conforme normas ASTM e IEC.',
     descriptionHTML: '',
     details: {
       'Fabricado em': 'Aço',
@@ -308,7 +282,7 @@ const baseProducts: Product[] = [
     title: 'Barco Inflável de poliéster em borracha',
     categories: [ProductCategory.BOMBEIRO],
     description:
-      'Este barco inflável é especialmente projetado para operações de resgate realizadas por equipes de bombeiros. Com uma estrutura robusta de poliéster emborrachado, ele oferece durabilidade e resistência em situações de emergência. Capaz de acomodar até nove pessoas e suportar uma carga total de 1200 kg, o barco é ideal para transportar equipes de resgate e vítimas com segurança. Sua quilha inflável proporciona maior estabilidade e controle, essencial em águas agitadas. Equipado com acessórios essenciais, como remos e kit de reparo, ele garante prontidão e eficiência em qualquer operação de salvamento.',
+      'Barco inflável especialmente projetado para operações de resgate realizadas por equipes de bombeiros. Com estrutura robusta de poliéster emborrachado, oferece durabilidade em situações de emergência. Capaz de acomodar até 9 pessoas e suportar carga total de 1200 kg. Quilha inflável para maior estabilidade em águas agitadas. Inclui acessórios essenciais como remos e kit de reparo para pronta resposta em operações de salvamento aquático.',
     descriptionHTML: '',
     details: {
       'Fabricado em': 'Poliéster',
@@ -340,7 +314,7 @@ const baseProducts: Product[] = [
     title: 'Bote Inflável Capacidade 9 passageiros',
     categories: [ProductCategory.BOMBEIRO],
     description:
-      'Este barco inflável é especialmente projetado para operações de resgate realizadas por equipes de bombeiros. Com uma estrutura robusta de poliéster emborrachado, ele oferece durabilidade e resistência em situações de emergência. Capaz de acomodar até nove pessoas e suportar uma carga total de 1200 kg, o barco é ideal para transportar equipes de resgate e vítimas com segurança. Sua quilha inflável proporciona maior estabilidade e controle, essencial em águas agitadas. Equipado com acessórios essenciais, como remos e kit de reparo, ele garante prontidão e eficiência em qualquer operação de salvamento.',
+      'Bote inflável desenvolvido especificamente para operações de resgate por equipes de bombeiros. Construído em material resistente de poliéster emborrachado para máxima durabilidade em condições extremas. Capacidade para 9 passageiros com carga máxima de 1200 kg. Design com quilha inflável oferece estabilidade superior em águas agitadas. Equipado com remos e kit completo de reparo para operações de emergência aquática.',
     descriptionHTML: '',
     details: {
       'Fabricado em': 'Poliéster',
@@ -370,34 +344,6 @@ const baseProducts: Product[] = [
     ],
   },
   {
-    slug: 'capacete-bombeiro',
-    active: true,
-    title: 'Capacete bombeiro de  segurança',
-    categories: [ProductCategory.BOMBEIRO],
-    description:
-      'Capacete bombeiro cav. Capacete de segurança em fiberglass, na cor vermelha, resistente a impactos e chamas, com revestimento interno, suspensão fixa, carneira tipo catraca de ajuste na parte traseira, com faixas refletivas fixadas nas laterais, aba em toda sua lateral e frontal, totalmente emborrachada. Protetor facial articulável, transparente com jugular de ajuste e aparador de suor em velcro. Protetor de nuca e ouvidos em tecido antichamas. Atende os requisitos da norma nfpa 1971 ou equivalente',
-    descriptionHTML: '',
-    details: {
-      'Fabricado em': 'Plástico',
-    },
-    price: 0,
-    images: [baseImagePath + 'capacete-bombeiro.png'],
-  },
-  {
-    slug: 'capacete-resgate',
-    active: true,
-    title: 'Capacete de resgate aquático',
-    categories: [ProductCategory.RESGATE],
-    description:
-      'Capacete de resgate aquático de montanha com protetores de ouvido Capacete injetado em polipropileno de alta resistência. Possui ajuste interno (RATCHER), feito com dentes de travamento com controle de volume, que proporciona melhor ajuste ao cabeçote, mais segurança e conforto ao operador, Espuma de células fechadas Rebites de metal inoxidável (não enferrujam), Fitas de polipropileno, Fivelas e engates de nylon, Neoprene 1,5 mm, Velcro',
-    descriptionHTML: '',
-    details: {
-      'Fabricado em': 'Polipropileno',
-    },
-    price: 0,
-    images: [baseImagePath + 'capacete-resgate.png'],
-  },
-  {
     slug: 'capuz-neoprene',
     active: false,
     title: 'Capuz Neoprene em borracha',
@@ -415,9 +361,9 @@ const baseProducts: Product[] = [
   {
     slug: 'cilindro-mergulho', 
     active: true,
-    title: 'Cilindro de mergulho alumínio',
+    title: 'Cilindro de mergulho em alumínio',
     categories: [ProductCategory.RESGATE],
-    description: 'O Cilindro para Mergulho em Alumínio 12L S80 com Válvula 3000 PSI é um componente essencial para a prática segura e eficaz do mergulho. Este cilindro é projetado para armazenar ar sob pressão, permitindo que os mergulhadores respirem enquanto exploram o mundo subaquático. Sua capacidade de 12 litros e pressão de 3000 PSI oferecem uma quantidade adequada de ar para uma experiência de mergulho prolongada.',
+    description: 'Cilindro para mergulho em alumínio 12L S80 com válvula 3000 PSI, componente essencial para mergulho seguro e eficaz. Projetado para armazenar ar sob pressão, permitindo respiração subaquática segura. Capacidade de 12 litros e pressão de 3000 PSI para experiência de mergulho prolongada. Construção em alumínio resistente à corrosão marinha.',
     descriptionHTML: '<strong>Recomendações</strong><br><br><strong>Manutenção Interna do Cilindro:</strong>   É essencial manter o interior do cilindro livre de umidade, óleo, sujeira e outros contaminantes para garantir a qualidade do ar respirável durante o mergulho.<br> <strong>Reserva de Ar:</strong>   Não é aconselhável descarregar completamente o cilindro. Manter uma pequena reserva de ar é crucial para lidar com emergências subaquáticas.<br> <strong>Evitar Aquecimento Artificial:</strong>   Deve-se evitar o aquecimento artificial do cilindro, pois o calor excessivo pode comprometer a integridade do material e a pressão interna.<br> <strong>Preservação das Marcações do Cilindro:</strong>   É importante não remover, ocultar ou alterar as marcações do cilindro para que profissionais de mergulho e técnicos possam avaliar com precisão seu estado e capacidade.',
     details: {
       'Fabricado em': 'Alumínio',
@@ -472,16 +418,16 @@ const baseProducts: Product[] = [
   {
     slug: 'enxada-rastelo',
     active: true,
-    title: 'Ferramenta combinada Enxada e Rastelo',
+    title: 'Ferramenta combinada Enxada/Rastelo MC Lead',
     categories: [ProductCategory.BOMBEIRO],
     description:
-      'Ferramenta do tipo versátil combinando em uma só peça, enxada e rastelo de alta resistência. Utilizada para limpar linhas de fogo, abrindo pequenas faixas ou aceiros, para cavar pequenas valas, rastelar dentre outros, cabo de madeira com 150 cm de comprimento, Peso: 2,3 kg, 6 dentes de 9 cm. (obs: medidas podem variar de acordo com pedido)',
+      'Ferramenta de uso verátil combinando em uma só peça, enxada e rastelo de alta resistência. Útil para l impar materiais inflaáveis por terra, abrindo pequenas faixas ou removendo detri os, para cavar pequenas valas, rastelar dentre outros. Possui cabo de madeira de 150 cm de comprimento e lâmina resistente com 6 dentes de aproximadamente 9 cm para máxima eficiência.',
     descriptionHTML: '',
     details: {
       'Fabricado em': 'Madeira',
       Comprimento: '125cm',
       Peso: '2,3kg',
-      Dentes: '8h,9cm'
+      Dentes: '6 dentes de 9cm'
     },
     price: 0,
     images: [baseImagePath + 'enxada-rastelo.png'],
@@ -489,7 +435,7 @@ const baseProducts: Product[] = [
   {
     slug: 'equipamento-respiracao',
     active: true,
-    title: 'Equipamento de respiração com máscara autônoma',
+    title: 'Aparelho de Respiração autônoma 6.8L Fibra C/ Corona Modelo: RHZ/ (6.8) (Máscara Dupla+Válvula de Máscara)',
     categories: [ProductCategory.BOMBEIRO],
     description:
       'Respirador de adução de ar tipo máscara autônoma de ar comprimido com circuito aberto de demanda com pressão positiva, usados exclusivamente para combate ao incêndio e áreas contaminadas com manômetro de fácil visualização e com alarme sonoro acoplado que é acionado, automaticamente, ao atingir 55 bar.',
@@ -506,16 +452,15 @@ const baseProducts: Product[] = [
   {
     slug: 'gancho',
     active: true,
-    title: 'Gancho Crock Bombeiros',
+    title: 'Gancho Crock de bombeiros',
     categories: [ProductCategory.BOMBEIRO],
     description:
-      'Equipamento para combate a incêndio, arrombamento, rescaldo e retirada de material (impulsão e tração). Gancho fundido e enriquecido em duro alumínio,pontiagudo e tracionante, Bastão de tubo de alumínio com diâmetro de 31.75mm revestido com borracha PU ou fibra de vidro, impregnado com resina epoxi e protegido internamente com o núcleo de poliuretano, permitindo melhor isolamento térmico e elétrico. Peça única ou articulado, comprimento 2,60 mts a 3 mts, Peso aproximado 2,0 kg (obs: medidas podem variar de acordo com pedido)',
+      'Equipamento destinado ao combate a incêndio, arrombamento , rescaldo e remoção de materiais (impulso e tração). Gancho fundido e enriquecido em duro alumínio, pontiagudo e tracionante. Bastão de tubo de alumínio com diâmetro de 1 ¼” revestida com borracha de PU ou fibra de vidro, impregnado com resina epóxi e protegido internamente com o núcleo de poliuretano, proporcionando melhor isolamento térmico e elétrico.',
     descriptionHTML: '',
     details: {
-      'Fabricado em': 'Alumínio',
-      Comprimento: '3m',
-      Diâmetro: '31,75cm',
-      Peso: '2kg',
+      'Tipo': 'Peça única ou articulada',
+      'Comprimento': 'de 2,60mts a 3mts',
+      'Peso Aproximado': '2kg',
     },
     price: 0,
     images: [baseImagePath + 'gancho.png'],
@@ -523,14 +468,14 @@ const baseProducts: Product[] = [
   {
     slug: 'gorgui',
     active: true,
-    title: 'Ferramenta Gorgui Multi-função',
+    title: 'GORGUI (Equipamento multifuncional)',
     categories: [ProductCategory.BOMBEIRO],
     description:
-      'Ferramenta combinada para cortar, raspar, cavar e sufocar (em rescaldo). Concebida com cabo de madeira fixado por parafusos e porcas autotravantes a folha, fabricada em aço SAE 1045 e dureza 42 a 46 RC, temperada e afiada com 10° nos lados e acabamento cromatizado. Com funções individualizadas que lhe confere multifuncionalidade, sem existir a necessidade de transportar diversas ferramentas. Sendo uma boa opção para equipes helitransportadas, obtendo facilidade para remoção da folha para sua manutenção quando necessário. Funções: Rastelo, Enxada, Enxadão. Medidas: 1240x35mm (cabo),14x34cm (lâmina), Peso: 2,5 kg (Padrão). (Obs: Medidas podem variar conforme pedido solicitado)',
+      'Ferramenta multifuncional para cortar, raspar, cavar e sufocar materiais (em rescaldo). Concebida com cabo de madeira sólido fixado por parafusos e porcas autotravantes à lâmina, fabricada em aço SAE 1045 com dureza de 42 a 46 RC, temperada e afiada com 10° nos lados. Possui funções individualizadas que conferem multifuncionalidade, eliminando a necessidade de transportar diversas ferramentas. Ideal para equipes helitransportadas, com facilidade de remoção da lâmina para manutenção.',
     descriptionHTML: '',
     details: {
       'Fabricado em': 'Madeira',
-      Medidas: '1500x35mm(Cabo)',
+      Medidas: '1240x35mm (cabo)',
       Lamina: '14x34cm',
       Peso: '2,5kg',
       Funções: 'Rastelo, Enxada , Enxadão',
@@ -559,7 +504,7 @@ const baseProducts: Product[] = [
     title: 'Laço cambão confeccionado em alumínio',
     categories: [ProductCategory.BOMBEIRO],
     description:
-      'Laço tipo cambão confeccionado em alumínio de alta resistência com cabo em aço encapado medindo 150 cm de comprimento e com dispositivo de travamento e soltura do laço rápido, utilizado para captura e imobilização de pequenos animais, pesando 1125 gr. (obs: medidas podem variar de acordo com pedido)',
+      'Laço tipo cambão confeccionado em alumínio de alta resistência com cabo em aço encapado. Utilizado para captura e imobilização de animais com cabo que se adapta através do dispositivo de travamento mecânico e soltura do laço rápida e segura. Medidas: 150 cm de comprimento, peso de 1.125g.',
     descriptionHTML: '',
     details: {
       'Fabricado em': 'Alumínio',
@@ -586,10 +531,10 @@ const baseProducts: Product[] = [
   {
     slug: 'machado-picareta',
     active: true,
-    title: 'Ferramenta combinada machado/picareta',
+    title: 'Ferramenta combinada Machado/Picareta Pulaski',
     categories: [ProductCategory.BOMBEIRO],
     description:
-      'Ferramenta forjada em aço 1075 tratado, do tipo versátil combinando machado e picareta em uma só peça, com a finalidade de cortar e picar materiais em brasa além de cavar pequenas linhas impedindo o avanço do fogo, pintada na cor vermelha ou galvanizada. Cabo de madeira com 90cm de comprimento. Peso: 2,9 kg. (padrão). (medidas podem variar de acordo com pedido).',
+      'Ferramenta especializada desenvolvida para uso em combate a incêndios e modificação de terreno, combinando as funcionalidades de machado e picareta em uma só peça de alta resistência. Possui lâmina de aço forjado de alta qualidade para corte eficiente de madeira e um lado pontiagudo para cavar e penetrar em superfícies duras. Cabo de madeira ergonômico de 90cm proporciona equilíbrio ideal entre força e controle.',
     descriptionHTML: '',
     details: {
       'Fabricado em': 'Aço',
@@ -602,16 +547,16 @@ const baseProducts: Product[] = [
   {
     slug: 'marreta',
     active: true,
-    title: 'Marreta tática construída em aço',
+    title: 'Marreta Tática 60cm',
     categories: [ProductCategory.POLICIAL],
     description:
-      'Marreta desenvolvida exclusivamente para o uso policial, e pode ser empregada no patrulhamento diário e grupos especiais. Um equipamento construído em aço, usinado com cortes e medidas precisas com acabamento em pintura eletrostática. Equipamento desenvolvido para arrombar portas (internas), fechaduras, dobradiças e auxiliar na abertura de cadeados, romper obstáculos e expandir resistências, a marreta pode entregar uma força cinética de mais de 150kg. A empunhadura de de nylon torna o equipamento isolado eletricamente (não condutivo e anti-fagulha). Tamanho: 60 cm; Diâmetro da empunhadura: 3,7cm; Peso: 5,1kg, Cor: Preta (padrão) (obs: medidas podem variar de acordo com pedido)',
+      'A Marreta foi criada especialmente para uso policial , sendo adequada tanto para patrulhas diárias quanto para operações de grupos especializados . Trata-se de uma ferramenta altamente resistente, com um design inovador, fabricada em aço usinado com cortes e dimensões precisas, e finalizada com pintura eletrostática Este equipamento é projetado para quebrar portas internas , travas , dobradiças , além de ajudar na abertura de estruturas . Capaz de gerar uma força cinética superior a 150kg, a marreta é uma aliada poderosa em operações táticas A ferramenta conta ainda com uma empunhadura em tubo isolante feito de fibra de vidro, impregnado com resina epóxi ao longo de toda sua extensão, proporcionando excelente aderência , mesmo com o uso de luvas , ou quando exposta a água , óleo ou sangue. A proteção nas laterais evita que as mãos do operador escorreguem para as extremidades ',
     descriptionHTML: '',
     details: {
       'Fabricado em': 'Aço',
+      'Diâmetro do tubo': '3,5cm',
       Comprimento: '60cm',
-      Diâmetro: '3,7cm',
-      Peso: '5,1kg',
+      Cor: 'Preto',
     },
     price: 0,
     images: [baseImagePath + 'marreta.png'],
@@ -621,7 +566,7 @@ const baseProducts: Product[] = [
     active: true,
     title: 'Passador de nível para mangueira',
     categories: [ProductCategory.BOMBEIRO],
-    description: `Equipamento fabricado em ferro, na cor preta com faixas na cor amarela para melhor visualização, utilizado para proteção da mangueira de combate a incêndio quando da necessidade de transpassá-la com o caminhão, comprimento 76 cm, largura 42 cm, altura 9 cm, vão para encaixe das mangueiras de 1 ½' e 2 ½" de aproximadamente 11 cm, possui duas alças laterais em ferro para transporte, Peso máximo de 23 kg. (obs: medidas podem variar de acordo com pedido)`,
+    description: `Equipamento fabricado em ferro fundido na cor preta com CT faixas na cor amarela para melhor visualização, utilizado para a proteção da mangueira de combate a incêndio quando da necessidade de transportá-la com o caminhão. Medidas: comprimento 76 cm, largura aproximada 42 cm, altura aproximada 9 cm, vão para encaixe das mangueiras de 1½" e 2½", aproximadamente 11 cm, peso máximo de 23 kg.`,
     descriptionHTML: '',
     details: {
       'Fabricado em': 'Ferro',
@@ -642,7 +587,7 @@ const baseProducts: Product[] = [
     title: 'Rastelo para remoção de material vegetal',
     categories: [ProductCategory.BOMBEIRO],
     description:
-      'Ferramenta especialmente desenhada para a remoção de material vegetal na abertura de aceiros, corta e rastela com facilidade e eficiência. Resistente e durável, é produzida em aço tratado, laminas com pequenas estrias e com acabamento em pintura ou galvanizada, possui cabo de madeira, com 150 cm de comprimento e tem peso total de 1,4 kg. (obs: medidas podem variar de acordo com pedido)',
+      'Ferramenta especial para uso em combate a incêndios, projetada de terminar material de apo de alta temperatura, com 4 dentes, capaz de cortar e rastelar. Ferramenta desenvolvida projetada para a remoção de material vegetal no abertura de aceiros, corta e rastela com facilidade e eficiência, resistente e durável. Produzida em aço tratado, lâminas com pequenas estrias e com acabamento em pintura, sendo efetivamente em pintura ou galvanizada.',
     descriptionHTML: '',
     details: {
       Cabo: 'Reto, de Madeira',
@@ -673,10 +618,10 @@ const baseProducts: Product[] = [
   {
     slug: 'suporte-colunas',
     active: true,
-    title: 'Suporte para colunas veicular',
+    title: 'Suporte Coluna Veicular',
     categories: [ProductCategory.RESGATE],
     description:
-      'Suporte para coluna veicular em ferro, complemento de soleira com encaixe para cilindros de resgate na cor amarelo. Peso 10 kg. (obs: medidas podem variar de acordo com pedido)',
+      'Suporte para coluna veicular em ferro, complemento de soleira com encaixe para cilindros de resgate na cor amarelo. Peso 10kg. Equipamento essencial para estabilização de veículos durante operações de resgate, proporcionando segurança e eficiência no trabalho das equipes de emergência.',
     descriptionHTML: '',
     details: {
       'Fabricado em': 'Ferro',
@@ -692,11 +637,11 @@ const baseProducts: Product[] = [
     title: 'Suporte lanterna Propolymer 4AA 27x37',
     categories: [ProductCategory.BOMBEIRO],
     description:
-      'Suporte adaptador metálico fabricado em alumínio com pintura a pó na cor preta, para uso da lanterna Propolymer 4AA LEDS stream light em capacete MSA Gallet F1 SF. Medidas:27x37 (obs: medidas podem variar de acordo com pedido)',
+      'Suporte adaptador metálico fabricado em alumínio com pintura a pó na cor preta para uso da lanterna Propolymer 4AA LEDS stream light em capacete MSA Gallet F1 SF. Dimensões 27x37mm, peso 454g. Projetado especificamente para integração perfeita com equipamentos de proteção individual dos bombeiros.',
     descriptionHTML: '',
     details: {
       'Fabricado em': 'Alumínio',
-      Comprimento: '27x37cm',
+      Dimensões: '27x37mm',
       Peso: '454g',
     },
     price: 0,
@@ -711,7 +656,7 @@ const baseProducts: Product[] = [
     title: 'Suporte para pressão - Painel',
     categories: [ProductCategory.RESGATE],
     description:
-      'Suporte para painel em ferro, complemento de soleira com encaixe para cilindros de resgate na cor amarelo. Peso 5 kg. (obs: medidas podem variar de acordo  com pedido)',
+      'Suporte para painel em ferro, complemento de soleira com encaixe para cilindros de resgate na cor amarelo. Peso 5kg. Projetado para distribuição de pressão em painéis durante operações de resgate veicular, proporcionando estabilidade e segurança.',
     descriptionHTML: '',
     details: {
       'Fabricado em': 'Ferro',
@@ -727,7 +672,7 @@ const baseProducts: Product[] = [
     title: 'Suporte para pressão - Teto',
     categories: [ProductCategory.RESGATE],
     description:
-      'Suporte para teto em ferro, complemento de soleira com encaixe para cilindros de resgate na cor amarelo. Peso 5 kg. (obs: medidas podem variar de acordo com pedido)',
+      'Suporte para teto em ferro, complemento de soleira com encaixe para cilindros de resgate na cor amarelo. Peso 5kg. Equipamento projetado para distribuição de pressão em tetos durante operações de resgate veicular, garantindo estabilidade estrutural.',
     descriptionHTML: '',
     details: {
       'Fabricado em': 'Ferro',
@@ -743,7 +688,7 @@ const baseProducts: Product[] = [
     title: 'Torniquete',
     categories: [ProductCategory.RESGATE],
     description:
-      'O Torniquete é um dispositivo médico projetado para controlar hemorragias graves em situações de emergência. Desenvolvido com um design exclusivo e materiais duráveis, ele oferece uma aplicação eficaz e rápida, essencial para intervenções de primeiros socorros. O torniquete é fácil de manusear, garantindo uma pressão adequada para interromper o fluxo sanguíneo, o que pode ser crucial para salvar vidas em cenários de trauma. Além disso, a fivela aprimorada assegura um uso seguro, mesmo em condições climáticas extremas, tornando-o uma escolha confiável para profissionais de saúde e socorristas.',
+      'Torniquete é um dispositivo médico projetado para controlar hemorragias graves em situações de emergência. Desenvolvido com design exclusivo e materiais duráveis para aplicação eficaz e rápida em primeiros socorros. Fácil de manusear, garante pressão adequada para interromper fluxo sanguíneo, crucial para salvar vidas em cenários de trauma. Fivela aprimorada assegura uso seguro mesmo em condições climáticas extremas. Inclui tira de tempo para registrar momento da aplicação.',
     descriptionHTML: '',
     descriptionImage: baseImagePath + 'torniquete-details.png',
     details: {
@@ -776,7 +721,7 @@ const baseProducts: Product[] = [
     title: 'Mochila de Arrombamento',
     categories: [ProductCategory.POLICIAL],
     description:
-      'A mochila foi desenvolvida para o serviço policial, com compartimentos específicos para transporte e armazenamento de ferramentas de arrombamento. Possui um design compacto e leve, focado na mobilidade e conforto do operador. <br><br>Estrutura Interna: Pré-moldada em EVA, leve e flexível para sustentação e manutenção da curvatura natural das costas. <br>Quantidade de Bolsos: 3 ou 4 (dependendo da versão) <br>Bolso central: Para ferramentas mais pesadas (aríete ou marreta). Bolsos ajustáveis com fitas de poliéster e sistema de travamento em velcro.<br>Alças anatômicas (formato S): Acolchoadas, feitas com espuma de células fechadas e acabamento em nylon 1000D Cordura®.<br>Ajustes de Ombros e Cintura: Reguláveis, distribuição de peso equilibrada entre ombros e cintura.<br>Ajuste abdominal: Regulagem superior a 50 cm.<br>Ajuste peitoral flutuante: Regulagem de altura e travamento com polímero de 2 pontos de tensão (ajuste superior a 20 cm).<br>Ajuste por baixo das pernas: Garante ancoragem da mochila ao corpo, essencial para atividades extremas (corrida, rapel, subida e descida de muros).<br>Abas de nylon 1000D Cordura®: Proteção e estabilização das ferramentas, fechamento com velcro.<br>Fivelas de polímero: Utilizadas nas travas e ajustes de fitas.<br>Elo em formato D nas alças: Para clipagem de outros equipamentos.<br><br><strong>Benefícios</strong><br> <br>Conforto: Design anatômico e acolchoado, ajustável para diferentes tipos de operadores <br>Estabilidade: Sistema de ajuste múltiplo que evita movimentação excessiva durante atividades intensas <br>Durabilidade: Feita em nylon 1000D Cordura® com componentes resistentes <br>',
+      'Mochila desenvolvida para o serviço policial com compartimentos específicos para transporte e armazenamento de ferramentas de arrombamento. Design compacto e leve, focado na mobilidade e conforto do operador. Estrutura interna pré-moldada em EVA para sustentação ergonômica. Possui 3 ou 4 bolsos com sistema de ajuste múltiplo, bolso central para ferramentas pesadas (aríete ou marreta), alças anatômicas acolchoadas em nylon 1000D Cordura® e ajustes reguláveis de ombros e cintura para distribuição equilibrada do peso.',
     descriptionHTML: '',
     details: {
       'Fabricado em': 'Nylon 1000D',
@@ -796,7 +741,7 @@ const baseProducts: Product[] = [
     title: 'Cesto de Resgate puça',
     categories: [ProductCategory.RESGATE],
     description:
-      'Equipamento destinado para operações de salvamento e resgate de vítimas de arrastamento, afogamento e naufrágios. O cesto é composto por dois aros de alumínio, um com 120 cm de circunferência e outro com 80 cm de circunferência, revestidos por uma rede de nylon seda 4mm com malhas de 8cm. A estrutura é projetada para oferecer segurança e durabilidade, com características específicas para absorção de impacto e prevenção de abrasões. <br><br> <strong>Benefícios</strong> <br><br> <strong>Durabilidade e Resistência:</strong> Fabricado com materiais robustos como alumínio e nylon, o cesto é capaz de suportar cargas pesadas e condições adversas, garantindo segurança durante as operações.<br><strong>Segurança Adicional:</strong> Equipado com flutuadores de polipex e solas protetoras, o cesto oferece estabilidade e protege contra impactos. <br><strong>Facilidade de Transporte:</strong> A bolsa em vinil flexível com alças de poliéster permite o transporte prático e seguro do equipamento. <br><strong>Isolamento e Proteção:</strong> As solas em borracha EVA fornecem alta resistência e evitam abrasões, garantindo a segurança da vítima e do operador durante o resgate.',
+      'Equipamento destinado para operações de salvamento e resgate de vítimas de arrastamento, afogamento e naufrágios. Cesto composto por dois aros de alumínio (120cm e 80cm de circunferência) revestidos por rede de nylon seda 4mm com malhas de 8cm. Capacidade para 500kg ou 3 pessoas. Inclui flutuadores de polipex, solas protetoras em borracha EVA, estropo de 5 toneladas e bolsa para transporte em vinil flexível.',
     descriptionHTML: '',
     details: {
       'Aro Superior': '120 cm de circunferência',
@@ -822,10 +767,10 @@ const baseProducts: Product[] = [
   {
     slug: 'cesto-resgate-aereo', 
     active: true,
-    title: 'Cesto de resgate aereo',
+    title: 'Cesto de Resgate Aéreo',
     categories: [ProductCategory.RESGATE],
     description:
-      'Equipamento destinado para operações de salvamento e resgate de vítimas em altura, alagamentos, enchentes e locais de difícil acesso. <br><br> <strong>Corpo de Sustentação</strong> <br><br> Composto por 9 cintas de poliéster (35 mm de largura, capacidade de 2 toneladas) <br>. Comprimento das cintas: 210 cm (duzentos e dez centímetros). <br> Estrutura: Abertura de 40 cm (quarenta centímetros) servindo como porta de entrada/saída. <br> Fixação: Costuras que unem as cintas ao aro inferior. <br><br> <strong> Piso do Cesto </strong> <br><br> Material: Rede de malha tipo "pescador" em nylon trançado de 3 mm de espessura. <br> Reforço: Cintas de poliéster de 35 mm duplicadas e costuradas, com capacidade de 2 toneladas. <br><br> <strong> Estropo </strong> <br><br> Material: Cinta de poliéster de 50 mm de largura, duplicada e costurada. <br>Comprimento: 10 metros.<br>Capacidade de carga: 5 toneladas.<br>Extremidades:<br> Uma alça com argola oval de aço (capacidade de 1,5 toneladas).<br> Outra alça com destorcedor de aço forjado. <br><br> <strong> Segurança </strong> <br><br> Fita tubular de 150cm com um mosquetão oval de duralumínio de trava automática <br>hCapacidade de mosquetão: 22kN <br>hFixação: Ao aro superior para uso do operador ou resgatista ',
+      'Equipamento destinado para operações de salvamento e resgate de vítimas em altura, alagamentos, enchentes e locais de difícil acesso. Cesto aéreo construído com aro tubular de alumínio de 70cm de diâmetro, revestido com espuma de polipropileno para proteção contra impactos. Corpo de sustentação composto por 9 cintas de poliéster de 35mm com capacidade para 2 toneladas. Piso em rede de nylon trançado tipo pescador com 3mm de espessura. Inclui estropo de 10 metros em poliéster duplicado com capacidade de 5 toneladas e fita de segurança com mosquetão de 22kN.',
     descriptionHTML: '',
     details: {
       Material: 'Tubular de alumínio, 1" (uma polegada) de diâmetro externo e 1/8" (um oitavo) de polegada de espessura',
@@ -859,10 +804,10 @@ const baseProducts: Product[] = [
   {
     slug: 'cinto-sling',
     active: true,
-    title: 'Cinto sling/ cinto multifuncional',
+    title: 'Cinto Sling/ Cinto Multifuncional',
     categories: [ProductCategory.RESGATE],
     description:
-      'O Cinto de Resgate Sling oferece segurança máxima em operações de resgate, incluindo salvamento aquático e em altura. Feito de poliéster de alta tenacidade, suporta até 2.000 kg.<br> Seu design facilita a rápida colocação e ajuste, otimizando o tempo de resposta. Projetado especificamente para bombeiros, equipes de resgate e profissionais de salvamento, o Cinto de Resgate Sling oferece a segurança e eficiência que você precisa.<br> Com um design focado na ergonomia e segurança, nosso cinto permite um desempenho superior em operações de resgate, facilitando o trabalho dos profissionais de salvamento.<br> Cinto projetado para uso misto em situações extremas;<br> Pode ser utilizado em água agitada, água parada, salvamento em alturas, retiradas de precipícios ou em áreas confinadas.<br><br> <strong> Cuidados </strong> <br> Lavar com água doce e sabão neutro.',
+      'Cinto de Resgate Sling oferece segurança máxima em operações de resgate, incluindo salvamento aquático e em altura. Fabricado em poliéster de alta tenacidade com capacidade para 2.000 kg. Design ergonômico facilita rápida colocação e ajuste, otimizando tempo de resposta. Projetado para bombeiros, equipes de resgate e profissionais de salvamento. Versátil para uso em água agitada, água parada, salvamento em alturas, retiradas de precipícios e áreas confinadas. Inclui espuma de polietileno para alta flutuação.',
     descriptionHTML: '',
     details: {
       'Cores disponiveis': 'vermelho ou amarelo',
@@ -891,7 +836,7 @@ const baseProducts: Product[] = [
     title: 'Colete Salva Vidas Inflável',
     categories: [ProductCategory.RESGATE],
     description:
-      'Os coletes salva-vidas infláveis são feitos de tecido de nylon + composto de TPU de poliéster e são formados por prensagem a quente de alta frequência. O airbag é equipado com um cartucho sensível à água e conectado a um cilindro de gás. Quando o colete salva-vidas inflável é exposto à água, ele se abre automaticamente para formar um airbag dentro de 3-5 segundos, alcançando o propósito de salvamento. Este produto tem as vantagens de ser leve, de tamanho pequeno, de centragem automática na água e de uso conveniente. Foi reconhecido pela indústria naval como uma nova alternativa aos coletes salva-vidas tradicionais de espuma.',
+      'Colete salva-vidas inflável feito de tecido de nylon + composto de TPU de poliéster, formado por prensagem a quente de alta frequência. Airbag equipado com cartucho sensível à água conectado a cilindro de gás. Quando exposto à água, infla automaticamente em 3-5 segundos para salvamento. Vantagens: leve, compacto, centragem automática na água e uso conveniente. Reconhecido pela indústria naval como alternativa aos coletes tradicionais de espuma. Atende norma ISO12402-3:2006.',
     descriptionHTML: 'Os coletes salva-vidas infláveis são feitos de tecido de nylon + composto de TPU de poliéster e são formados por prensagem a quente de alta frequência. <br>O airbag é equipado com um cartucho sensível à água e conectado a um cilindro de gás. Quando o colete salva-vidas inflável é exposto à água, ele se abre automaticamente para formar um airbag dentro de 3-5 segundos, alcançando o propósito de salvamento.<br>Este produto tem as vantagens de ser leve, de tamanho pequeno, de centragem automática na água e de uso conveniente. Foi reconhecido pela indústria naval como uma nova alternativa aos coletes salva-vidas tradicionais de espuma. <br><br> <strong>Padrão Técnico do produto</strong> <br><br> Atende à norma ISO12402-3: 2006 Dispositivo de Flutuação Pessoal - Parte 3: Nível de Desempenho dos Requisitos de Segurança do Colete Salva-Vidas 150. <br><br> <strong> Operação </strong> <br><br> Para tipos manuais, puxe a corda no inflador para inflar e utilizar normalmente. <br>Quando a pressão do airbag for insuficiente, use um insuflador bucal para complementar o ar. <br>Para tipos manual/automático, após a pessoa cair acidentalmente na água, o dispositivo de disparo ativa automaticamente o dispositivo inflável dentro de 3-5 segundos. <br>Se não puder ser ativado automaticamente, puxe a corda no dispositivo inflável para inflar e usar normalmente. <br>Quando a pressão do airbag for insuficiente, use um insuflador bucal para complementar o ar <br><br> <strong>Validade</strong> <br> 3 anos (Bobina por 1 ano) <br><br> <strong> Certificado </strong><br> CCS/CE <br><br> <strong>Instruções de Uso</strong> <br> <strong> Vestuário </strong> <br> O colete salva-vidas só é eficaz se estiver totalmente inflado. <br><br> <strong> Como vestir </strong> <br> Vista-o como um colete, feche o encaixe frontal e ajuste o cinto o mais apertado possível, sem comprometer o conforto <br><br> <strong> Insuflação manual </strong> <br> Antes de entrar na água, infle rapidamente o colete salva-vidas puxando a corda com a mão direita <br><br> <strong> Insuflação automática </strong> <br> Começa a inflar automaticamente dentro de 5 segundos após a submersão na água. Se o dispositivo automático não funcionar ou for perdido, deve-se realizar a insuflação manualmente <br><br> <strong> Enchimento com a boca </strong> <br> O tubo de enchimento manual está localizado na parte frontal esquerda. Abra a tampa antes de assoprar <br><br> <strong> Desinflação </strong> <br> Quando o  ar precisa ser liberado a tampa do tubo pode ser invertida e, ao pressionar suavemente a tampa , o ar será expelido <br><br> <strong> Manutenção e Conservação </strong> <br> Não usar como almofada após inflado: Não bater ou jogar no ar; não expor ao sol por um longo tempo; evitar contato com óleo, ácido, alcalinos, ferramentas pontiagudas e outras substâncias que possam danificar o colete salva-vidas.<br><strong>Peso do colete salva-vidas:</strong> Deve ser verificado de acordo com o peso de CO2 mostrado na placa de identificação. Após seis meses de uso, o colete deve ser pesado diariamente. Se o peso for inferior a 2g em relação ao valor nominal após um ano, não deve ser usado.<br><strong>Verificação do Dispositivo Automático:</strong> Os cartuchos automáticos devem ser verificados ou substituídos a cada seis meses (dependendo das condições de armazenamento, mas não mais de um ano).<br><strong>Reparos:</strong> Não tente repará-lo você mesmo. O intervalo recomendado de manutenção é de um ano. A empresa é responsável pela garantia e fornecimento de peças de desgaste.          ',
     details: {
       'ciclos de teste': 'Sem sinais de danos após dez ciclos de teste com temperatura ambiente de -30°C a 65°C',
@@ -932,7 +877,7 @@ const baseProducts: Product[] = [
     title: 'Kit completo de Manutenção e Reparos',
     categories: [ProductCategory.RESGATE],
     description:
-      'Um kit completo de manutenção e reparos. Possui estojo composto por diversas ferramentas e acessórios, específicos para equipamentos de mergulho.Fácil de guardar e transportar, todas as ferramentas ficam alojadas em compartimentos próprios, protegidas e organizadas. Um dos pontos que diferem uma manutenção bem feita, é a utilização de ferramentas próprias para cada finalidade.',
+      'Kit completo de manutenção e reparos com estojo organizado contendo diversas ferramentas e acessórios específicos para equipamentos de mergulho. Fácil de guardar e transportar, todas as ferramentas ficam alojadas em compartimentos próprios, protegidas e organizadas. Inclui chaves, ferramentas especializadas, anéis O-ring e acessórios essenciais para manutenção profissional.',
     descriptionHTML: '',
     details: {
       'Case para transporte, organização e proteção':'',
@@ -965,7 +910,7 @@ const baseProducts: Product[] = [
     title: 'Plataforma de Resgate',
     categories: [ProductCategory.RESGATE],
     description:
-      'Plataforma de Resgate composta por: 2 tubos de alumínio como recepção e travamento das peças da escada; <br> 2 tubos de alumínio, telescópicos com barras de ligação inferior; <br> 1 superfície antiderrapante de 2 peças ligadas por dobradiças; <br> 1 tubo de alumínio como barra de ligação diagonal; <br> 1 tubo de alumínio como proteção contra quedas; <br> 4 pés reguláveis para nivelamento. <br> 3 degraus para altura de 850 mm <br> 5 degraus para altura de 1370 mm <br Os degraus ficam alinhados quando a plataforma estiver na altura de 850 mm',
+      'Plataforma de Resgate construída em alumínio de alta resistência para operações de salvamento em altura. Composta por estrutura telescópica com barras de ligação, superfície antiderrapante articulada e 4 pés reguláveis para nivelamento. Capacidade de carga até 500kg. Altura ajustável de 850mm a 1391mm sem necessidade de ferramentas. Inclui grade de proteção articulável e removível. Dimensões: 850 x 1770mm (área total), 1980 x 1080 x 230mm (dobrável).',
     descriptionHTML: '',
     details: {
       Material: 'Construída em alumínio de alta resistência',
@@ -1015,7 +960,7 @@ const baseProducts: Product[] = [
   {
     slug: 'cilindro-scba', 
     active: true,
-    title: 'CILINDRO DE AÇO SCBA PARA BOMBEIROS Modelo: RHZK(6.8)',
+    title: 'Aparelho de Respiração autônoma 6.8L Fibra S/ Carona Modelo: RHZ(6.8)',
     categories: [ProductCategory.BOMBEIRO],
     description:
       'Máscara Facial Completa: Proteção antiembaçante e antirreflexo, ampla visão, boa vedação, uso confortável. Válvula de Gás Compacta: Fornecimento de grande quantidade de gás sem interferir na visão. <br>Placa Traseira: Fibra de carbono leve e de alta resistência, desenhada para conforto e praticidade. <br>Redutor de Pressão: Com válvula de segurança interna, dispositivo de ajuste, manutenção fácil. <br>Manômetro: À prova dágua e à prova de choque. <br>Válvula do Cilindro: Equipado com dispositivo de segurança para evitar abertura acidental. <br><strong> Acessórios </strong> <br>01 Máscaras faciais completas <br>01 Conexão em "Y" para aparelho respiratório <br>01 Cilindro de fibra de carbono 6.8L 300 PSI com válvula reguladora de pressão e manômetro <br>01 Suporte de cilindro (arnês) com manômetro <br>02 Válvulas de demanda com mangueira reguladora <br>01 Caixa para armazenamento e transporte  <br> <strong> Aplicação </strong> <br> Adequado para bombeiros ou socorristas em ambientes com substâncias tóxicas ou nocivas, como fumaça e oxigênio, proporcionando proteção respiratória eficaz aos usuários. <br> <strong> Área de Uso </strong> <br> Amplamente utilizado em áreas como proteção contra incêndio, energia elétrica, indústria química, construção naval, fundição, armazenamento, laboratórios, mineração e outros setores   ',
@@ -1043,7 +988,7 @@ const baseProducts: Product[] = [
   {
     slug: 'cilindro-amarelo', 
     active: true,
-    title: 'CILINDRO DE AÇO SCBA PARA BOMBEIROS Modelo: RHZK6.0( Máscara Dupla+Válvula de Máscara)',
+    title: 'Aparelho de Respiração Autônoma 6.0L Aço C/ Carona Modelo: RHZK6.0( Máscara Dupla+Válvula de Máscara)',
     categories: [ProductCategory.BOMBEIRO],
     description:
       'Máscara Facial Completa: Proteção antiembaçante e antirreflexo, ampla visão, boa vedação, uso confortável. Válvula de Gás Compacta: Fornecimento de grande quantidade de gás sem interferir na visão. <br>Placa Traseira: Fibra de carbono leve e de alta resistência, desenhada para conforto e praticidade. <br>Redutor de Pressão: Com válvula de segurança interna, dispositivo de ajuste, manutenção fácil. <br>Manômetro: À prova dágua e à prova de choque. <br>Válvula do Cilindro: Equipado com dispositivo de segurança para evitar abertura acidental. <br><strong> Acessórios </strong> <br>02 Máscaras faciais completas <br>01 Conexão em "Y" para aparelho respiratório <br>01 Cilindro de fibra de carbono 6.0L 300 PSI com válvula reguladora de pressão e manômetro <br>01 Suporte de cilindro (arnês) com manômetro <br>02 Válvulas de demanda com mangueira reguladora <br>01 Caixa para armazenamento e transporte  <br> <strong> Aplicação </strong> <br> Adequado para bombeiros ou socorristas em ambientes com substâncias tóxicas ou nocivas, como fumaça e oxigênio, proporcionando proteção respiratória eficaz aos usuários. <br> <strong> Área de Uso </strong> <br> Amplamente utilizado em áreas como proteção contra incêndio, energia elétrica, indústria química, construção naval, fundição, armazenamento, laboratórios, mineração e outros setores   ',
@@ -1099,7 +1044,7 @@ const baseProducts: Product[] = [
   {
     slug: 'cilindro-90', 
     active: true,
-    title: 'Cilindro de Aço SCBA para Bombeiros Modelo RHZ/(9.0) (Máscara Dupla+Válvula de  Máscara)',
+    title: 'Aparelho de Respiração Autônoma 9.0L Fibra C/ Carona Modelo: RHZ/(9.0) (Máscara Dupla+Válvula de Máscara)',
     categories: [ProductCategory.BOMBEIRO],
     description:
       'Máscara Facial Completa: Proteção antiembaçante e antirreflexo, ampla visão, boa vedação, uso confortável. Válvula de Gás Compacta: Fornecimento de grande quantidade de gás sem interferir na visão. <br>Placa Traseira: Fibra de carbono leve e de alta resistência, desenhada para conforto e praticidade. <br>Redutor de Pressão: Com válvula de segurança interna, dispositivo de ajuste, manutenção fácil. <br>Manômetro: À prova dágua e à prova de choque. <br>Válvula do Cilindro: Equipado com dispositivo de segurança para evitar abertura acidental. <br><strong> Acessórios </strong> <br>02 Máscaras faciais completas <br>01 Conexão em "Y" para aparelho respiratório <br>01 Cilindro de fibra de carbono 9L 300 PSI com válvula reguladora de pressão e manômetro <br>01 Suporte de cilindro (arnês) com manômetro <br>02 Válvulas de demanda com mangueira reguladora <br>01 Caixa para armazenamento e transporte  <br> <strong> Aplicação </strong> <br> Adequado para bombeiros ou socorristas em ambientes com substâncias tóxicas ou nocivas, como fumaça e oxigênio, proporcionando proteção respiratória eficaz aos usuários. <br> <strong> Área de Uso </strong> <br> Amplamente utilizado em áreas como proteção contra incêndio, energia elétrica, indústria química, construção naval, fundição, armazenamento, laboratórios, mineração e outros setores   ',
@@ -1127,7 +1072,7 @@ const baseProducts: Product[] = [
   {
     slug: 'cilindro-rhzk', 
     active: true,
-    title: 'CILINDRO DE AÇO SCBA PARA BOMBEIROS Modelo: RHZK/(9.0)',
+    title: 'Aparelho de Respiração Autônoma 9.0L Fibras S/ Carona Modelo: RHZ/(9.0)',
     categories: [ProductCategory.BOMBEIRO],
     description:
       'Máscara Facial Completa: Proteção antiembaçante e antirreflexo, ampla visão, boa vedação, uso confortável. Válvula de Gás Compacta: Fornecimento de grande quantidade de gás sem interferir na visão. <br>Placa Traseira: Fibra de carbono leve e de alta resistência, desenhada para conforto e praticidade. <br>Redutor de Pressão: Com válvula de segurança interna, dispositivo de ajuste, manutenção fácil. <br>Manômetro: À prova dágua e à prova de choque. <br>Válvula do Cilindro: Equipado com dispositivo de segurança para evitar abertura acidental. <br><strong> Acessórios </strong> <br>01 Máscaras faciais completas <br>01 Conexão em "Y" para aparelho respiratório <br>01 Cilindro de fibra de carbono 9L 300 PSI com válvula reguladora de pressão e manômetro <br>01 Suporte de cilindro (arnês) com manômetro <br>02 Válvulas de demanda com mangueira reguladora <br>01 Caixa para armazenamento e transporte  <br> <strong> Aplicação </strong> <br> Adequado para bombeiros ou socorristas em ambientes com substâncias tóxicas ou nocivas, como fumaça e oxigênio, proporcionando proteção respiratória eficaz aos usuários. <br> <strong> Área de Uso </strong> <br> Amplamente utilizado em áreas como proteção contra incêndio, energia elétrica, indústria química, construção naval, fundição, armazenamento, laboratórios, mineração e outros setores   ',
@@ -1150,6 +1095,178 @@ const baseProducts: Product[] = [
     price: 0,
     images: [
       baseImagePath + 'cilindro-rhzk.png',
+    ],
+  },
+  {
+    slug: 'cilindro-fibra-carbono-68l',
+    active: true,
+    title: 'Cilindro de Fibra de Carbono 6.8L com Válvula para Aparelho de Respiração Autônoma',
+    categories: [ProductCategory.BOMBEIRO],
+    description:
+      'Cilindro desenvolvido para aparelhos de respiração com acabamento revolucionário, sendo de exigente importância para aplicações em ambientes tóxicos, alta resistência, sendo adequado para alta temperatura de uso.',
+    descriptionHTML: '',
+    details: {
+      'Capacidade': '6.8 Litros',
+      'Pressão de trabalho': '300 bar (4350 PSI)',
+      'Material do cilindro': 'Fibra de Carbono de Alta Performance',
+      'Revestimento externo': 'Fibra de Vidro',
+      'Acabamento interno': 'Liso',
+      'Rosca': 'M18 x 1,5',
+      'Material da válvula': 'Alumínio',
+      'Peso aproximado': '3,2 kg',
+      'Dimensões aproximadas': '560mm x 140mm',
+      'Pressão de teste': '450 bar',
+      'Certificação': 'Inmetro/CE',
+      'Vida útil': '15 anos',
+    },
+    price: 0,
+    images: [
+      baseImagePath + 'cilindro_scuba_leao_modelismo_fibra_carbono_300_bar_6_8l_1919_5_1905104432a512c165d63d67518d8b54_20210729171920 1.png',
+    ],
+  },
+  {
+    slug: 'valvula-cilindro',
+    active: true,
+    title: 'Válvula para Cilindro',
+    categories: [ProductCategory.BOMBEIRO],
+    description:
+      'Válvula para Cilindro ON/OFF de Compressão - Suporte DIN. Conecta e desconecta com indicação do lado fechado. Possui chave para manuseio das conexões, facilitando a conexão com RPCA, a através o empregado determinando em caso tanto lugar três posições.',
+    descriptionHTML: '',
+    details: {
+      'Tipo': 'ON/OFF de Compressão',
+      'Suporte': 'DIN',
+      'Material do corpo': 'Liga metálica cromada',
+      'Punho/Volante': 'Polímero de alta resistência',
+      'Rosca de entrada': 'M18 x 1,5',
+      'Rosca de saída': 'Fêmea / Macho conforme especificação',
+      'Pressão de trabalho': '300 bar',
+      'Temperatura de operação': '-30°C a +60°C',
+      'Certificação': 'Normas DIN',
+      'Peso aproximado': '280g',
+      'Aplicação': 'Cilindros de respiração autônoma',
+    },
+    price: 0,
+    images: [
+      baseImagePath + 'Image (2).png',
+      baseImagePath + 'img-0518-photoroom.png',
+      baseImagePath + 'img-0520-photoroom.png',
+    ],
+  },
+  {
+    slug: 'marreta-tatica-75cm',
+    active: true,
+    title: 'Marreta Tática 75cm',
+    categories: [ProductCategory.POLICIAL],
+    description:
+      'A Marreta Tática causa danos extremos com precisão, sendo ideal para operações policiais que exigem força de impacto direcionado. Equipamento desenvolvido especificamente para arrombar portas internas, quebrar fechaduras, dobradiças, cadeados e romper obstáculos diversos. Versão estendida de 75cm oferece maior alavancagem e força de impacto. Construída em aço temperado de alta qualidade com acabamento em pintura eletrostática preta. A empunhadura ergonômica em nylon proporciona isolamento elétrico, aderência superior e características anti-fagulha.',
+    descriptionHTML: '',
+    details: {
+      'Fabricado em': 'Aço temperado',
+      'Comprimento': '75cm',
+      'Diâmetro da empunhadura': '3,7cm',
+      'Peso aproximado': '6,2kg',
+      'Acabamento': 'Pintura eletrostática preta',
+      'Empunhadura': 'Nylon ergonômico',
+      'Força cinética': 'Superior a 180kg',
+      'Isolamento elétrico': 'Sim',
+      'Anti-fagulha': 'Sim',
+      'Aplicação': 'Operações policiais táticas',
+    },
+    price: 0,
+    images: [
+      baseImagePath + 'Image (3).png',
+    ],
+  },
+  {
+    slug: 'mochila-flexivel-costal-anti-incendio',
+    active: true,
+    title: 'Mochila Flexível Costal Anti-Incêndio',
+    categories: [ProductCategory.BOMBEIRO],
+    description:
+      'Mochila costal flexível para transporte de água lisoa para combate a incêndios florestais. Equipamento leve, flexível e resistente com alta durabilidade. Sustagem anti-furico para vedação segura e maior vida útil. Tanque ergométrico para alta entrega para facilidade de carregamento. Alças ajustáveis, válvula de alívio de pressão. Duplo reflete na base do tanque para maior durabilidade. Faixas refletivas para identificação do operador.',
+    descriptionHTML: '',
+    details: {
+      'Material': 'PVC flexível de alta resistência',
+      'Capacidade': '20 litros',
+      'Peso vazio': 'Aproximadamente 2,5kg',
+      'Dimensões': '50cm x 35cm x 15cm',
+      'Sistema de enchimento': 'Bocal de enchimento com tampa plástica rígida e anel de rosca',
+      'Mangueira': 'Flexível com 1,50m, válvula de gatilho interno em latão com gatilho',
+      'Sustagem': 'Anti-furico para vedação segura',
+      'Alças': 'Ergonômicas e ajustáveis',
+      'Válvula de alívio': 'Para controle de pressão',
+      'Base': 'Duplo reforço para maior durabilidade',
+      'Faixas': 'Refletivas para identificação',
+      'Peso líquido máximo': '20kg',
+      'Aplicação': 'Combate a incêndios florestais',
+    },
+    price: 0,
+    images: [
+      baseImagePath + 'Image (4).png',
+      baseImagePath + '61wzQRjaH5L._AC_SL1200_.png',
+      baseImagePath + '61Jn6vP069L._AC_SL1200_.png',
+      baseImagePath + '51mv8GYkRXL._AC_SL1200_.png',
+    ],
+  },
+  {
+    slug: 'lifebelt-flutuador-xpe',
+    active: true,
+    title: 'Lifebelt/ flutuador XPE',
+    categories: [ProductCategory.RESGATE],
+    description:
+      'Flutuador de alta performance desenvolvido com bolsas de espuma EVA/espuma XPE e revestimento almofadado moldado, aplicado para salvamento aquático. Equipamento de segurança Equipado com rebocador integrado em nylon resistente de flutuação, garantindo acelerações flutuação conforme para instruções de resgate.',
+    descriptionHTML: '',
+    details: {
+      'Material': 'Espuma XPE com revestimento almofadado',
+      'Dimensões do flutuador': '101 cm x 18 cm x 8 cm',
+      'Modelo': 'Espuma encapsulada de polietileno reticulado (XPE)',
+      'Resistência': 'Material durável, resistente a rasgos e à água salgada',
+      'Cinta interna': 'Polipropileno TPU 25 mm, com 110 cm de comprimento e 17 cm de cada lado para conforto de colocação rápida',
+      'Fechamento': 'Zíper na lateral TPU 15 cm com 18 cm de fechamento',
+      'Material da corda': 'Polipropileno',
+      'Argolas': 'Aço inox, 26 mm de diâmetro interno',
+      'Acessórios': 'Incluídos cino algo cinto',
+      'Comprimento da corda': '25 m de nylon 8 mm com 240 m de comprimento',
+      'Resistência da corda': 'Entre variação 35 mm com revestimento em Neoprene',
+      'Costuras': 'Reforçadas para maior resistência',
+      'Flutuação': 'Espuma XPE de alta densidade',
+      'Peso total': '1300 kg',
+      'Cores disponíveis': 'Vermelho e Amarelo',
+    },
+    price: 0,
+    images: [
+      baseImagePath + 'sled.fw_-1024x406 1.png',
+    ],
+  },
+  {
+    slug: 'lifebelt-flutuador-srb',
+    active: true,
+    title: 'Lifebelt/ flutuador SRB',
+    categories: [ProductCategory.RESGATE],
+    description:
+      'Lifebelt SRB é um equipamento de segurança flutuante de alta performance, projetado com materiais resistentes à água salgada e desenvolvido para reforçar equipe em operações aquáticas. Com bolsas de espuma SRB encapsulada e estrutura reforçada, garante eficiência máxima para resgate e flutuação avançada em situações de emergência.',
+    descriptionHTML: '',
+    details: {
+      'Modelo': 'Lifebelt SRB com equipamento de segurança flutuante de alta performance',
+      'Revestimento externo': 'Equipamento resistente a água salgada',
+      'Dimensões': '86 cm(C) x 16 cm(L) x 7 cm (A)',
+      'Resistência': 'Material durável de navegação de 1kg poliuticas',
+      'Peso total': '1800 kg',
+      'Cinta interna': 'Polipropileno 25 mm com cargo de kit E kit',
+      'Comprimento da cinta': '95 cm com 15 cm de cada lado',
+      'Cinta na extremidade': 'Poliéster 24 mm e 6h de cargo, 2,085m de comprimento',
+      'Cinta traseira': 'Poliéster 50 mm e 6h de cargo, 125cm de comprimento com revestimento quadrinicos em',
+      'Alça de resgate': 'Neoprene',
+      'Argolas': 'Aço Inox 35mm de diâmetro',
+      'Material': 'Polipropileno em cgo fluê',
+      'Costuras': 'Reforçadas',
+      'Tubos internos': 'Siliconados para reforço dos cintos',
+      'Fechamento': 'Zíper resistente e sistema',
+      'Garantia': '3 meses contra defeitos de fabricação',
+    },
+    price: 0,
+    images: [
+      baseImagePath + 'sled.fw_-1024x406 1.png',
     ],
   },
 ];
