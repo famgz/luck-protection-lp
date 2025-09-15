@@ -270,21 +270,20 @@ const baseProducts: Product[] = [
     title: 'Barco Inflável de poliéster em borracha',
     categories: [ProductCategory.BOMBEIRO],
     description:
-      'Equipamento destinado para operações de salvamento e resgate de vítimas de arrastamento, afogamento e naufrágios.',
-    descriptionHTML: `
-      <h3>Especificações</h3>
-      <p>Barco inflável especialmente projetado para operações de resgate realizadas por equipes de bombeiros. Com estrutura robusta de poliéster emborrachado, oferece durabilidade em situações de emergência.</p>
-      <p>Capaz de acomodar até 9 pessoas e suportar carga total de 1200 kg. Quilha inflável para maior estabilidade em águas agitadas.</p>
-      <p>Inclui acessórios essenciais como remos e kit de reparo para pronta resposta em operações de salvamento aquático.</p>
-      
-      <h3>Bolsa</h3>
-      <p>Confeccionada em material resistente, com dimensões adequadas para armazenamento e transporte do barco inflável. Inclui alças reforçadas para facilitar o manuseio durante operações de emergência.</p>
-    `,
+      'Este barco inflável é especialmente projetado para operações de resgate realizadas por equipes de bombeiros. Com uma estrutura robusta de poliéster emborrachado ele oferece durabilidade e resistência em situações de emergência, capaz de acomodar até nove pessoas e suportar uma carga total de 1200 kg. Equipado com acessórios essenciais como remos e kit de reparo, ele garante prontidão e eficiência em qualquer operação de salvamento.',
+    descriptionHTML: '',
     details: {
-      'Fabricado em': 'Poliéster',
-      Comprimento: '4,7m',
-      Passageiros: '9',
-      Peso: '1,2kg',
+      'Tipo de Material': 'Tecido de poliéster emborrachado',
+      Comprimento: '4,70 m',
+      'Largura Externa': '1,90 m',
+      'Capacidade de Passageiros': '9 pessoas',
+      'Material do Fundo': 'Tecido reforçado de poliéster emborrachado',
+      'Potência do Motor': '20 a 50 HP',
+      'Características Adicionais':
+        'Quilha inflável para maior estabilidade e controle',
+      'Capacidade de Carga': '1200 kg máximo',
+      'Acessórios Inclusos':
+        'Par de remos, kit de reparo e foles de enchimento',
     },
     price: 0,
     images: [baseImagePath + 'barco-inflavel.png'],
@@ -499,7 +498,7 @@ const baseProducts: Product[] = [
       Certificação: 'EN 137:2006, EN 136:1998, C.A nº 52.013',
     },
     price: 0,
-    images: [baseImagePath + 'equipamento-respiracao.png'],
+    images: [baseImagePath + 'Image (8).png'],
   },
   {
     slug: 'gancho',
@@ -1036,7 +1035,7 @@ const baseProducts: Product[] = [
   },
   {
     slug: 'cilindro-aco',
-    active: true,
+    active: false,
     title:
       'Cilindro de Aço SCBA para Bombeiros Modelo RHZ/(6.8) (Máscara Dupla+Válvula de  Máscara)',
     categories: [ProductCategory.BOMBEIRO],
@@ -1189,7 +1188,7 @@ const baseProducts: Product[] = [
   },
   {
     slug: 'kit-respiracao',
-    active: true,
+    active: false,
     title: 'Kit Respiração Autônoma',
     categories: [ProductCategory.BOMBEIRO],
     description:
@@ -1271,7 +1270,9 @@ const baseProducts: Product[] = [
       'Som do alarme': '90 dB',
       Peso: '18 kg',
       Embalagem: 'Caixa plástica (preta ou laranja)',
-      Certificação: 'EN 137:2006, EN 136:1998, C.A nº 52.013',
+      'EN 137:2006': '',
+      'EN 136:1998': '',
+      'Certificado de Aprovação': 'C.A nº 52.013',
     },
     price: 0,
     images: [baseImagePath + 'cilindro-90.png'],
@@ -1513,6 +1514,68 @@ const baseProducts: Product[] = [
     },
     price: 0,
     images: [baseImagePath + 'sled.fw_-1024x406 1.png'],
+  },
+  {
+    slug: 'aparelho-respiracao-autonoma-60l-aco',
+    active: true,
+    title: 'Aparelho de Respiração Autônoma 6.0L Aço S/Carona',
+    categories: [ProductCategory.BOMBEIRO],
+    description:
+      "Aparelho de respiração autônoma com máscara facial completa, proteção antiembaçante e antirreflexo. Válvula de gás pequena e pequena para grande fornecimento de gás, não afeta a visão durante o uso. Placa traseira leve possível deploy à prova d'água e choque, luminoso e alarme preciso. Adequado para bombeiros ou equipes de resgate em ambientes tóxicos ou prejudiciais, contendo substâncias nocivas como fumaça e em locais com baixo teor de oxigênio. Oferece proteção respiratória eficaz aos usuários.",
+    descriptionHTML:
+      '<strong>Características</strong><br><br>' +
+      '• Com antiembaçante, antirreflexo, ampla visão, boa estanqueidade da ar e máscara facial confortável<br>' +
+      '• A válvula de fornecimento de gás é pequena e pequena para grande fornecimento de gás, não afeta a visão durante o uso<br>' +
+      '• Placa traseira de fibra de carbono, leve e de alta resistência, projetada para uso mais confortável e confortável<br>' +
+      '• O regulador de pressão uma válvula de segurança embutida, sem dispositivo de ajuste e livre de manutenção. Tem uma interface de reserva<br>' +
+      "• Regulador de pressão de peso leve possível deploy à prova d'água e à prova de choque, luminoso e alarme preciso<br>" +
+      '• Válvula da garrafa é equipada com um dispositivo de verificação contra alavanca para evitar o fechamento involuntário durante o uso<br><br>' +
+      '<strong>Acessórios</strong><br><br>' +
+      '• 01 Máscara facial completa<br>' +
+      '• 01 Cilindro de aço Boa 300 PSI com Válvula reguladora de Pressão e Manômetro<br>' +
+      '• 01 Válvula de demanda com mangueira reguladora<br>' +
+      '• 01 Caixa para armazenamento e transporte<br><br>' +
+      '<strong>Aplicação</strong><br><br>' +
+      'Adequado para bombeiros ou equipes de resgate em ambientes tóxicos ou prejudiciais, contendo substâncias nocivas como fumaça e em locais com baixo teor de oxigênio. Oferece proteção respiratória eficaz aos usuários<br><br>' +
+      '<strong>Área de Uso</strong><br><br>' +
+      'Bombeiros, eletricidade, indústria química, navegação, metalurgia, armazéns, laboratórios, mineração e outros setores<br><br>' +
+      '<strong>Especificações</strong><br><br>' +
+      '• Campo visual da máscara de gás ≥ 96%<br>' +
+      '• Inalação: 30 L/min<br>' +
+      '• Material interno do cilindro: Aço<br>' +
+      '• Capacidade do cilindro: Ru<br>' +
+      '• Resistência à exalação: < 1000 Pa<br>' +
+      '• Resistência à inalação: < 500 Pa<br>' +
+      '• Temperatura de operação: -30°C a 60°C<br>' +
+      '• Máximo sonoro: 55 bar<br>' +
+      '• Tempo de serviço: 50 - 60 min<br>' +
+      '• Alarme de abertura: 8.5 MPa<br>' +
+      '• Peso: 15 kg<br>' +
+      '• Embalagem: Meleta de plástico preto ou laranja<br>' +
+      '• Procedimentos: importado<br><br>' +
+      '<strong>Certificação</strong><br><br>' +
+      '• EN 137:2006, EN 136:1998<br>' +
+      '• Certificado de Aprovação – C.A nº 52.013',
+    details: {
+      'Campo visual da máscara': '≥ 96%',
+      Inalação: '30 L/min',
+      'Material interno do cilindro': 'Aço',
+      'Capacidade do cilindro': 'Ru',
+      'Resistência à exalação': '< 1000 Pa',
+      'Resistência à inalação': '< 500 Pa',
+      'Temperatura de operação': '-30°C a 60°C',
+      'Máximo sonoro': '55 bar',
+      'Tempo de serviço': '50 - 60 min',
+      'Alarme de abertura': '8.5 MPa',
+      Peso: '15 kg',
+      Embalagem: 'Meleta de plástico preto ou laranja',
+      Procedimentos: 'importado',
+      Certificação: 'EN 137:2006, EN 136:1998',
+      CE: 'EN 137:2006',
+      'Certificado de Aprovação': 'C.A nº 52.013',
+    },
+    price: 0,
+    images: [baseImagePath + 'aparelho-respiracao-autonoma-60l-aco.png'],
   },
 ];
 
