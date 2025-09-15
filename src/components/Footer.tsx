@@ -62,10 +62,11 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      
+
       <div className="border-t border-gray-700 py-4">
         <div className="container text-center text-xs text-gray-400">
-          © 2024 Luck Protection. Todos os direitos reservados. Desenvolvido por Mß Design e Desenvolvimento.
+          © 2024 Luck Protection. Todos os direitos reservados. Desenvolvido
+          por Mß Design e Desenvolvimento.
         </div>
       </div>
     </footer>

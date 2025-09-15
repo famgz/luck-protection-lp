@@ -120,36 +120,72 @@ export default function SingleProductPage() {
             <img
               src={product.descriptionImage}
               alt="Descrição do produto"
-              className="rounded-lg" 
+              className="rounded-lg"
             />
           </div>
         )}
 
-        {/* Technical details */}
-        <div className="space-y-10 py-16 lg:py-20">
-          <h2 className="text-2xl font-semibold">Descrição Geral</h2>
-          <p
-            className="text-sm leading-7"
-            dangerouslySetInnerHTML={{
-              __html:
-                product.descriptionHTML.trim().length > 0
-                  ? product.descriptionHTML
-                  : product.description,
-            }}
-          />
+        {/* Product Details */}
+        <div className="max-w-4xl space-y-8 py-16 lg:py-20">
+          {/* Renderizar seções do descriptionHTML de forma estruturada */}
+          {product.descriptionHTML ? (
+            <div className="space-y-8">
+              {/* Dividir o HTML em seções baseadas em tags <strong> */}
+              {product.descriptionHTML
+                .split('<strong>')
+                .slice(1) // Remove o primeiro elemento vazio
+                .map((section, index) => {
+                  const [title, ...contentParts] = section.split('</strong>');
+                  const content = contentParts.join('</strong>').trim();
 
-          <div className="space-y-4">
-            <h3 className="text-2xl">Características</h3>
-            {Object.entries(product.details).map(([k, v]) => (
-              <div
-                key={k}
-                className="flex gap-1"
-              >
-                <span className="font-medium">{k}</span>
-                <span className="font-medium">{v}</span>
+                  if (!content) return null;
+
+                  return (
+                    <div key={index} className="space-y-4">
+                      <h2 className="text-lg font-bold text-black">{title}</h2>
+                      <div
+                        className="text-sm leading-relaxed text-gray-800"
+                        dangerouslySetInnerHTML={{
+                          __html: content
+                            .replace(/^<br><br>/, '') // Remove <br> inicial
+                            .replace(/<br><br>$/, ''), // Remove <br> final
+                        }}
+                      />
+                    </div>
+                  );
+                })}
+            </div>
+          ) : (
+            /* Fallback para produtos sem descriptionHTML estruturada */
+            <div className="space-y-8">
+              {/* Descrição básica */}
+              <div className="space-y-4">
+                <h2 className="text-lg font-bold text-black">Descrição</h2>
+                <p className="text-sm leading-relaxed text-gray-800">
+                  {product.description}
+                </p>
               </div>
-            ))}
-          </div>
+
+              {/* Características */}
+              {Object.entries(product.details).length > 0 && (
+                <div className="space-y-4">
+                  <h2 className="text-lg font-bold text-black">
+                    Características
+                  </h2>
+                  <div className="space-y-1">
+                    {Object.entries(product.details).map(([key, value]) => (
+                      <div key={key} className="flex items-start gap-2">
+                        <span className="mt-1 text-black">•</span>
+                        <span className="text-sm text-gray-800">
+                          {key}: {value}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
         </div>
       </div>
     </div>

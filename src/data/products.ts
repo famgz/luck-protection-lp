@@ -51,10 +51,7 @@ const baseProducts: Product[] = [
       Peso: 'De 1,5 a 2,5 kg',
     },
     price: 0,
-    images: [
-      baseImagePath + 'abafador-incendio.png',
-      baseImagePath + 'abafador-incendio-2.png',
-    ],
+    images: [baseImagePath + 'abafador-incendio.png'],
   },
   {
     slug: 'abafador-incendio-madeira', // atualizar foto
@@ -81,10 +78,7 @@ const baseProducts: Product[] = [
       Peso: 'De 1,5 a 2,5 kg',
     },
     price: 0,
-    images: [
-      baseImagePath + 'abafador-incendio-madeira.png',
-      baseImagePath + 'abafador-incendio-madeira2.png',
-    ],
+    images: [baseImagePath + 'abafador-incendio-madeira.png'],
   },
   {
     slug: 'alavanca-2',
@@ -117,16 +111,17 @@ const baseProducts: Product[] = [
     descriptionHTML: '',
     details: {
       Material: 'Aço liga, forjado em peça única de alta resistência',
-      Tratamento: 'Tratamento térmico para aumentar a durabilidade e resistência',
+      Tratamento:
+        'Tratamento térmico para aumentar a durabilidade e resistência',
       Acabamento: 'Pintura eletrostática preto fosco ou natural',
       Comprimento: 'Mínimo: 90 cm / Máximo: 95 cm',
       Peso: '6,0kg',
       Ponteiras: 'Três ponteiras dinâmicas versáteis',
       'Uma extremidade': 'Para corte de chapa',
       'Outra extremidade': 'Para perfuração',
-      Funcionalidade: 'Ferramenta de arrombamento tático que permite perfurar e cortar chapas metálicas, tipo hooligan',
-      Garantia: '1 ano contra defeitos de fabricação'
-
+      Funcionalidade:
+        'Ferramenta de arrombamento tático que permite perfurar e cortar chapas metálicas, tipo hooligan',
+      Garantia: '1 ano contra defeitos de fabricação',
     },
     price: 0,
     images: [
@@ -161,22 +156,24 @@ const baseProducts: Product[] = [
       'Ferramenta de arrombamento tático que permite perfurar e cortar chapas metálicas, tipo hooligan. Material em aço liga, forjado em peça única de alta resistência com tratamento térmico para aumentar a durabilidade e resistência. Possui três ponteiras dinâmicas versáteis, uma extremidade para corte de chapa e outra extremidade para perfuração. Garantia de 1 ano contra defeitos de fabricação.',
     descriptionHTML: '',
     details: {
-      'Material': 'Aço liga, forjado em peça única de alta resistência',
-      'Tratamento': 'Tratamento térmico para aumentar a durabilidade e resistência',
-      'Acabamento': 'Pintura eletrostática preto fosco ou natural',
-      'Comprimento': 'Mínimo 90 cm / Máximo 95 cm',
-      'Peso': 'Máximo 6,0 kg',
-      'Ponteiras': 'Três ponteiras dinâmicas versáteis',
+      Material: 'Aço liga, forjado em peça única de alta resistência',
+      Tratamento:
+        'Tratamento térmico para aumentar a durabilidade e resistência',
+      Acabamento: 'Pintura eletrostática preto fosco ou natural',
+      Comprimento: 'Mínimo 90 cm / Máximo 95 cm',
+      Peso: 'Máximo 6,0 kg',
+      Ponteiras: 'Três ponteiras dinâmicas versáteis',
       'Uma extremidade': 'Para corte de chapa',
       'Outra extremidade': 'Para perfuração',
-      'Funcionalidade': 'Ferramenta de arrombamento tático que permite perfurar e cortar chapas metálicas, tipo hooligan',
-      'Garantia': '1 ano contra defeitos de fabricação'
+      Funcionalidade:
+        'Ferramenta de arrombamento tático que permite perfurar e cortar chapas metálicas, tipo hooligan',
+      Garantia: '1 ano contra defeitos de fabricação',
     },
     price: 0,
     images: [
       baseImagePath + 'ALAVANCA HOOLIGAN CORTA LATA-1-Photoroom 1 1.png',
       baseImagePath + 'image 61.png',
-      baseImagePath + 'image 62.png'
+      baseImagePath + 'image 62.png',
     ],
   },
   {
@@ -229,10 +226,7 @@ const baseProducts: Product[] = [
       Peso: '8kg',
     },
     price: 0,
-    images: [
-      baseImagePath + 'ariete-tatico.png',
-      baseImagePath + 'ariete-tatico-2.png',
-    ],
+    images: [baseImagePath + 'ariete-tatico.png'],
   },
   {
     slug: 'ariete-tatico-75',
@@ -250,10 +244,7 @@ const baseProducts: Product[] = [
       Peso: '15kg',
     },
     price: 0,
-    images: [
-      baseImagePath + 'ariete-tatico.png',
-      baseImagePath + 'ariete-tatico-2.png',
-    ],
+    images: [baseImagePath + 'ariete-tatico.png'],
   },
   {
     slug: 'ariete-tatico-1-alca',
@@ -271,10 +262,7 @@ const baseProducts: Product[] = [
       Peso: '12kg',
     },
     price: 0,
-    images: [
-      baseImagePath + 'ariete-tatico.png',
-      baseImagePath + 'ariete-tatico-2.png',
-    ],
+    images: [baseImagePath + 'Image (5).png'],
   },
   {
     slug: 'barco-inflavel',
@@ -282,8 +270,16 @@ const baseProducts: Product[] = [
     title: 'Barco Inflável de poliéster em borracha',
     categories: [ProductCategory.BOMBEIRO],
     description:
-      'Barco inflável especialmente projetado para operações de resgate realizadas por equipes de bombeiros. Com estrutura robusta de poliéster emborrachado, oferece durabilidade em situações de emergência. Capaz de acomodar até 9 pessoas e suportar carga total de 1200 kg. Quilha inflável para maior estabilidade em águas agitadas. Inclui acessórios essenciais como remos e kit de reparo para pronta resposta em operações de salvamento aquático.',
-    descriptionHTML: '',
+      'Equipamento destinado para operações de salvamento e resgate de vítimas de arrastamento, afogamento e naufrágios.',
+    descriptionHTML: `
+      <h3>Especificações</h3>
+      <p>Barco inflável especialmente projetado para operações de resgate realizadas por equipes de bombeiros. Com estrutura robusta de poliéster emborrachado, oferece durabilidade em situações de emergência.</p>
+      <p>Capaz de acomodar até 9 pessoas e suportar carga total de 1200 kg. Quilha inflável para maior estabilidade em águas agitadas.</p>
+      <p>Inclui acessórios essenciais como remos e kit de reparo para pronta resposta em operações de salvamento aquático.</p>
+      
+      <h3>Bolsa</h3>
+      <p>Confeccionada em material resistente, com dimensões adequadas para armazenamento e transporte do barco inflável. Inclui alças reforçadas para facilitar o manuseio durante operações de emergência.</p>
+    `,
     details: {
       'Fabricado em': 'Poliéster',
       Comprimento: '4,7m',
@@ -359,12 +355,21 @@ const baseProducts: Product[] = [
     images: [baseImagePath + 'capuz-neoprene.png'],
   },
   {
-    slug: 'cilindro-mergulho', 
+    slug: 'cilindro-mergulho',
     active: true,
     title: 'Cilindro de mergulho em alumínio',
     categories: [ProductCategory.RESGATE],
-    description: 'Cilindro para mergulho em alumínio 12L S80 com válvula 3000 PSI, componente essencial para mergulho seguro e eficaz. Projetado para armazenar ar sob pressão, permitindo respiração subaquática segura. Capacidade de 12 litros e pressão de 3000 PSI para experiência de mergulho prolongada. Construção em alumínio resistente à corrosão marinha.',
-    descriptionHTML: '<strong>Recomendações</strong><br><br><strong>Manutenção Interna do Cilindro:</strong>   É essencial manter o interior do cilindro livre de umidade, óleo, sujeira e outros contaminantes para garantir a qualidade do ar respirável durante o mergulho.<br> <strong>Reserva de Ar:</strong>   Não é aconselhável descarregar completamente o cilindro. Manter uma pequena reserva de ar é crucial para lidar com emergências subaquáticas.<br> <strong>Evitar Aquecimento Artificial:</strong>   Deve-se evitar o aquecimento artificial do cilindro, pois o calor excessivo pode comprometer a integridade do material e a pressão interna.<br> <strong>Preservação das Marcações do Cilindro:</strong>   É importante não remover, ocultar ou alterar as marcações do cilindro para que profissionais de mergulho e técnicos possam avaliar com precisão seu estado e capacidade.',
+    description:
+      'Equipamento destinado para operações de salvamento e resgate de vítimas de arrastamento, afogamento e naufrágios.',
+    descriptionHTML: `
+      <h3>Especificações</h3>
+      <p>Cilindro para mergulho em alumínio 12L S80 com válvula 3000 PSI, componente essencial para mergulho seguro e eficaz. Projetado para armazenar ar sob pressão, permitindo respiração subaquática segura.</p>
+      <p>Capacidade de 12 litros e pressão de 3000 PSI para experiência de mergulho prolongada. Construção em alumínio resistente à corrosão marinha.</p>
+      <p><strong>Recomendações:</strong> É essencial manter o interior do cilindro livre de umidade, óleo, sujeira e outros contaminantes para garantir a qualidade do ar respirável durante o mergulho.</p>
+      
+      <h3>Bolsa</h3>
+      <p>Confeccionada em material resistente à água, com dimensões adequadas para armazenamento e transporte seguro do cilindro. Inclui alças acolchoadas e sistema de fixação para evitar movimentação durante o transporte.</p>
+    `,
     details: {
       'Fabricado em': 'Alumínio',
       Litros: '12L',
@@ -380,7 +385,6 @@ const baseProducts: Product[] = [
     categories: [ProductCategory.RESGATE],
     description:
       'O cinto pélvico é um cinturão pélvico circunferencial, projetado para estabilizar fraturas pélvicas em livro aberto em caso de lesão pélvica traumática. Cientificamente e clinicamente comprovado para fornecer força segura e eficaz para estabilizar fraturas pélvicas.O fecho mantém a força correta; não pode ser apertado em excesso <br>O “clique” fornece feedback claro para confirmar a aplicação correta <br>Puxar gradualmente e simetricamente aumenta a tensão e reduz a pelve <br>Radio transparente( permitindo raios-X e tomográficas sem remoção ) <br>Facilidade de aplicação : Basta inserir o cinto através do fecho , puxar a alça e prender <br>Velcro na alça e no cinto para fixação rápida e fácil <br> DISPONÍVEL EM 3 TAMANHOS <br>PEQUENO : <br>Circunferência do quadril 27-45’’/69-114cm <br>PADRÃO : <br>Circunferência do quadril 32-50’’/81-127cm <br>(Militar Padrão) <br>GRANDE : <br>Circunferência do quadril 36-54’’/91-137cm',
-    descriptionImage: baseImagePath + 'cinto-pelvico-details.png',
     descriptionHTML: `O cinto pélvico é um cinturão pélvico circunferencial, projetado para estabilizar fraturas pélvicas em livro aberto em caso de lesão pélvica traumática. Cientificamente e clinicamente comprovado para fornecer força segura e eficaz para estabilizar fraturas pélvicas.<br/> O fecho mantém a força correta; não pode ser apertado em excesso.<br/> O “clique” fornece feedback claro para confirmar a aplicação correta.<br/> Puxar gradualmente e simetricamente aumenta a tensão e reduz a pelve.<br/> Radio transparente (permitindo raios-X e tomográficas sem remoção).<br/> Facilidade de aplicação : Basta inserir o cinto através do fecho, puxar a alça e prender.<br/> Velcro na alça e no cinto para fixação rápida e fácil.<br/> <br/> DISPONÍVEL EM 3 TAMANHOS<br/> PEQUENO : Circunferência do quadril 27-45''/69-114cm<br/> PADRÃO : Circunferência do quadril 32-50''/81-127cm (Militar Padrão)<br/> GRANDE : Circunferência do quadril 36-54''/91-137cm<br/>`,
     details: {
       'Fabricado em': 'Tecido macio',
@@ -392,6 +396,7 @@ const baseProducts: Product[] = [
       baseImagePath + 'cinto-pelvico.png',
       baseImagePath + 'cinto-pelvico-2.png',
       baseImagePath + 'cinto-pelvico-3.png',
+      baseImagePath + 'cinto-pelvico-details.png',
     ],
   },
   {
@@ -407,6 +412,7 @@ const baseProducts: Product[] = [
       Flutuabilidade: '150N',
       'Temp de inflação': '5s',
       'Duração de Flutuação': '24H',
+      Certificação: 'CCS/CE',
       Peso: '1kg',
     },
     price: 0,
@@ -427,7 +433,7 @@ const baseProducts: Product[] = [
       'Fabricado em': 'Madeira',
       Comprimento: '125cm',
       Peso: '2,3kg',
-      Dentes: '6 dentes de 9cm'
+      Dentes: '6 dentes de 9cm',
     },
     price: 0,
     images: [baseImagePath + 'enxada-rastelo.png'],
@@ -435,16 +441,62 @@ const baseProducts: Product[] = [
   {
     slug: 'equipamento-respiracao',
     active: true,
-    title: 'Aparelho de Respiração autônoma 6.8L Fibra C/ Corona Modelo: RHZ/ (6.8) (Máscara Dupla+Válvula de Máscara)',
+    title:
+      'Aparelho de Respiração autônoma 6.8L Fibra C/ Corona Modelo: RHZ/ (6.8) (Máscara Dupla+Válvula de Máscara)',
     categories: [ProductCategory.BOMBEIRO],
     description:
-      'Respirador de adução de ar tipo máscara autônoma de ar comprimido com circuito aberto de demanda com pressão positiva, usados exclusivamente para combate ao incêndio e áreas contaminadas com manômetro de fácil visualização e com alarme sonoro acoplado que é acionado, automaticamente, ao atingir 55 bar.',
-    descriptionHTML: '',
+      "Aparelho de respiração autônoma com máscara facial completa, proteção antiembaçante e antirreflexo. Válvula de gás compacta com grande fluxo. Placa traseira leve e resistente. Redutor de pressão com válvula de segurança integrada. Manômetro à prova d'água e choque. Inclui cilindro de fibra de carbono 6.8L, máscaras, conexões e caixa de transporte.",
+    descriptionHTML:
+      '<strong>Características</strong><br><br>' +
+      '• Máscara facial com proteção contra embaçamento, antirreflexo, amplo campo de visão, boa vedação e uso confortável<br>' +
+      '• Válvula de fornecimento de gás compacta, possui grande fluxo de gás e não interfere na visão do usuário<br>' +
+      '• Placa traseira leve e de alta resistência, projetada para uso confortável e prático<br>' +
+      '• Redutor de pressão com válvula de segurança embutida, sem dispositivo de ajuste, livre de manutenção e com interface de reserva<br>' +
+      "• Manômetro leve à prova d'água e à choque, com exibição luminosa e preço preciso<br>" +
+      '• Válvula da garrafa equipada com dispositivo de contra alavanca para evitar fechamento acidental durante o uso<br><br>' +
+      '<strong>Acessórios</strong><br><br>' +
+      '• 02 Máscaras faciais completas<br>' +
+      '• 01 Conexão "Y" para carona do aparelho de respiração<br>' +
+      '• 01 Cilindro de Fibra de Carbono 6.8L 300 PSI com válvula reguladora de pressão e manômetro<br>' +
+      '• 01 Arnês (suporte para o cilindro) com manômetro<br>' +
+      '• 02 Válvulas de demanda com mangueira reguladora<br>' +
+      '• 01 Caixa para armazenamento e transporte<br><br>' +
+      '<strong>Aplicação</strong><br><br>' +
+      'Adequado para bombeiros ou trabalhadores de resgate em ambientes tóxicos ou prejudiciais, contendo substâncias nocivas como fumaça, oxigênio e outros. Proporciona proteção respiratória eficaz aos usuários<br><br>' +
+      '<strong>Área de Uso</strong><br><br>' +
+      'Amplamente utilizado em áreas como proteção contra incêndio, energia elétrica, indústria química, construção naval, fundição, armazenamento, laboratórios, mineração e outros setores<br><br>' +
+      '<strong>Especificações</strong><br><br>' +
+      '• Campo visual da máscara de gás > 96%<br>' +
+      '• Inalação: 30 L/min<br>' +
+      '• Material interno do cilindro: Fibra de Carbono<br>' +
+      '• Capacidade do cilindro: 2040 L (6,8)<br>' +
+      '• Resistência à exalação: < 1000 Pa<br>' +
+      '• Resistência à inalação: < 500 Pa<br>' +
+      '• Temperatura de operação: -30°C a 60°C<br>' +
+      '• Pressão do alarme: 5.5 MPa<br>' +
+      '• Pressão de trabalho: 300 Pa<br>' +
+      '• Tempo de serviço: 55 – 60 min<br>' +
+      '• Som do alarme: 90 dB<br>' +
+      '• Peso: 18 kg<br>' +
+      '• Embalagem: Estojo plástico (preto ou laranja)<br><br>' +
+      '<strong>Certificação</strong><br><br>' +
+      '• EN 137:2006, EN 136:1998<br>' +
+      '• Certificado de Aprovação – C.A nº 52.013',
     details: {
-      'Fabricado em': 'Aço',
-      Litros: '6L',
-      'Peso Cheio': '13,5kg',
-      'Peso Vazio': '11,5kg',
+      'Campo visual da máscara': '> 96%',
+      Inalação: '30 L/min',
+      'Material do cilindro': 'Fibra de Carbono',
+      'Capacidade do cilindro': '2040L (6,8L)',
+      'Resistência à exalação': '< 1000 Pa',
+      'Resistência à inalação': '< 500 Pa',
+      'Temperatura de operação': '-30°C a 60°C',
+      'Pressão do alarme': '5.5 MPa',
+      'Pressão de trabalho': '300 Pa',
+      'Tempo de serviço': '55 – 60 min',
+      'Som do alarme': '90 dB',
+      Peso: '18 kg',
+      Embalagem: 'Estojo plástico (preto ou laranja)',
+      Certificação: 'EN 137:2006, EN 136:1998, C.A nº 52.013',
     },
     price: 0,
     images: [baseImagePath + 'equipamento-respiracao.png'],
@@ -458,8 +510,8 @@ const baseProducts: Product[] = [
       'Equipamento destinado ao combate a incêndio, arrombamento , rescaldo e remoção de materiais (impulso e tração). Gancho fundido e enriquecido em duro alumínio, pontiagudo e tracionante. Bastão de tubo de alumínio com diâmetro de 1 ¼” revestida com borracha de PU ou fibra de vidro, impregnado com resina epóxi e protegido internamente com o núcleo de poliuretano, proporcionando melhor isolamento térmico e elétrico.',
     descriptionHTML: '',
     details: {
-      'Tipo': 'Peça única ou articulada',
-      'Comprimento': 'de 2,60mts a 3mts',
+      Tipo: 'Peça única ou articulada',
+      Comprimento: 'de 2,60mts a 3mts',
       'Peso Aproximado': '2kg',
     },
     price: 0,
@@ -485,7 +537,7 @@ const baseProducts: Product[] = [
   },
   {
     slug: 'kit-arrombamento',
-    active: true,
+    active: false,
     title: 'Kit de Arrombamento',
     categories: [ProductCategory.POLICIAL],
     description:
@@ -573,7 +625,8 @@ const baseProducts: Product[] = [
       'Comprimento aproximado': '76cm',
       'Largura aproximada': '42cm',
       'Altura aproximada': '9cm',
-      'Largura e altura do vão para encaixe das mangueiras': 'De 1½" e 2½" de aproximadamente 11 cm',
+      'Largura e altura do vão para encaixe das mangueiras':
+        'De 1½" e 2½" de aproximadamente 11 cm',
       'Possui duas alças laterais em ferro para transporte': '',
       Peso: '23kg',
     },
@@ -598,7 +651,7 @@ const baseProducts: Product[] = [
       Peso: '1,4kg',
     },
     price: 0,
-    images: [baseImagePath + 'rastelo.png'],
+    images: [baseImagePath + 'Rastelo-1-Photoroom 1 1.png'],
   },
   {
     slug: 'roupa-neoprene',
@@ -690,7 +743,6 @@ const baseProducts: Product[] = [
     description:
       'Torniquete é um dispositivo médico projetado para controlar hemorragias graves em situações de emergência. Desenvolvido com design exclusivo e materiais duráveis para aplicação eficaz e rápida em primeiros socorros. Fácil de manusear, garante pressão adequada para interromper fluxo sanguíneo, crucial para salvar vidas em cenários de trauma. Fivela aprimorada assegura uso seguro mesmo em condições climáticas extremas. Inclui tira de tempo para registrar momento da aplicação.',
     descriptionHTML: '',
-    descriptionImage: baseImagePath + 'torniquete-details.png',
     details: {
       'Fabricado em': 'Nylon',
       Comprimento: '3,8*96cm',
@@ -707,16 +759,17 @@ const baseProducts: Product[] = [
       'Tamanho Versátil': 'Adequado para diversos tamanhos de membros',
       'Opções de Cor': 'Disponível em várias cores',
       'Fácil Manuseio': 'Intuitivo para todos os usuários',
-      'Compatibilidade': 'Pode ser usado com outro torniquete',
+      Compatibilidade: 'Pode ser usado com outro torniquete',
     },
     price: 0,
     images: [
       baseImagePath + 'torniquete.png',
       baseImagePath + 'torniquete-2.png',
+      baseImagePath + 'torniquete-details.png',
     ],
   },
   {
-    slug: 'mochila-arrombamento', // falta a description 
+    slug: 'mochila-arrombamento', // falta a description
     active: true,
     title: 'Mochila de Arrombamento',
     categories: [ProductCategory.POLICIAL],
@@ -732,11 +785,11 @@ const baseProducts: Product[] = [
     price: 0,
     images: [
       baseImagePath + 'mochila-arrombamento.png',
-      baseImagePath + 'mochila-arrombamento2.png', 
+      baseImagePath + 'mochila-arrombamento2.png',
     ],
   },
   {
-    slug: 'cesto-resgate', 
+    slug: 'cesto-resgate',
     active: true,
     title: 'Cesto de Resgate puça',
     categories: [ProductCategory.RESGATE],
@@ -750,49 +803,96 @@ const baseProducts: Product[] = [
       'Peso Total': '20 kg',
       'Capacidade de Carga': '500 kg ou 03 pessoas',
       Rede: 'Nylon seda 4mm com malhas de 8cm',
-      Alças: '04 alças de poliéster de 50mm, com carga de ruptura de 2 toneladas',
-      'Cintas Laterais': '06 cintas de poliéster de 50mm, com carga de ruptura de 2 toneladas',
-      Estropo: '01 estropo de poliéster de 50mm, com carga de ruptura de 5 toneladas',
+      Alças:
+        '04 alças de poliéster de 50mm, com carga de ruptura de 2 toneladas',
+      'Cintas Laterais':
+        '06 cintas de poliéster de 50mm, com carga de ruptura de 2 toneladas',
+      Estropo:
+        '01 estropo de poliéster de 50mm, com carga de ruptura de 5 toneladas',
       Argola: 'Oval em aço forjado com capacidade de carga para 1,5 toneladas',
       'Gancho com Destorcedor': 'Em aço forjado para carga de 1,5 toneladas',
       Flutuador: 'Polipex',
       Solas: 'Borracha EVA',
-      Bolsa: 'Vinil flexível com zíper nº 10, dimensões de 420 cm x 130 cm x 15 cm',
+      Bolsa:
+        'Vinil flexível com zíper nº 10, dimensões de 420 cm x 130 cm x 15 cm',
     },
     price: 0,
-    images: [
-      baseImagePath + 'cesto-resgate.png'
-    ],
+    images: [baseImagePath + 'cesto-resgate.png'],
   },
   {
-    slug: 'cesto-resgate-aereo', 
+    slug: 'cesto-resgate-aereo',
     active: true,
     title: 'Cesto de Resgate Aéreo',
     categories: [ProductCategory.RESGATE],
     description:
-      'Equipamento destinado para operações de salvamento e resgate de vítimas em altura, alagamentos, enchentes e locais de difícil acesso. Cesto aéreo construído com aro tubular de alumínio de 70cm de diâmetro, revestido com espuma de polipropileno para proteção contra impactos. Corpo de sustentação composto por 9 cintas de poliéster de 35mm com capacidade para 2 toneladas. Piso em rede de nylon trançado tipo pescador com 3mm de espessura. Inclui estropo de 10 metros em poliéster duplicado com capacidade de 5 toneladas e fita de segurança com mosquetão de 22kN.',
-    descriptionHTML: '',
+      'Equipamento destinado para operações de salvamento e resgate de vítimas em altura, afogamentos e naufrágios a locais de difícil acesso.',
+    descriptionHTML:
+      '<strong>Descrição</strong><br><br>' +
+      'Equipamento destinado para operações de salvamento e resgate de vítimas em altura, afogamentos e naufrágios a locais de difícil acesso.<br><br>' +
+      '<strong>Estrutura Geral</strong><br><br>' +
+      '<strong>Aros</strong><br><br>' +
+      '<strong>Aro Superior</strong><br><br>' +
+      '• Material: Tubular de alumínio, 1" (uma polegada) de diâmetro externo e 1/8" (um oitavo) de polegada de espessura<br>' +
+      '• Dimensão: 70 cm (setenta centímetros) de diâmetro<br>' +
+      '• Revestimento: Espuma de polipropileno para proteção contra impactos<br>' +
+      '• Sustentação: Cinco cintas de poliéster (50 cm cada) distribuídas igualmente<br>' +
+      '• Cintas superiores: Poliéster de 35 mm com capacidade de carga para 2 toneladas<br>' +
+      '• Argola de conexão: Para fixação do estropo<br><br>' +
+      '<strong>Aro Inferior</strong><br><br>' +
+      '• Material: Tubular de alumínio com revestimento de cordim branco de poliamida de 3,5 mm<br>' +
+      '• Dimensão: 100 cm (cem centímetros) de diâmetro externo<br>' +
+      '• Proteção: Mangueira de PVC transparente contra abrasão<br>' +
+      '• Conexão: Ligado ao aro superior por cintas de poliéster de 35 mm (capacidade de 2 toneladas), duplicadas e costuradas<br><br>' +
+      '<strong>Corpo de Sustentação</strong><br><br>' +
+      '• Composto por 9 cintas de poliéster (35 mm de largura, capacidade de 2 toneladas)<br>' +
+      '• Comprimento das cintas: 210 cm (duzentos e dez centímetros)<br>' +
+      '• Estrutura: Abertura de 40 cm (quarenta centímetros) servindo como porta de entrada/saída<br>' +
+      '• Função: Costuras que unem as cintas do aro inferior<br><br>' +
+      '<strong>Piso do Cesto</strong><br><br>' +
+      '• Material: Rede de malha tipo "pescador" em nylon trançado de 3 mm de espessura<br>' +
+      '• Reforço: Cintas de poliéster de 35 mm duplicadas e costuradas, com capacidade de 2 toneladas<br><br>' +
+      '<strong>Estropo</strong><br><br>' +
+      '• Material: Cinta de poliéster de 50 mm de largura, duplicada e costurada<br>' +
+      '• Comprimento: 10 metros<br>' +
+      '• Capacidade de carga: 5 toneladas<br>' +
+      '• Extremidades:<br>' +
+      '  • Uma alça com argola oval de aço (capacidade de 15 toneladas)<br>' +
+      '  • Outra alça com destorcedor de aço forjado',
     details: {
-      Material: 'Tubular de alumínio, 1" (uma polegada) de diâmetro externo e 1/8" (um oitavo) de polegada de espessura',
+      Material:
+        'Tubular de alumínio, 1" (uma polegada) de diâmetro externo e 1/8" (um oitavo) de polegada de espessura',
       Dimensão: '70 cm (setenta centímetros) de diâmetro',
       Revestimento: 'Espuma de polipropileno para proteção contra impactos',
-      Sustentação: 'Cinco cintas de poliéster (50 cm cada) distribuídas igualmente',
-      'Cintas superiores':'Poliéster de 35 mm com capacidade de carga para 2 toneladas',
-      'Argola de conexão':'Para fixação do estropo',
-      'Material do Aro Inferior':'Tubular de alumínio com revestimento de cordim branco de poliamida de 3,5 mm',
-      'Dimensão do Aro Inferior':'100 cm (cem centímetros) de diâmetro externo',
-      'Proteção do Aro Inferior':'Mangueira de PVC transparente contra abrasão',
-      'Conexão do Aro Inferior':'Ligado ao aro superior por cintas de poliéster de 35 mm (capacidade de 2 toneladas), duplicadas e costuradas',
-      'Material da Proteção e Porta':'Rede de malha tipo "pescador" em nylon na cor azul',
-      'Estrutura da Proteção e Porta':'Cintas de nylon (25 mm de largura, capacidade de 700 kgf) na cor preta',
-      'Fechamento da Proteção e Porta':'Quatro mosquetões de aço inox fixados na estrutura do corpo do cesto',
-      'Material da Bolsa de Acondicionamento e Transporte': 'Lona de vinil na cor amarela com reforços',
+      Sustentação:
+        'Cinco cintas de poliéster (50 cm cada) distribuídas igualmente',
+      'Cintas superiores':
+        'Poliéster de 35 mm com capacidade de carga para 2 toneladas',
+      'Argola de conexão': 'Para fixação do estropo',
+      'Material do Aro Inferior':
+        'Tubular de alumínio com revestimento de cordim branco de poliamida de 3,5 mm',
+      'Dimensão do Aro Inferior':
+        '100 cm (cem centímetros) de diâmetro externo',
+      'Proteção do Aro Inferior':
+        'Mangueira de PVC transparente contra abrasão',
+      'Conexão do Aro Inferior':
+        'Ligado ao aro superior por cintas de poliéster de 35 mm (capacidade de 2 toneladas), duplicadas e costuradas',
+      'Material da Proteção e Porta':
+        'Rede de malha tipo "pescador" em nylon na cor azul',
+      'Estrutura da Proteção e Porta':
+        'Cintas de nylon (25 mm de largura, capacidade de 700 kgf) na cor preta',
+      'Fechamento da Proteção e Porta':
+        'Quatro mosquetões de aço inox fixados na estrutura do corpo do cesto',
+      'Material da Bolsa de Acondicionamento e Transporte':
+        'Lona de vinil na cor amarela com reforços',
       'Fechamento da Bolsa de Acondicionamento e Transporte': 'Zíper',
       'Drenagem da Bolsa de Acondicionamento e Transporte': 'Ilhós em latão',
-      'Todas as cintas de Observações e Generalidades':'Poliéster',
-      'Acabamentos das cintas de Observações e Generalidades':'Fios de poliamida trançada (branca e amarela)',
-      'Costuras das cintas de Observações e Generalidades':'Fios de nylon (brancos e pretos)',
-      'Materiais metálicos das cintas de Observações e Generalidades':'Aço para trabalho de carga (exceto aros de alumínio e mosquetão)',
+      'Todas as cintas de Observações e Generalidades': 'Poliéster',
+      'Acabamentos das cintas de Observações e Generalidades':
+        'Fios de poliamida trançada (branca e amarela)',
+      'Costuras das cintas de Observações e Generalidades':
+        'Fios de nylon (brancos e pretos)',
+      'Materiais metálicos das cintas de Observações e Generalidades':
+        'Aço para trabalho de carga (exceto aros de alumínio e mosquetão)',
     },
     price: 0,
     images: [
@@ -815,11 +915,13 @@ const baseProducts: Product[] = [
       Tamanho: 'Diâmetro interno quando aberto de 50 cm',
       Material: 'Cordura 500',
       Fio: 'Nylon paraquedista',
-      'Anel em D': 'Aço de alta resistência com revestimento em PVC com 30 Kn de carga',
+      'Anel em D':
+        'Aço de alta resistência com revestimento em PVC com 30 Kn de carga',
       Espuma: 'Polietileno de alta densidade, impermeável e com alta flutuação',
       Cintas: 'Polipropileno com 50mm com 20kn de carga',
       Velcro: '25 mm e 50mm na cor preta com costuras especiais',
-      'Bolsa de transporte': 'Toda em cordura 500 com ziper de nylon de alta resistência, tamanho 10'
+      'Bolsa de transporte':
+        'Toda em cordura 500 com ziper de nylon de alta resistência, tamanho 10',
     },
     price: 0,
     images: [
@@ -827,7 +929,6 @@ const baseProducts: Product[] = [
       baseImagePath + 'cinto-sling2.png',
       baseImagePath + 'cinto-sling3.png',
       baseImagePath + 'cinto-sling4.png',
-
     ],
   },
   {
@@ -837,22 +938,28 @@ const baseProducts: Product[] = [
     categories: [ProductCategory.RESGATE],
     description:
       'Colete salva-vidas inflável feito de tecido de nylon + composto de TPU de poliéster, formado por prensagem a quente de alta frequência. Airbag equipado com cartucho sensível à água conectado a cilindro de gás. Quando exposto à água, infla automaticamente em 3-5 segundos para salvamento. Vantagens: leve, compacto, centragem automática na água e uso conveniente. Reconhecido pela indústria naval como alternativa aos coletes tradicionais de espuma. Atende norma ISO12402-3:2006.',
-    descriptionHTML: 'Os coletes salva-vidas infláveis são feitos de tecido de nylon + composto de TPU de poliéster e são formados por prensagem a quente de alta frequência. <br>O airbag é equipado com um cartucho sensível à água e conectado a um cilindro de gás. Quando o colete salva-vidas inflável é exposto à água, ele se abre automaticamente para formar um airbag dentro de 3-5 segundos, alcançando o propósito de salvamento.<br>Este produto tem as vantagens de ser leve, de tamanho pequeno, de centragem automática na água e de uso conveniente. Foi reconhecido pela indústria naval como uma nova alternativa aos coletes salva-vidas tradicionais de espuma. <br><br> <strong>Padrão Técnico do produto</strong> <br><br> Atende à norma ISO12402-3: 2006 Dispositivo de Flutuação Pessoal - Parte 3: Nível de Desempenho dos Requisitos de Segurança do Colete Salva-Vidas 150. <br><br> <strong> Operação </strong> <br><br> Para tipos manuais, puxe a corda no inflador para inflar e utilizar normalmente. <br>Quando a pressão do airbag for insuficiente, use um insuflador bucal para complementar o ar. <br>Para tipos manual/automático, após a pessoa cair acidentalmente na água, o dispositivo de disparo ativa automaticamente o dispositivo inflável dentro de 3-5 segundos. <br>Se não puder ser ativado automaticamente, puxe a corda no dispositivo inflável para inflar e usar normalmente. <br>Quando a pressão do airbag for insuficiente, use um insuflador bucal para complementar o ar <br><br> <strong>Validade</strong> <br> 3 anos (Bobina por 1 ano) <br><br> <strong> Certificado </strong><br> CCS/CE <br><br> <strong>Instruções de Uso</strong> <br> <strong> Vestuário </strong> <br> O colete salva-vidas só é eficaz se estiver totalmente inflado. <br><br> <strong> Como vestir </strong> <br> Vista-o como um colete, feche o encaixe frontal e ajuste o cinto o mais apertado possível, sem comprometer o conforto <br><br> <strong> Insuflação manual </strong> <br> Antes de entrar na água, infle rapidamente o colete salva-vidas puxando a corda com a mão direita <br><br> <strong> Insuflação automática </strong> <br> Começa a inflar automaticamente dentro de 5 segundos após a submersão na água. Se o dispositivo automático não funcionar ou for perdido, deve-se realizar a insuflação manualmente <br><br> <strong> Enchimento com a boca </strong> <br> O tubo de enchimento manual está localizado na parte frontal esquerda. Abra a tampa antes de assoprar <br><br> <strong> Desinflação </strong> <br> Quando o  ar precisa ser liberado a tampa do tubo pode ser invertida e, ao pressionar suavemente a tampa , o ar será expelido <br><br> <strong> Manutenção e Conservação </strong> <br> Não usar como almofada após inflado: Não bater ou jogar no ar; não expor ao sol por um longo tempo; evitar contato com óleo, ácido, alcalinos, ferramentas pontiagudas e outras substâncias que possam danificar o colete salva-vidas.<br><strong>Peso do colete salva-vidas:</strong> Deve ser verificado de acordo com o peso de CO2 mostrado na placa de identificação. Após seis meses de uso, o colete deve ser pesado diariamente. Se o peso for inferior a 2g em relação ao valor nominal após um ano, não deve ser usado.<br><strong>Verificação do Dispositivo Automático:</strong> Os cartuchos automáticos devem ser verificados ou substituídos a cada seis meses (dependendo das condições de armazenamento, mas não mais de um ano).<br><strong>Reparos:</strong> Não tente repará-lo você mesmo. O intervalo recomendado de manutenção é de um ano. A empresa é responsável pela garantia e fornecimento de peças de desgaste.          ',
+    descriptionHTML:
+      '<strong>Descrição Geral</strong><br><br>Os coletes salva-vidas infláveis são feitos de tecido de nylon + composto de TPU de poliéster e são formados por prensagem a quente de alta frequência.<br>O airbag é equipado com um cartucho sensível à água e conectado a um cilindro de gás. Quando o colete salva-vidas inflável é exposto à água, ele se abre automaticamente para formar um airbag dentro de 3-5 segundos, alcançando o propósito de salvamento.<br>Este produto tem as vantagens de ser leve, de tamanho pequeno, de centragem automática na água e de uso conveniente. Foi reconhecido pela indústria naval como uma nova alternativa aos coletes salva-vidas tradicionais de espuma.<br><br><strong>Parâmetros de Desempenho</strong><br><br>• Ciclos de Teste: Sem sinais de danos após dez ciclos de teste com temperatura ambiente de -30°C a 65°C, como estipulado, descompressão e mudanças nas propriedades microbianas<br>• Resistência de Integridade: Pressão de resistência: 40kPa<br>• Pressão de trabalho: 10-15kPa<br>• Cilindro: Tamanho 33g x 1 unidade<br>• Conector de rosca do cilindro: Rosca imperial de 1/2 polegada<br>• Capacidade de peso: 43kg - 140kg<br>• Resistência do Corpo ou do Anel de Elevação: ≥3200N<br>• Resistência dos Ombros: ≥900N<br>• Força de Fixação do Apito: ≥225N<br>• Laço de Levantamento: Laço 80kg<br><br><strong>Padrão Técnico do Produto</strong><br><br>Atende à norma ISO12402-3:2006 Dispositivo de Flutuação Pessoal - Parte 3: Nível de Desempenho dos Requisitos de Segurança do Colete Salva-Vidas 150.<br><br><strong>Operação</strong><br><br>Para tipos manuais, puxe a corda no inflador para inflar e utilizar normalmente.<br>Quando a pressão do airbag for insuficiente, use um insuflador bucal para complementar o ar.<br>Para tipos manual/automático, após a pessoa cair acidentalmente na água, o dispositivo de disparo ativa automaticamente o dispositivo inflável dentro de 3-5 segundos.<br>Se não puder ser ativado automaticamente, puxe a corda no dispositivo inflável para inflar e usar normalmente.<br>Quando a pressão do airbag for insuficiente, use um insuflador bucal para complementar o ar<br><br><strong>Certificação</strong><br><br>CCS/CE<br><br><strong>Regulamentação</strong><br><br>Regulamentações da SOLAS: IMO 2I(74), IMC 2S5(82), IMC 32R(84), IMO 200(95), versão aprovada para certificações internacionais CCS.',
+    descriptionImage: baseImagePath + 'Group 77 2.png',
     details: {
-      'ciclos de teste': 'Sem sinais de danos após dez ciclos de teste com temperatura ambiente de -30°C a 65°C',
+      'ciclos de teste':
+        'Sem sinais de danos após dez ciclos de teste com temperatura ambiente de -30°C a 65°C',
       'Resistência de Corpo ou do anel de Elevação': 'x3200N',
       'Resistência dos Ombros': 'x900N',
       'Força de Fixação do Apito': 'x225N',
       'Pressão de resistência': '40kPa',
       'Pressão de trabalho': '10-15kPa',
       Tamanho: '33g X 1 unidade',
-      'Conector de rosca do cilindro': 'Rosca imperial de 1/2 polegada 43kg - 140kg' ,
+      'Conector de rosca do cilindro':
+        'Rosca imperial de 1/2 polegada 43kg - 140kg',
       'Embalagem padrão': '20 unidades por caixa',
-      Volume: '0,09 m³'
+      Certificação: 'CCS/CE',
+      Volume: '0,09 m³',
     },
     price: 0,
     images: [
       baseImagePath + 'colete-inflavel.png',
+      baseImagePath + 'Group 75 1.png',
     ],
   },
   {
@@ -864,15 +971,13 @@ const baseProducts: Product[] = [
       'Fabricado em armação de aço, alça para transporte, suporte para deixar os dois pares de mangueiras prontos para o uso, em cores diferentes para facilitar a visualização e operação pelo usuário, dispostos em carretel especialmente desenvolvido para o acondicionamento das mesmas com conexão de engate rápido, com trava de segurança e tampas de proteção contra detritos nas extremidades deixando-as prontas para desenrolar e enrolar, com dispositivo tipo manivela',
     descriptionHTML: '',
     details: {
-      Peso: '23 e 26,9 Kg'
+      Peso: '23 e 26,9 Kg',
     },
     price: 0,
-    images: [
-      baseImagePath + 'carretel-mangueira.png',
-    ],
+    images: [baseImagePath + 'carretel-mangueira.png'],
   },
   {
-    slug: 'kit-manutencao', 
+    slug: 'kit-manutencao',
     active: true,
     title: 'Kit completo de Manutenção e Reparos',
     categories: [ProductCategory.RESGATE],
@@ -880,32 +985,33 @@ const baseProducts: Product[] = [
       'Kit completo de manutenção e reparos com estojo organizado contendo diversas ferramentas e acessórios específicos para equipamentos de mergulho. Fácil de guardar e transportar, todas as ferramentas ficam alojadas em compartimentos próprios, protegidas e organizadas. Inclui chaves, ferramentas especializadas, anéis O-ring e acessórios essenciais para manutenção profissional.',
     descriptionHTML: '',
     details: {
-      'Case para transporte, organização e proteção':'',
-      'Diversas ferramentas':'',
-      '1 peça "+" Chave De Fenda':'',
-      '1 peça "-" Chave De Fenda':'',
-      'Ferramenta 1 Piece Cup':'',
-      'Chave 1 peça (3/4"-2")':'',
-      '3 Peças O-ring Ferramenta':'',
-      '2 peças fora motriz':'',
-      '1 Piece Oil Tank Válvula Botão':'',
-      '1 peça Registro Padrão':'',
-      '1 peça levantamento ferramenta 3 cabeças':'',
-      '1 peça levantamento ferramenta 4 cabeças':'',
-      '1 peça Dt-203 ferramenta multifunções':'',
-      'Chave 2 peças "s"':'',
-      '1 Piece Handle':'',
-      '1 peça Silicone O-ring (incluindo 10 peças As568-010,10 peças As568-011, 5 peças As568-012, 10 peças As568-014, 5 peças As568-015, 10 peças As568-112 Modelo.)':'',
+      'Case para transporte, organização e proteção': '',
+      'Diversas ferramentas': '',
+      '1 peça "+" Chave De Fenda': '',
+      '1 peça "-" Chave De Fenda': '',
+      'Ferramenta 1 Piece Cup': '',
+      'Chave 1 peça (3/4"-2")': '',
+      '3 Peças O-ring Ferramenta': '',
+      '2 peças fora motriz': '',
+      '1 Piece Oil Tank Válvula Botão': '',
+      '1 peça Registro Padrão': '',
+      '1 peça levantamento ferramenta 3 cabeças': '',
+      '1 peça levantamento ferramenta 4 cabeças': '',
+      '1 peça Dt-203 ferramenta multifunções': '',
+      'Chave 2 peças "s"': '',
+      '1 Piece Handle': '',
+      '1 peça Silicone O-ring (incluindo 10 peças As568-010,10 peças As568-011, 5 peças As568-012, 10 peças As568-014, 5 peças As568-015, 10 peças As568-112 Modelo.)':
+        '',
     },
     price: 0,
     images: [
       baseImagePath + 'kit-manutencao.png',
-      baseImagePath + 'kit-manutencao2.png', 
-      baseImagePath + 'kit-manutencao3.png', 
+      baseImagePath + 'kit-manutencao2.png',
+      baseImagePath + 'kit-manutencao3.png',
     ],
   },
   {
-    slug: 'plataforma-resgate',  
+    slug: 'plataforma-resgate',
     active: true,
     title: 'Plataforma de Resgate',
     categories: [ProductCategory.RESGATE],
@@ -914,32 +1020,32 @@ const baseProducts: Product[] = [
     descriptionHTML: '',
     details: {
       Material: 'Construída em alumínio de alta resistência',
-      'Capacidade de Carga':'Até 500 kg',
-      'Superfície':'Antiderrapante',
-      'Dimensões (Área Total)':'850 x 1770 mm',
-      'Dimensões (Dobrável)':'1980 x 1080 x 230 mm',
-      'Altura Ajustável':'De 850 mm até 1391 mm, sem necessidade de ferramentas',
-      'Grade de Proteção':'Articulável e removível em um dos lados',
-      'Pinos de Trava':'Com cordão em aço para evitar perda',
-      'Peso Total':'49 Kg',
-      'Dobrável':'Facilita armazenamento e transporte',
+      'Capacidade de Carga': 'Até 500 kg',
+      Superfície: 'Antiderrapante',
+      'Dimensões (Área Total)': '850 x 1770 mm',
+      'Dimensões (Dobrável)': '1980 x 1080 x 230 mm',
+      'Altura Ajustável':
+        'De 850 mm até 1391 mm, sem necessidade de ferramentas',
+      'Grade de Proteção': 'Articulável e removível em um dos lados',
+      'Pinos de Trava': 'Com cordão em aço para evitar perda',
+      'Peso Total': '49 Kg',
+      Dobrável: 'Facilita armazenamento e transporte',
     },
     price: 0,
-    images: [
-      baseImagePath + 'plataforma-resgate.png', 
-    ],
+    images: [baseImagePath + 'plataforma-resgate.png'],
   },
   {
-    slug: 'cilindro-aco', 
+    slug: 'cilindro-aco',
     active: true,
-    title: 'Cilindro de Aço SCBA para Bombeiros Modelo RHZ/(6.8) (Máscara Dupla+Válvula de  Máscara)',
+    title:
+      'Cilindro de Aço SCBA para Bombeiros Modelo RHZ/(6.8) (Máscara Dupla+Válvula de  Máscara)',
     categories: [ProductCategory.BOMBEIRO],
     description:
       'Máscara Facial Completa: Proteção antiembaçante e antirreflexo, ampla visão, boa vedação, uso confortável. Válvula de Gás Compacta: Fornecimento de grande quantidade de gás sem interferir na visão. <br>Placa Traseira: Fibra de carbono leve e de alta resistência, desenhada para conforto e praticidade. <br>Redutor de Pressão: Com válvula de segurança interna, dispositivo de ajuste, manutenção fácil. <br>Manômetro: À prova dágua e à prova de choque. <br>Válvula do Cilindro: Equipado com dispositivo de segurança para evitar abertura acidental. <br><strong> Acessórios </strong> <br>02 Máscaras faciais completas <br>01 Conexão em "Y" para aparelho respiratório <br>01 Cilindro de fibra de carbono 6.8L 300 PSI com válvula reguladora de pressão e manômetro <br>01 Suporte de cilindro (arnês) com manômetro <br>02 Válvulas de demanda com mangueira reguladora <br>01 Caixa para armazenamento e transporte  <br> <strong> Aplicação </strong> <br> Adequado para bombeiros ou socorristas em ambientes com substâncias tóxicas ou nocivas, como fumaça e oxigênio, proporcionando proteção respiratória eficaz aos usuários. <br> <strong> Área de Uso </strong> <br> Amplamente utilizado em áreas como proteção contra incêndio, energia elétrica, indústria química, construção naval, fundição, armazenamento, laboratórios, mineração e outros setores   ',
     descriptionHTML: '',
     details: {
       'Campo de visão da máscara de  ': '>96%',
-      'Inalação': '30 L/min',
+      Inalação: '30 L/min',
       'Material do cilindro': 'Aço',
       'Capacidade do cilindro': '2040L (6,8L)',
       'Resistência à exalação': '<1000 Pa',
@@ -949,53 +1055,121 @@ const baseProducts: Product[] = [
       'Pressão de trabalho': '300 Pa',
       'Tempo de serviço': '55 - 60 min',
       'Som do alarme': '90 dB',
-      'Peso': '18 kg',
-      'Embalagem': 'Estojo de plástico (preto ou laranja)',
+      Peso: '18 kg',
+      Embalagem: 'Estojo de plástico (preto ou laranja)',
     },
     price: 0,
-    images: [
-      baseImagePath + 'cilindro-aco.png',
-    ],
+    images: [baseImagePath + 'cilindro-aco.png'],
   },
   {
-    slug: 'cilindro-scba', 
+    slug: 'cilindro-scba',
     active: true,
-    title: 'Aparelho de Respiração autônoma 6.8L Fibra S/ Carona Modelo: RHZ(6.8)',
+    title:
+      'Aparelho de Respiração autônoma 6.8L Fibra S/ Carona Modelo: RHZ(6.8)',
     categories: [ProductCategory.BOMBEIRO],
     description:
-      'Máscara Facial Completa: Proteção antiembaçante e antirreflexo, ampla visão, boa vedação, uso confortável. Válvula de Gás Compacta: Fornecimento de grande quantidade de gás sem interferir na visão. <br>Placa Traseira: Fibra de carbono leve e de alta resistência, desenhada para conforto e praticidade. <br>Redutor de Pressão: Com válvula de segurança interna, dispositivo de ajuste, manutenção fácil. <br>Manômetro: À prova dágua e à prova de choque. <br>Válvula do Cilindro: Equipado com dispositivo de segurança para evitar abertura acidental. <br><strong> Acessórios </strong> <br>01 Máscaras faciais completas <br>01 Conexão em "Y" para aparelho respiratório <br>01 Cilindro de fibra de carbono 6.8L 300 PSI com válvula reguladora de pressão e manômetro <br>01 Suporte de cilindro (arnês) com manômetro <br>02 Válvulas de demanda com mangueira reguladora <br>01 Caixa para armazenamento e transporte  <br> <strong> Aplicação </strong> <br> Adequado para bombeiros ou socorristas em ambientes com substâncias tóxicas ou nocivas, como fumaça e oxigênio, proporcionando proteção respiratória eficaz aos usuários. <br> <strong> Área de Uso </strong> <br> Amplamente utilizado em áreas como proteção contra incêndio, energia elétrica, indústria química, construção naval, fundição, armazenamento, laboratórios, mineração e outros setores   ',
-    descriptionHTML: '',
+      "Aparelho de respiração autônoma com máscara facial completa, proteção antiembaçante e antirreflexo. Válvula de gás compacta com grande fluxo. Placa traseira em fibra de carbono leve e resistente. Redutor de pressão com válvula de segurança integrada. Manômetro à prova d'água e choque. Modelo sem carona, inclui cilindro de fibra de carbono 6.8L.",
+    descriptionHTML:
+      '<strong>Características</strong><br><br>' +
+      '• Máscara facial com propriedades antiembaçantes e antirreflexo, campo de visão amplo, boa vedação e uso confortável<br>' +
+      '• Válvula de fornecimento de gás de pequeno volume, grande capacidade de fornecimento de gás, sem interferência no campo de visão durante o uso<br>' +
+      '• Placa traseira em fibra de carbono, leve e de alta resistência, projetada para maior conforto e praticidade<br>' +
+      '• Redutor de pressão com válvula de segurança embutida, sem necessidade de dispositivo de ajuste, livre de manutenção. Possui interface de reserva<br>' +
+      "• Manômetro leve, com display à prova d'água, à prova de choque, luminoso e preciso no alarme<br>" +
+      '• A válvula de demanda possui um dispositivo de catraca que evita o fechamento acidental durante o uso<br><br>' +
+      '<strong>Acessórios</strong><br><br>' +
+      '• 01 Máscara facial completa<br>' +
+      '• 01 Cilindro de Fibra de Carbono 6.8L 300 PSI com Válvula reguladora de Pressão e Manômetro<br>' +
+      '• 01 Arnês (suporte para o cilindro) com Manômetro<br>' +
+      '• 01 Válvula de demanda com mangueira reguladora<br>' +
+      '• 01 Caixa para armazenamento e transporte<br><br>' +
+      '<strong>Aplicação</strong><br><br>' +
+      'Indicado para bombeiros ou trabalhadores de resgate em ambientes com gases tóxicos ou prejudiciais, incluindo substâncias nocivas como fumaça e deficiência de oxigênio, proporcionando proteção respiratória eficaz aos usuários<br><br>' +
+      '<strong>Área de Uso</strong><br><br>' +
+      'Amplamente utilizado em combate a incêndios, energia elétrica, indústrias químicas, navais, metalúrgicas, armamento, laboratórios, mineração e outros setores<br><br>' +
+      '<strong>Especificações</strong><br><br>' +
+      '• Campo visual da máscara de gás > 96%<br>' +
+      '• Inalação: 30 L/min<br>' +
+      '• Material interno do cilindro: Fibra de Carbono<br>' +
+      '• Capacidade do cilindro: 2040 L (6,8L)<br>' +
+      '• Resistência à exalação: < 1000 Pa<br>' +
+      '• Resistência à inalação: < 500 Pa<br>' +
+      '• Temperatura de operação: -30°C a 60°C<br>' +
+      '• Pressão do alarme: 5.5 MPa<br>' +
+      '• Pressão de trabalho: 300 Pa<br>' +
+      '• Tempo de serviço: 55 – 60 min<br>' +
+      '• Som do alarme: 90 dB<br>' +
+      '• Peso: 18 kg<br>' +
+      '• Embalagem: Estojo plástico (preto ou laranja)<br><br>' +
+      '<strong>Certificação</strong><br><br>' +
+      '• EN 137:2006, EN 136:1998<br>' +
+      '• Certificado de Aprovação – C.A nº 52.013',
     details: {
-      'Campo de visão da máscara de  ': '>96%',
-      'Inalação': '30 L/min',
-      'Material do cilindro': 'Aço',
+      'Campo visual da máscara': '> 96%',
+      Inalação: '30 L/min',
+      'Material do cilindro': 'Fibra de Carbono',
       'Capacidade do cilindro': '2040L (6,8L)',
-      'Resistência à exalação': '<1000 Pa',
-      'Resistência à inalação': '<500 Pa',
+      'Resistência à exalação': '< 1000 Pa',
+      'Resistência à inalação': '< 500 Pa',
       'Temperatura de operação': '-30°C a 60°C',
-      'Pressão de alarme': '5.5 MPa',
+      'Pressão do alarme': '5.5 MPa',
       'Pressão de trabalho': '300 Pa',
-      'Tempo de serviço': '55 - 60 min',
+      'Tempo de serviço': '55 – 60 min',
       'Som do alarme': '90 dB',
-      'Peso': '18 kg',
-      'Embalagem': 'Estojo de plástico (preto ou laranja)',
+      Peso: '18 kg',
+      Embalagem: 'Estojo plástico (preto ou laranja)',
+      Certificação: 'EN 137:2006, EN 136:1998, C.A nº 52.013',
     },
     price: 0,
-    images: [
-      baseImagePath + 'cilindro-scba.png',
-    ],
+    images: [baseImagePath + 'cilindro-scba.png'],
   },
   {
-    slug: 'cilindro-amarelo', 
+    slug: 'cilindro-amarelo',
     active: true,
-    title: 'Aparelho de Respiração Autônoma 6.0L Aço C/ Carona Modelo: RHZK6.0( Máscara Dupla+Válvula de Máscara)',
+    title:
+      'Aparelho de Respiração Autônoma 6.0L Aço C/ Carona Modelo: RHZK6.0( Máscara Dupla+Válvula de Máscara)',
     categories: [ProductCategory.BOMBEIRO],
     description:
-      'Máscara Facial Completa: Proteção antiembaçante e antirreflexo, ampla visão, boa vedação, uso confortável. Válvula de Gás Compacta: Fornecimento de grande quantidade de gás sem interferir na visão. <br>Placa Traseira: Fibra de carbono leve e de alta resistência, desenhada para conforto e praticidade. <br>Redutor de Pressão: Com válvula de segurança interna, dispositivo de ajuste, manutenção fácil. <br>Manômetro: À prova dágua e à prova de choque. <br>Válvula do Cilindro: Equipado com dispositivo de segurança para evitar abertura acidental. <br><strong> Acessórios </strong> <br>02 Máscaras faciais completas <br>01 Conexão em "Y" para aparelho respiratório <br>01 Cilindro de fibra de carbono 6.0L 300 PSI com válvula reguladora de pressão e manômetro <br>01 Suporte de cilindro (arnês) com manômetro <br>02 Válvulas de demanda com mangueira reguladora <br>01 Caixa para armazenamento e transporte  <br> <strong> Aplicação </strong> <br> Adequado para bombeiros ou socorristas em ambientes com substâncias tóxicas ou nocivas, como fumaça e oxigênio, proporcionando proteção respiratória eficaz aos usuários. <br> <strong> Área de Uso </strong> <br> Amplamente utilizado em áreas como proteção contra incêndio, energia elétrica, indústria química, construção naval, fundição, armazenamento, laboratórios, mineração e outros setores   ',
-    descriptionHTML: '',
+      "Aparelho de respiração autônoma com máscara facial completa, proteção antiembaçante e antirreflexo. Válvula de gás compacta com grande fluxo. Placa traseira em fibra de carbono leve e resistente. Redutor de pressão com válvula de segurança integrada. Manômetro à prova d'água e choque. Inclui cilindro de aço 6.0L, máscaras, conexões e caixa de transporte.",
+    descriptionHTML:
+      '<strong>Características</strong><br><br>' +
+      '• Máscara facial com antiembaçante, antirreflexo, amplo campo de visão, boa vedação e uso confortável<br>' +
+      '• A válvula de fornecimento de gás é compacta, possui grande fluxo de gás e não afeta a visão do usuário durante o uso<br>' +
+      '• A placa traseira é feita de fibra de carbono, leve, de alta resistência, projetada para maior conforto e praticidade<br>' +
+      '• O redutor de pressão possui válvula de segurança integrada, sem dispositivo de ajuste, sendo de manutenção e equipado com uma interface de reserva<br>' +
+      "• O manômetro leve é à prova d'água, resistente a choques e com display luminoso<br>" +
+      '• A válvula do cilindro possui um dispositivo de trava com catraca para evitar fechamento acidental durante o uso<br><br>' +
+      '<strong>Acessórios</strong><br><br>' +
+      '• 02 Máscaras facial completas<br>' +
+      '• 01 Conexão "Y" para carona do aparelho de respiração<br>' +
+      '• 01 Cilindro de aço 6.0L 300 PSI com Válvula reguladora de Pressão e Manômetro<br>' +
+      '• 01 Arnês (Suporte para o cilindro) com Manômetro<br>' +
+      '• 02 Válvula de demanda com mangueira reguladora<br>' +
+      '• 01 Caixa para armazenamento e transporte<br><br>' +
+      '<strong>Aplicação</strong><br><br>' +
+      'Adequado para bombeiros ou equipes de resgate em ambientes com gases tóxicos ou prejudiciais, contendo substâncias nocivas como fumaça e em locais com baixo teor de oxigênio. Oferece proteção respiratória eficaz aos usuários.<br><br>' +
+      '<strong>Área de Uso</strong><br><br>' +
+      'Bombeiros, eletricidade, indústria química, navegação, metalurgia, armamento, laboratórios, mineração e outros setores<br><br>' +
+      '<strong>Especificações</strong><br><br>' +
+      '• Campo visual da máscara de gás ≥ 96%<br>' +
+      '• Inalação: 30 L/min<br>' +
+      '• Material interno do cilindro: Aço<br>' +
+      '• Capacidade do cilindro: 2040L (6,8L)<br>' +
+      '• Resistência à exalação: < 1000 Pa<br>' +
+      '• Resistência à inalação: < 500 Pa<br>' +
+      '• Temperatura de operação: -30°C a 60°C<br>' +
+      '• Pressão do alarme: 5.5 MPa<br>' +
+      '• Pressão de trabalho: 300 Pa<br>' +
+      '• Tempo de uso: 50 – 60 min<br>' +
+      '• Som do alarme: 90 dB<br>' +
+      '• Peso: 18 kg<br>' +
+      '• Embalagem: Caixa plástica (preta ou laranja)<br><br>' +
+      '<strong>Certificação</strong><br><br>' +
+      '• EN 137:2006, EN 136:1998<br>' +
+      '• Certificado de Aprovação – C.A nº 52.013',
     details: {
       'Campo de visão da máscara de  ': '>96%',
-      'Inalação': '30 L/min',
+      Inalação: '30 L/min',
       'Material do cilindro': 'Aço',
       'Capacidade do cilindro': '2040L (6,8L)',
       'Resistência à exalação': '<1000 Pa',
@@ -1004,17 +1178,17 @@ const baseProducts: Product[] = [
       'Pressão de alarme': '5.5 MPa',
       'Pressão de trabalho': '300 Pa',
       'Tempo de serviço': '55 - 60 min',
+      Certificação:
+        'EN 137:2006, EN 136:1998, Certificado de Aprovação – C.A nº 52.013',
       'Som do alarme': '90 dB',
-      'Peso': '18 kg',
-      'Embalagem': 'Estojo de plástico (preto ou laranja)',
+      Peso: '18 kg',
+      Embalagem: 'Estojo de plástico (preto ou laranja)',
     },
     price: 0,
-    images: [
-      baseImagePath + 'cilindro-amarelo.png',
-    ],
+    images: [baseImagePath + 'cilindro-amarelo.png'],
   },
   {
-    slug: 'kit-respiracao', 
+    slug: 'kit-respiracao',
     active: true,
     title: 'Kit Respiração Autônoma',
     categories: [ProductCategory.BOMBEIRO],
@@ -1023,7 +1197,7 @@ const baseProducts: Product[] = [
     descriptionHTML: '',
     details: {
       'Campo de visão da máscara de  ': '>96%',
-      'Inalação': '30 L/min',
+      Inalação: '30 L/min',
       'Material do cilindro': 'Aço',
       'Capacidade do cilindro': '2040L (6,8L)',
       'Resistência à exalação': '<1000 Pa',
@@ -1033,95 +1207,165 @@ const baseProducts: Product[] = [
       'Pressão de trabalho': '300 Pa',
       'Tempo de serviço': '55 - 60 min',
       'Som do alarme': '90 dB',
-      'Peso': '18 kg',
-      'Embalagem': 'Estojo de plástico (preto ou laranja)',
+      Peso: '18 kg',
+      Embalagem: 'Estojo de plástico (preto ou laranja)',
     },
     price: 0,
-    images: [
-      baseImagePath + 'kit-respiracao.png',
-    ],
+    images: [baseImagePath + 'kit-respiracao.png'],
   },
   {
-    slug: 'cilindro-90', 
+    slug: 'cilindro-90',
     active: true,
-    title: 'Aparelho de Respiração Autônoma 9.0L Fibra C/ Carona Modelo: RHZ/(9.0) (Máscara Dupla+Válvula de Máscara)',
+    title:
+      'Aparelho de Respiração Autônoma 9.0L Fibra C/ Carona Modelo: RHZ/(9.0) (Máscara Dupla+Válvula de Máscara)',
     categories: [ProductCategory.BOMBEIRO],
     description:
-      'Máscara Facial Completa: Proteção antiembaçante e antirreflexo, ampla visão, boa vedação, uso confortável. Válvula de Gás Compacta: Fornecimento de grande quantidade de gás sem interferir na visão. <br>Placa Traseira: Fibra de carbono leve e de alta resistência, desenhada para conforto e praticidade. <br>Redutor de Pressão: Com válvula de segurança interna, dispositivo de ajuste, manutenção fácil. <br>Manômetro: À prova dágua e à prova de choque. <br>Válvula do Cilindro: Equipado com dispositivo de segurança para evitar abertura acidental. <br><strong> Acessórios </strong> <br>02 Máscaras faciais completas <br>01 Conexão em "Y" para aparelho respiratório <br>01 Cilindro de fibra de carbono 9L 300 PSI com válvula reguladora de pressão e manômetro <br>01 Suporte de cilindro (arnês) com manômetro <br>02 Válvulas de demanda com mangueira reguladora <br>01 Caixa para armazenamento e transporte  <br> <strong> Aplicação </strong> <br> Adequado para bombeiros ou socorristas em ambientes com substâncias tóxicas ou nocivas, como fumaça e oxigênio, proporcionando proteção respiratória eficaz aos usuários. <br> <strong> Área de Uso </strong> <br> Amplamente utilizado em áreas como proteção contra incêndio, energia elétrica, indústria química, construção naval, fundição, armazenamento, laboratórios, mineração e outros setores   ',
-    descriptionHTML: '',
+      "Aparelho de respiração autônoma com máscara facial completa, proteção antiembaçante e antirreflexo. Válvula de gás compacta com grande fluxo. Placa traseira em fibra de carbono leve e resistente. Redutor de pressão com válvula de segurança integrada. Manômetro à prova d'água e choque. Modelo com carona, inclui cilindro de fibra de carbono 9.0L para maior autonomia.",
+    descriptionHTML:
+      '<strong>Características</strong><br><br>' +
+      '• Máscara facial confortável com antiembaçante, antirreflexo, amplo campo de visão, boa vedação e confortável de usar<br>' +
+      '• A válvula de fornecimento de gás é pequena, possui grande capacidade de fornecimento de gás e não afeta o campo de visão durante o uso<br>' +
+      '• Placa traseira de fibra de carbono, leve e de alta resistência, projetada para ser mais confortável e prática de usar<br>' +
+      '• Redutor de pressão com válvula de segurança embutida, sem dispositivo de ajuste e isento de manutenção<br>' +
+      "• Possui uma interface de reserva. Medidor de pressão leve com display à prova d'água, à prova de choque, luminoso e com alarme preciso<br>" +
+      '• A válvula da garrafa possui um dispositivo de trava tipo catraca para evitar fechamentos acidentais durante o uso<br><br>' +
+      '<strong>Acessórios</strong><br><br>' +
+      '• 02 Máscara facial completa<br>' +
+      '• 01 Conexão "Y" para carona do aparelho de respiração<br>' +
+      '• 01 Cilindro de Fibra de Carbono 9L 300 PSI com Válvula reguladora de Pressão e Manômetro<br>' +
+      '• 01 Arnês (Suporte para o cilindro) com Manômetro<br>' +
+      '• 02 Válvula de demanda com mangueira reguladora<br>' +
+      '• 01 Caixa para armazenamento e transporte<br><br>' +
+      '<strong>Aplicação</strong><br><br>' +
+      'Indicado para bombeiros ou trabalhadores de resgate em ambientes com gases tóxicos ou nocivos, contendo substâncias prejudiciais, como fumaça e oxigênio, entre outros. Proporciona proteção respiratória eficaz para os usuários<br><br>' +
+      '<strong>Área de Uso</strong><br><br>' +
+      'É amplamente utilizado em setores como combate a incêndios, energia elétrica, química, naval, metalurgia, armazenamento, laboratórios, mineração e outros<br><br>' +
+      '<strong>Especificações</strong><br><br>' +
+      '• Campo visual da máscara de gás > 96%<br>' +
+      '• Inalação: 30 L/min<br>' +
+      '• Material interno do cilindro: Fibra de carbono<br>' +
+      '• Capacidade do cilindro: 2700 L (9,0L)<br>' +
+      '• Tempo de Uso: 90 min<br>' +
+      '• Resistência à exalação: < 1000 Pa<br>' +
+      '• Resistência à inalação: < 500 Pa<br>' +
+      '• Temperatura de operação: -30°C a 60°C<br>' +
+      '• Pressão do alarme: 5.5 MPa<br>' +
+      '• Pressão de trabalho: 300 Pa<br>' +
+      '• Som do alarme: 90 dB<br>' +
+      '• Peso: 18 kg<br>' +
+      '• Embalagem: Caixa plástica (preta ou laranja)<br><br>' +
+      '<strong>Certificação</strong><br><br>' +
+      '• EN 137:2006, EN 136:1998<br>' +
+      '• Certificado de Aprovação – C.A nº 52.013',
     details: {
-      'Campo de visão da máscara de  ': '>96%',
-      'Inalação': '30 L/min',
-      'Material do cilindro': 'Aço',
-      'Capacidade do cilindro': '2040L (6,8L)',
-      'Resistência à exalação': '<1000 Pa',
-      'Resistência à inalação': '<500 Pa',
+      'Campo visual da máscara': '> 96%',
+      Inalação: '30 L/min',
+      'Material do cilindro': 'Fibra de Carbono',
+      'Capacidade do cilindro': '2700L (9,0L)',
+      'Tempo de Uso': '90 min',
+      'Resistência à exalação': '< 1000 Pa',
+      'Resistência à inalação': '< 500 Pa',
       'Temperatura de operação': '-30°C a 60°C',
-      'Pressão de alarme': '5.5 MPa',
+      'Pressão do alarme': '5.5 MPa',
       'Pressão de trabalho': '300 Pa',
-      'Tempo de serviço': '55 - 60 min',
       'Som do alarme': '90 dB',
-      'Peso': '18 kg',
-      'Embalagem': 'Estojo de plástico (preto ou laranja)',
+      Peso: '18 kg',
+      Embalagem: 'Caixa plástica (preta ou laranja)',
+      Certificação: 'EN 137:2006, EN 136:1998, C.A nº 52.013',
     },
     price: 0,
-    images: [
-      baseImagePath + 'cilindro-90.png',
-    ],
+    images: [baseImagePath + 'cilindro-90.png'],
   },
   {
-    slug: 'cilindro-rhzk', 
+    slug: 'cilindro-rhzk',
     active: true,
-    title: 'Aparelho de Respiração Autônoma 9.0L Fibras S/ Carona Modelo: RHZ/(9.0)',
+    title:
+      'Aparelho de Respiração Autônoma 9.0L Fibras S/ Carona Modelo: RHZ/(9.0)',
     categories: [ProductCategory.BOMBEIRO],
     description:
-      'Máscara Facial Completa: Proteção antiembaçante e antirreflexo, ampla visão, boa vedação, uso confortável. Válvula de Gás Compacta: Fornecimento de grande quantidade de gás sem interferir na visão. <br>Placa Traseira: Fibra de carbono leve e de alta resistência, desenhada para conforto e praticidade. <br>Redutor de Pressão: Com válvula de segurança interna, dispositivo de ajuste, manutenção fácil. <br>Manômetro: À prova dágua e à prova de choque. <br>Válvula do Cilindro: Equipado com dispositivo de segurança para evitar abertura acidental. <br><strong> Acessórios </strong> <br>01 Máscaras faciais completas <br>01 Conexão em "Y" para aparelho respiratório <br>01 Cilindro de fibra de carbono 9L 300 PSI com válvula reguladora de pressão e manômetro <br>01 Suporte de cilindro (arnês) com manômetro <br>02 Válvulas de demanda com mangueira reguladora <br>01 Caixa para armazenamento e transporte  <br> <strong> Aplicação </strong> <br> Adequado para bombeiros ou socorristas em ambientes com substâncias tóxicas ou nocivas, como fumaça e oxigênio, proporcionando proteção respiratória eficaz aos usuários. <br> <strong> Área de Uso </strong> <br> Amplamente utilizado em áreas como proteção contra incêndio, energia elétrica, indústria química, construção naval, fundição, armazenamento, laboratórios, mineração e outros setores   ',
-    descriptionHTML: '',
+      "Aparelho de respiração autônoma com máscara facial completa, proteção antiembaçante e antirreflexo. Válvula de gás compacta com grande fluxo. Placa traseira em fibra de carbono leve e resistente. Redutor de pressão com válvula de segurança integrada. Manômetro à prova d'água e choque. Modelo sem carona, inclui cilindro de fibra de carbono 9.0L para maior autonomia.",
+    descriptionHTML:
+      '<strong>Características</strong><br><br>' +
+      '• Máscara facial confortável com antiembaçante, antirreflexo, amplo campo de visão, boa vedação e confortável de usar<br>' +
+      '• A válvula de fornecimento de gás é pequena, possui grande capacidade de fornecimento de gás e não afeta o campo de visão durante o uso<br>' +
+      '• Placa traseira de fibra de carbono, leve e de alta resistência, projetada para ser mais confortável e prática de usar<br>' +
+      '• Redutor de pressão com válvula de segurança embutida, sem dispositivo de ajuste e isento de manutenção<br>' +
+      '• Possui uma interface de reserva<br>' +
+      "• Medidor de pressão leve com display à prova d'água, à prova de choque, luminoso e com alarme preciso<br>" +
+      '• A válvula da garrafa possui um dispositivo de trava tipo catraca para evitar fechamentos acidentais durante o uso<br><br>' +
+      '<strong>Acessórios</strong><br><br>' +
+      '• 01 Máscara facial completa<br>' +
+      '• 01 Cilindro de Fibra de Carbono 9L 300 PSI com Válvula reguladora de Pressão e Manômetro<br>' +
+      '• 01 Arnês (Suporte para o cilindro) com Manômetro<br>' +
+      '• 01 Válvula de demanda com mangueira reguladora<br>' +
+      '• 01 Caixa para armazenamento e transporte<br><br>' +
+      '<strong>Aplicação</strong><br><br>' +
+      'Indicado para bombeiros ou trabalhadores de resgate em ambientes com gases tóxicos ou nocivos, contendo substâncias prejudiciais, como fumaça e oxigênio, entre outros. Proporciona proteção respiratória eficaz para os usuários<br><br>' +
+      '<strong>Área de Uso</strong><br><br>' +
+      'É amplamente utilizado em setores como combate a incêndios, energia elétrica, química, naval, metalurgia, armazenamento, laboratórios, mineração e outros<br><br>' +
+      '<strong>Especificações</strong><br><br>' +
+      '• Campo visual da máscara de gás > 96%<br>' +
+      '• Inalação: 30 L/min<br>' +
+      '• Material interno do cilindro: Fibra de carbono<br>' +
+      '• Capacidade do cilindro: 2700 L (9,0L)<br>' +
+      '• Tempo de Uso: 90 min<br>' +
+      '• Resistência à exalação: < 1000 Pa<br>' +
+      '• Resistência à inalação: < 500 Pa<br>' +
+      '• Temperatura de operação: -30°C a 60°C<br>' +
+      '• Pressão do alarme: 5.5 MPa<br>' +
+      '• Pressão de trabalho: 300 Pa<br>' +
+      '• Som do alarme: 90 dB<br>' +
+      '• Peso: 18 kg<br>' +
+      '• Embalagem: Caixa plástica (preta ou laranja)<br><br>' +
+      '<strong>Certificação</strong><br><br>' +
+      '• EN 137:2006, EN 136:1998<br>' +
+      '• Certificado de Aprovação – C.A nº 52.013',
     details: {
-      'Campo de visão da máscara de  ': '>96%',
-      'Inalação': '30 L/min',
-      'Material do cilindro': 'Aço',
-      'Capacidade do cilindro': '2040L (6,8L)',
-      'Resistência à exalação': '<1000 Pa',
-      'Resistência à inalação': '<500 Pa',
+      'Campo visual da máscara': '> 96%',
+      Inalação: '30 L/min',
+      'Material do cilindro': 'Fibra de Carbono',
+      'Capacidade do cilindro': '2700L (9,0L)',
+      'Tempo de Uso': '90 min',
+      'Resistência à exalação': '< 1000 Pa',
+      'Resistência à inalação': '< 500 Pa',
       'Temperatura de operação': '-30°C a 60°C',
-      'Pressão de alarme': '5.5 MPa',
+      'Pressão do alarme': '5.5 MPa',
       'Pressão de trabalho': '300 Pa',
-      'Tempo de serviço': '55 - 60 min',
       'Som do alarme': '90 dB',
-      'Peso': '18 kg',
-      'Embalagem': 'Estojo de plástico (preto ou laranja)',
+      Peso: '18 kg',
+      Embalagem: 'Caixa plástica (preta ou laranja)',
+      Certificação: 'EN 137:2006, EN 136:1998, C.A nº 52.013',
     },
     price: 0,
-    images: [
-      baseImagePath + 'cilindro-rhzk.png',
-    ],
+    images: [baseImagePath + 'cilindro-rhzk.png'],
   },
   {
     slug: 'cilindro-fibra-carbono-68l',
     active: true,
-    title: 'Cilindro de Fibra de Carbono 6.8L com Válvula para Aparelho de Respiração Autônoma',
+    title:
+      'Cilindro de Fibra de Carbono 6.8L com Válvula para Aparelho de Respiração Autônoma',
     categories: [ProductCategory.BOMBEIRO],
     description:
       'Cilindro desenvolvido para aparelhos de respiração com acabamento revolucionário, sendo de exigente importância para aplicações em ambientes tóxicos, alta resistência, sendo adequado para alta temperatura de uso.',
     descriptionHTML: '',
     details: {
-      'Capacidade': '6.8 Litros',
+      Capacidade: '6.8 Litros',
       'Pressão de trabalho': '300 bar (4350 PSI)',
       'Material do cilindro': 'Fibra de Carbono de Alta Performance',
       'Revestimento externo': 'Fibra de Vidro',
       'Acabamento interno': 'Liso',
-      'Rosca': 'M18 x 1,5',
+      Rosca: 'M18 x 1,5',
       'Material da válvula': 'Alumínio',
       'Peso aproximado': '3,2 kg',
       'Dimensões aproximadas': '560mm x 140mm',
       'Pressão de teste': '450 bar',
-      'Certificação': 'Inmetro/CE',
+      Certificação: 'Inmetro/CE',
       'Vida útil': '15 anos',
     },
     price: 0,
     images: [
-      baseImagePath + 'cilindro_scuba_leao_modelismo_fibra_carbono_300_bar_6_8l_1919_5_1905104432a512c165d63d67518d8b54_20210729171920 1.png',
+      baseImagePath +
+        'cilindro_scuba_leao_modelismo_fibra_carbono_300_bar_6_8l_1919_5_1905104432a512c165d63d67518d8b54_20210729171920 1.png',
     ],
   },
   {
@@ -1133,17 +1377,17 @@ const baseProducts: Product[] = [
       'Válvula para Cilindro ON/OFF de Compressão - Suporte DIN. Conecta e desconecta com indicação do lado fechado. Possui chave para manuseio das conexões, facilitando a conexão com RPCA, a através o empregado determinando em caso tanto lugar três posições.',
     descriptionHTML: '',
     details: {
-      'Tipo': 'ON/OFF de Compressão',
-      'Suporte': 'DIN',
+      Tipo: 'ON/OFF de Compressão',
+      Suporte: 'DIN',
       'Material do corpo': 'Liga metálica cromada',
       'Punho/Volante': 'Polímero de alta resistência',
       'Rosca de entrada': 'M18 x 1,5',
       'Rosca de saída': 'Fêmea / Macho conforme especificação',
       'Pressão de trabalho': '300 bar',
       'Temperatura de operação': '-30°C a +60°C',
-      'Certificação': 'Normas DIN',
+      Certificação: 'Normas DIN',
       'Peso aproximado': '280g',
-      'Aplicação': 'Cilindros de respiração autônoma',
+      Aplicação: 'Cilindros de respiração autônoma',
     },
     price: 0,
     images: [
@@ -1162,20 +1406,18 @@ const baseProducts: Product[] = [
     descriptionHTML: '',
     details: {
       'Fabricado em': 'Aço temperado',
-      'Comprimento': '75cm',
+      Comprimento: '75cm',
       'Diâmetro da empunhadura': '3,7cm',
       'Peso aproximado': '6,2kg',
-      'Acabamento': 'Pintura eletrostática preta',
-      'Empunhadura': 'Nylon ergonômico',
+      Acabamento: 'Pintura eletrostática preta',
+      Empunhadura: 'Nylon ergonômico',
       'Força cinética': 'Superior a 180kg',
       'Isolamento elétrico': 'Sim',
       'Anti-fagulha': 'Sim',
-      'Aplicação': 'Operações policiais táticas',
+      Aplicação: 'Operações policiais táticas',
     },
     price: 0,
-    images: [
-      baseImagePath + 'Image (3).png',
-    ],
+    images: [baseImagePath + 'Image (3).png'],
   },
   {
     slug: 'mochila-flexivel-costal-anti-incendio',
@@ -1186,19 +1428,21 @@ const baseProducts: Product[] = [
       'Mochila costal flexível para transporte de água lisoa para combate a incêndios florestais. Equipamento leve, flexível e resistente com alta durabilidade. Sustagem anti-furico para vedação segura e maior vida útil. Tanque ergométrico para alta entrega para facilidade de carregamento. Alças ajustáveis, válvula de alívio de pressão. Duplo reflete na base do tanque para maior durabilidade. Faixas refletivas para identificação do operador.',
     descriptionHTML: '',
     details: {
-      'Material': 'PVC flexível de alta resistência',
-      'Capacidade': '20 litros',
+      Material: 'PVC flexível de alta resistência',
+      Capacidade: '20 litros',
       'Peso vazio': 'Aproximadamente 2,5kg',
-      'Dimensões': '50cm x 35cm x 15cm',
-      'Sistema de enchimento': 'Bocal de enchimento com tampa plástica rígida e anel de rosca',
-      'Mangueira': 'Flexível com 1,50m, válvula de gatilho interno em latão com gatilho',
-      'Sustagem': 'Anti-furico para vedação segura',
-      'Alças': 'Ergonômicas e ajustáveis',
+      Dimensões: '50cm x 35cm x 15cm',
+      'Sistema de enchimento':
+        'Bocal de enchimento com tampa plástica rígida e anel de rosca',
+      Mangueira:
+        'Flexível com 1,50m, válvula de gatilho interno em latão com gatilho',
+      Sustagem: 'Anti-furico para vedação segura',
+      Alças: 'Ergonômicas e ajustáveis',
       'Válvula de alívio': 'Para controle de pressão',
-      'Base': 'Duplo reforço para maior durabilidade',
-      'Faixas': 'Refletivas para identificação',
+      Base: 'Duplo reforço para maior durabilidade',
+      Faixas: 'Refletivas para identificação',
       'Peso líquido máximo': '20kg',
-      'Aplicação': 'Combate a incêndios florestais',
+      Aplicação: 'Combate a incêndios florestais',
     },
     price: 0,
     images: [
@@ -1217,26 +1461,26 @@ const baseProducts: Product[] = [
       'Flutuador de alta performance desenvolvido com bolsas de espuma EVA/espuma XPE e revestimento almofadado moldado, aplicado para salvamento aquático. Equipamento de segurança Equipado com rebocador integrado em nylon resistente de flutuação, garantindo acelerações flutuação conforme para instruções de resgate.',
     descriptionHTML: '',
     details: {
-      'Material': 'Espuma XPE com revestimento almofadado',
+      Material: 'Espuma XPE com revestimento almofadado',
       'Dimensões do flutuador': '101 cm x 18 cm x 8 cm',
-      'Modelo': 'Espuma encapsulada de polietileno reticulado (XPE)',
-      'Resistência': 'Material durável, resistente a rasgos e à água salgada',
-      'Cinta interna': 'Polipropileno TPU 25 mm, com 110 cm de comprimento e 17 cm de cada lado para conforto de colocação rápida',
-      'Fechamento': 'Zíper na lateral TPU 15 cm com 18 cm de fechamento',
+      Modelo: 'Espuma encapsulada de polietileno reticulado (XPE)',
+      Resistência: 'Material durável, resistente a rasgos e à água salgada',
+      'Cinta interna':
+        'Polipropileno TPU 25 mm, com 110 cm de comprimento e 17 cm de cada lado para conforto de colocação rápida',
+      Fechamento: 'Zíper na lateral TPU 15 cm com 18 cm de fechamento',
       'Material da corda': 'Polipropileno',
-      'Argolas': 'Aço inox, 26 mm de diâmetro interno',
-      'Acessórios': 'Incluídos cino algo cinto',
+      Argolas: 'Aço inox, 26 mm de diâmetro interno',
+      Acessórios: 'Incluídos cino algo cinto',
       'Comprimento da corda': '25 m de nylon 8 mm com 240 m de comprimento',
-      'Resistência da corda': 'Entre variação 35 mm com revestimento em Neoprene',
-      'Costuras': 'Reforçadas para maior resistência',
-      'Flutuação': 'Espuma XPE de alta densidade',
+      'Resistência da corda':
+        'Entre variação 35 mm com revestimento em Neoprene',
+      Costuras: 'Reforçadas para maior resistência',
+      Flutuação: 'Espuma XPE de alta densidade',
       'Peso total': '1300 kg',
       'Cores disponíveis': 'Vermelho e Amarelo',
     },
     price: 0,
-    images: [
-      baseImagePath + 'sled.fw_-1024x406 1.png',
-    ],
+    images: [baseImagePath + 'sled.fw_-1024x406 1.png'],
   },
   {
     slug: 'lifebelt-flutuador-srb',
@@ -1247,27 +1491,28 @@ const baseProducts: Product[] = [
       'Lifebelt SRB é um equipamento de segurança flutuante de alta performance, projetado com materiais resistentes à água salgada e desenvolvido para reforçar equipe em operações aquáticas. Com bolsas de espuma SRB encapsulada e estrutura reforçada, garante eficiência máxima para resgate e flutuação avançada em situações de emergência.',
     descriptionHTML: '',
     details: {
-      'Modelo': 'Lifebelt SRB com equipamento de segurança flutuante de alta performance',
+      Modelo:
+        'Lifebelt SRB com equipamento de segurança flutuante de alta performance',
       'Revestimento externo': 'Equipamento resistente a água salgada',
-      'Dimensões': '86 cm(C) x 16 cm(L) x 7 cm (A)',
-      'Resistência': 'Material durável de navegação de 1kg poliuticas',
+      Dimensões: '86 cm(C) x 16 cm(L) x 7 cm (A)',
+      Resistência: 'Material durável de navegação de 1kg poliuticas',
       'Peso total': '1800 kg',
       'Cinta interna': 'Polipropileno 25 mm com cargo de kit E kit',
       'Comprimento da cinta': '95 cm com 15 cm de cada lado',
-      'Cinta na extremidade': 'Poliéster 24 mm e 6h de cargo, 2,085m de comprimento',
-      'Cinta traseira': 'Poliéster 50 mm e 6h de cargo, 125cm de comprimento com revestimento quadrinicos em',
+      'Cinta na extremidade':
+        'Poliéster 24 mm e 6h de cargo, 2,085m de comprimento',
+      'Cinta traseira':
+        'Poliéster 50 mm e 6h de cargo, 125cm de comprimento com revestimento quadrinicos em',
       'Alça de resgate': 'Neoprene',
-      'Argolas': 'Aço Inox 35mm de diâmetro',
-      'Material': 'Polipropileno em cgo fluê',
-      'Costuras': 'Reforçadas',
+      Argolas: 'Aço Inox 35mm de diâmetro',
+      Material: 'Polipropileno em cgo fluê',
+      Costuras: 'Reforçadas',
       'Tubos internos': 'Siliconados para reforço dos cintos',
-      'Fechamento': 'Zíper resistente e sistema',
-      'Garantia': '3 meses contra defeitos de fabricação',
+      Fechamento: 'Zíper resistente e sistema',
+      Garantia: '3 meses contra defeitos de fabricação',
     },
     price: 0,
-    images: [
-      baseImagePath + 'sled.fw_-1024x406 1.png',
-    ],
+    images: [baseImagePath + 'sled.fw_-1024x406 1.png'],
   },
 ];
 
